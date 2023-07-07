@@ -22,7 +22,7 @@ public class Clue : MonoBehaviour
 
     private void OnMouseDown()
     {
-        print("Clue Found");
+        
         if (!haveBeenFound)
         {
             SpawnUI();
@@ -31,14 +31,16 @@ public class Clue : MonoBehaviour
         }
         else
         {
-            UIClue.SetActive(true);
+            print("Clue Found");
+            UIClue.gameObject.SetActive(true);
         }
     }
 
     private void SpawnUI()
     {
-        Instantiate(UIClue, transform.position, Quaternion.identity);
         UIClue.GetComponent<UI_Clue>().clue = this;
+        UIClue = Instantiate(UIClue, transform.position, Quaternion.identity);
+        
     }
 
 }

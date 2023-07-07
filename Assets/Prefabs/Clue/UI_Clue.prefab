@@ -587,6 +587,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c21bbeb623921b741bce28d7eaf2e505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clue: {fileID: 0}
+  MiniGameButton: {fileID: 8175075160661316726}
 --- !u!1 &4802918897135342408
 GameObject:
   m_ObjectHideFlags: 0

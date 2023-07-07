@@ -7,12 +7,18 @@ public class UI_Clue : MonoBehaviour
 {
     public Clue clue;
     [SerializeField] Button MiniGameButton;
-    public void OkButtonClick()
-    {
-        gameObject.SetActive(false);
-        if (!clue.miniGame)
+    [SerializeField] public Image ClueImage;
+
+    private void Start()
+    { 
+        if (clue.miniGame == null)
         {
             MiniGameButton.gameObject.SetActive(false);
         }
+    }
+
+    public void OkButtonClick()
+    {
+        gameObject.SetActive(false);
     }
 }
