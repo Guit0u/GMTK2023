@@ -102,7 +102,7 @@ public class DialogueContainer : MonoBehaviour
 
         foreach (char letter in text.ToCharArray())
         {
-            waitBetweenLetter = 0.1f / textSpeed; //For debug
+            waitBetweenLetter = 0.1f / textSpeed;
 
             dialogue.text += letter;
             yield return new WaitForSeconds(waitBetweenLetter);

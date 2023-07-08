@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,4 +5,5 @@ using UnityEngine;
 public class DialogueBranch : ScriptableObject
 {
     public List<TextEntry> entries = new();
+    public List<DialogueBranch> following = new();
 }

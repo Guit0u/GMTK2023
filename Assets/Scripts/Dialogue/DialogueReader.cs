@@ -21,6 +21,8 @@ public class DialogueReader : MonoBehaviour
         {
             TextEntry currentEntry = dialogue.entries[entryIndex];
             dialogueContainer.SetText(currentEntry, entryTextIndex);
+
+            return;
         }
 
         entryTextIndex++;
@@ -35,7 +37,21 @@ public class DialogueReader : MonoBehaviour
             entryTextIndex = 0;
 
             if (entryIndex < dialogue.entries.Count) UpdateContainer();
+            else Debug.Log("End of dialogue.");
         }
+    }
+
+    public void Choose(int index)
+    {
+        if (dialogue.following.Count > index && dialogue.following[index] != null)
+        {
+            dialogue = dialogue.following[index];
+
+            entryIndex = 0;
+            entryTextIndex = 0;
+        }
+
+        UpdateContainer();
     }
 
     private void UpdateContainer()
