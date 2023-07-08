@@ -11,6 +11,7 @@ public class UI_Clue : MonoBehaviour
     [SerializeField] Button MiniGameButton;
     [SerializeField] public Image ClueImage;
     [SerializeField] public TMP_Text textDescription;
+    [SerializeField] public TMP_Text textName;
     bool hasAlreadyDoTheMiniGame;
 
     private void Start()

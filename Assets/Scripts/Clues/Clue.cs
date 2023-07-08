@@ -61,6 +61,7 @@ public class Clue : MonoBehaviour
         UIClue = Instantiate(UIClue, transform.position, Quaternion.identity);
         UIClue.GetComponent<UI_Clue>().clue = this;
         UIClue.GetComponent<UI_Clue>().textDescription.SetText(description);
+        UIClue.GetComponent<UI_Clue>().textName.SetText(clueName);
 
     }
 

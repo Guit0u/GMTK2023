@@ -739,6 +739,7 @@ MonoBehaviour:
   MiniGameButton: {fileID: 8175075160661316726}
   ClueImage: {fileID: 698557402449146690}
   textDescription: {fileID: 2958620124294392009}
+  textName: {fileID: 3880692761840070562}
 --- !u!1 &4802918897135342408
 GameObject:
   m_ObjectHideFlags: 0
