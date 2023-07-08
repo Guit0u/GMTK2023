@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: ebd60b8bc9fe7a84b9db5e31665de562, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -589,6 +589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clue: {fileID: 0}
   MiniGameButton: {fileID: 8175075160661316726}
+  ClueImage: {fileID: 698557402449146690}
 --- !u!1 &4802918897135342408
 GameObject:
   m_ObjectHideFlags: 0

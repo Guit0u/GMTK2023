@@ -31,7 +31,6 @@ public class Clue : MonoBehaviour
         }
         else
         {
-            print("Clue Found");
             UIClue.gameObject.SetActive(true);
         }
     }
