@@ -4,13 +4,18 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+
+public enum ClueState
+{
+    NotFound,HasBeenFound,HasBeenAffected
+}
 public class Clue : MonoBehaviour
 {
     CluesManager CM;
     public GameObject UIClue;
-    bool hasBeenFound = false;
-    public string ClueName;
-    public string state; //a definir
+    //bool hasBeenFound = false;
+    public string clueName;
+    public ClueState clueState; 
     [SerializeField] public MiniGame miniGame;
 
     private void Start()
@@ -35,11 +40,11 @@ public class Clue : MonoBehaviour
         {
             return;
         }
-        if (!haveBeenFound)
+        if (clueState== ClueState.NotFound)
         {
             SpawnUI();
             AddClue();
-            haveBeenFound = true;
+            clueState = ClueState.HasBeenFound;
         }
         else
         {
