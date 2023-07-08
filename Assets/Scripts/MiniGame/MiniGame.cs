@@ -22,6 +22,7 @@ public class MiniGame : MonoBehaviour
         timerIsRunning = true;
         CM = FindObjectOfType<CluesManager>();
         CM.HideAllUIClue();
+        CM.HideMenu();
     }
     void Update()
     {
@@ -36,7 +37,7 @@ public class MiniGame : MonoBehaviour
             {
                 timeRemaining = 0;
                 timerIsRunning = false;
-                ChangeAndDisplayUIClue("a");
+                ChangeAndDisplayUIClue();
                 SceneManager.UnloadSceneAsync(miniGameName);
             }
         }
@@ -62,15 +63,22 @@ public class MiniGame : MonoBehaviour
     public void Win()
     {
         hasWin = true;
-        ChangeAndDisplayUIClue("a");
+        ChangeAndDisplayUIClue();
         relatedClue.clueState = ClueState.HasBeenAffected;
         SceneManager.UnloadSceneAsync(miniGameName);
     }
-    public void ChangeAndDisplayUIClue(string newText)
+    public void ChangeAndDisplayUIClue()
     {
+
         GetRelatedClue();
-        print(relatedClue);
-        relatedClue.UIClue.GetComponent<UI_Clue>().textDescription.SetText("henlo");
+        if (hasWin)
+        {
+            relatedClue.UIClue.GetComponent<UI_Clue>().textDescription.SetText(relatedClue.affectedDescription);
+        }
+        else
+        {
+            relatedClue.UIClue.GetComponent<UI_Clue>().textDescription.SetText(relatedClue.SeenDescription);
+        }    
         relatedClue.UIClue.gameObject.SetActive(true);
     }
 
