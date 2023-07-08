@@ -19,7 +19,7 @@ public class CluesManager : MonoBehaviour
 
     public void DisplayClues()
     {
-        foreach(Clue clue in cluesFound)
+        //foreach(Clue clue in cluesFound)
         {
 
             //clue.UIClue.GetComponent<UI_Clue>().ClueImage;
