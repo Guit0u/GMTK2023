@@ -1,6 +1,7 @@
  using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UI_Clue : MonoBehaviour
@@ -20,5 +21,11 @@ public class UI_Clue : MonoBehaviour
     public void OkButtonClick()
     {
         gameObject.SetActive(false);
+    }
+
+    public void MiniGameButtonClick()
+    {
+        SceneManager.LoadScene("MiniGameScene", LoadSceneMode.Additive);
+        //SceneManager.UnloadSceneAsync("MiniGameScene");
     }
 }
