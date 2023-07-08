@@ -44,12 +44,14 @@ public class DialogueReader : MonoBehaviour
         if (dialogue.following.Count > index && dialogue.following[index] != null)
         {
             dialogue = dialogue.following[index];
-
             entryIndex = 0;
             entryTextIndex = 0;
-        }
 
-        UpdateContainer();
+            if (!Evaluate(dialogue.condition)) Choose(0);
+
+            SusManager.Instance.ChangeSus(dialogue.SusModifier);
+            UpdateContainer();
+        }
     }
 
     private void UpdateContainer()
@@ -68,7 +70,13 @@ public class DialogueReader : MonoBehaviour
             if (condition.susCondition == SusCondition.Above && suspicion < condition.susValue) return false;
         }
 
-        
+        foreach (Clue clue in CluesManager.Instance.Clues)
+        {
+            if (condition.clues.TryGetValue(clue.name, out ClueState clueState))
+            {
+                if (clue.clueState != clueState) return false;
+            }
+        }
 
         return true;
     }
