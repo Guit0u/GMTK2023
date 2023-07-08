@@ -15,10 +15,12 @@ public class CluesManager : MonoBehaviour
     [SerializeField] Canvas canvas;
     bool isDisplaying = false;
     [SerializeField] Image[] images;
+    [SerializeField] Image Background;
 
     private void Start()
     {
         Clues = GetComponents<Clue>();
+        Background.gameObject.SetActive(false);
         foreach(Image image in images)
         {
             ImagesClue.Add(image, null);
@@ -40,7 +42,7 @@ public class CluesManager : MonoBehaviour
         PointerEventData pointerEventData = (PointerEventData)eventData;
         GameObject clickedImage = pointerEventData.pointerPress;
         Clue clue = ImagesClue[clickedImage.GetComponent<Image>()];
-        clue.UIClue.SetActive(true);
+        clue.DisplayUI();
     }
 
     public static void AddEventTriggerListener(EventTrigger trigger,
@@ -58,6 +60,8 @@ public class CluesManager : MonoBehaviour
     {
         if (isDisplaying)
         {
+            HideAllUIClue();
+            Background.gameObject.SetActive(false);
             foreach (KeyValuePair<Image, Clue> clue in ImagesClue)
             {
                 clue.Key.gameObject.SetActive(false);
@@ -66,6 +70,8 @@ public class CluesManager : MonoBehaviour
         }
         else
         {
+            HideAllUIClue();
+            Background.gameObject.SetActive(true);
             foreach (KeyValuePair<Image, Clue> clue in ImagesClue)
             {
                 if (clue.Value!= null)
@@ -74,5 +80,14 @@ public class CluesManager : MonoBehaviour
             isDisplaying=true;
         }
 
+    }
+
+    public void HideAllUIClue()
+    {
+        foreach (KeyValuePair<Image, Clue> clue in ImagesClue)
+        {
+            if(clue.Value!=null && clue.Value.UIClue != null)
+                clue.Value.UIClue.SetActive(false);
+        }
     }
 }

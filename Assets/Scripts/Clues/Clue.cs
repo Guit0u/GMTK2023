@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Clue : MonoBehaviour
 {
@@ -20,9 +21,18 @@ public class Clue : MonoBehaviour
         CM.FoundClue(this);
     }
 
+    public void DisplayUI()
+    {
+        CM.HideAllUIClue();
+        UIClue.gameObject.SetActive(true);
+    }
+
     private void OnMouseDown()
     {
-        
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
         if (!haveBeenFound)
         {
             SpawnUI();
@@ -31,7 +41,7 @@ public class Clue : MonoBehaviour
         }
         else
         {
-            UIClue.gameObject.SetActive(true);
+            DisplayUI();
         }
     }
 
