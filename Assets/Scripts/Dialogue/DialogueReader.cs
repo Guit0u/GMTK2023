@@ -17,6 +17,12 @@ public class DialogueReader : MonoBehaviour
 
     public void Next()
     {
+        if (dialogueContainer.IsTyping)
+        {
+            TextEntry currentEntry = dialogue.entries[entryIndex];
+            dialogueContainer.SetText(currentEntry, entryTextIndex);
+        }
+
         entryTextIndex++;
 
         if (entryTextIndex < dialogue.entries[entryIndex].text.Count)
@@ -35,16 +41,6 @@ public class DialogueReader : MonoBehaviour
     private void UpdateContainer()
     {
         TextEntry currentEntry = dialogue.entries[entryIndex];
-
-        dialogueContainer.ShowPortrait(currentEntry.portrait);
-
-        if (currentEntry.type == EntryType.Text)
-        {
-            dialogueContainer.SetText(currentEntry.author, currentEntry.text[entryTextIndex]);
-        }
-        else
-        {
-            dialogueContainer.SetChoice(currentEntry.author, currentEntry.text);
-        }
+        dialogueContainer.UpdateValues(currentEntry, entryTextIndex);
     }
 }

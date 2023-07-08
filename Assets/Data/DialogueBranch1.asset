@@ -21,7 +21,7 @@ MonoBehaviour:
       reversed: 0
     text:
     - Hello mon chum
-    - "Comment qu'\xE7a va en ces moments difficiles ?"
+    - "Comment qu'\xE7a va en ces moments difficiles ? \nPas trop relou ma gueule"
     - J'parie qu'tut tournes les pouces sans rien branler
   - type: 0
     author: Jeremiah

@@ -207,6 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3964c56ce696e7845899f697f3606166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textSpeed: 3
   Portraits:
   - {fileID: 1425411269072951653}
   - {fileID: 138458791195797911}

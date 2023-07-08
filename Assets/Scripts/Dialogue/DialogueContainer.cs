@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -5,6 +6,12 @@ using UnityEngine.UI;
 
 public class DialogueContainer : MonoBehaviour
 {
+    [Header("Parameters")]
+    [SerializeField, Range(1, 10)] private int textSpeed = 3;
+    
+    private float waitBetweenLetter;
+    private bool typing;
+
     [Header("Portrait")]
     [SerializeField] private List<Image> Portraits;
 
@@ -15,6 +22,27 @@ public class DialogueContainer : MonoBehaviour
 
     [Header("Choices")]
     [SerializeField] private List<Button> buttons;
+
+    public bool IsTyping { get => typing; }
+
+    private void Start()
+    {
+        waitBetweenLetter = 0.1f / textSpeed;
+    }
+
+    public void UpdateValues(TextEntry entry, int textIndex)
+    {
+        ShowPortrait(entry.portrait);
+
+        if (entry.type == EntryType.Text)
+        {
+            StartCoroutine(TypeText(entry.author, entry.text[textIndex]));
+        }
+        else
+        {
+            SetChoice(entry.author, entry.text);
+        }
+    }
 
     public void ShowPortrait(Portrait portrait)
     {
@@ -28,17 +56,30 @@ public class DialogueContainer : MonoBehaviour
         else Portraits[imageIndex].gameObject.GetComponent<RectTransform>().localScale = Vector3.one;
     }
 
-    public void SetText(string authorName, string text)
+    public void ResetText()
     {
         foreach (Button button in buttons) { button.gameObject.SetActive(false); }
 
-        author.text = authorName;
-        dialogue.text = text;
+        author.text = string.Empty;
+        dialogue.text = string.Empty;
 
-        arrow.SetActive(true);
+        arrow.SetActive(false);
     }
 
-    public void SetChoice(string authorName, List<string> choices)
+    public void SetText(TextEntry entry, int entryIndex)
+    {
+        StopAllCoroutines();
+
+        foreach (Button button in buttons) { button.gameObject.SetActive(false); }
+
+        author.text = entry.author;
+        dialogue.text = entry.text[entryIndex];
+
+        arrow.SetActive(true);
+        typing = false;
+    }
+
+    private void SetChoice(string authorName, List<string> choices)
     {
         author.text = authorName;
         dialogue.text = string.Empty;
@@ -50,5 +91,24 @@ public class DialogueContainer : MonoBehaviour
             buttons[i].gameObject.SetActive(true);
             buttons[i].GetComponentInChildren<TextMeshProUGUI>().text = choices[i];
         }
+    }
+
+    private IEnumerator TypeText(string authorName, string text)
+    {
+        ResetText();
+        typing = true;
+
+        author.text = authorName;
+
+        foreach (char letter in text.ToCharArray())
+        {
+            waitBetweenLetter = 0.1f / textSpeed; //For debug
+
+            dialogue.text += letter;
+            yield return new WaitForSeconds(waitBetweenLetter);
+        }
+
+        arrow.SetActive(true);
+        typing = false;
     }
 }
