@@ -17,5 +17,6 @@ public class TextEntry
 
     public Portrait portrait;
 
+    [TextArea(1, 3)]
     public List<string> text = new();
 }

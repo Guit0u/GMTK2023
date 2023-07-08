@@ -21,7 +21,7 @@ MonoBehaviour:
       reversed: 0
     text:
     - Hello mon chum
-    - "Comment qu'\xE7a va en ces moments difficiles ?"
+    - "Comment qu'\xE7a va en ces moments difficiles ? \nPas trop relou ma gueule"
     - J'parie qu'tut tournes les pouces sans rien branler
   - type: 0
     author: Jeremiah
@@ -52,3 +52,7 @@ MonoBehaviour:
     - Le buter
     - Appeler la police
     - "Se tourner v\xE9ritablement les pouces"
+  following:
+  - {fileID: 11400000, guid: 6ca4446a849ed37448059f7dff6a62c8, type: 2}
+  - {fileID: 11400000, guid: 77507444db1faa348a02aa8b282b258f, type: 2}
+  - {fileID: 11400000, guid: 6fcfa0538f1f14f449b6d7915902706f, type: 2}
