@@ -15,7 +15,11 @@ public class Clue : MonoBehaviour
     public GameObject UIClue;
 
     public string clueName;
-    public ClueState clueState; 
+    public ClueState clueState;
+    public string description;
+    public string SeenDescription;
+    public string affectedDescription;
+
     [SerializeField] public string miniGame;
 
     private void Start()
@@ -54,9 +58,11 @@ public class Clue : MonoBehaviour
 
     private void SpawnUI()
     {
-        UIClue.GetComponent<UI_Clue>().clue = this;
         UIClue = Instantiate(UIClue, transform.position, Quaternion.identity);
-        
+        UIClue.GetComponent<UI_Clue>().clue = this;
+        UIClue.GetComponent<UI_Clue>().textDescription.SetText(description);
+        UIClue.GetComponent<UI_Clue>().textName.SetText(clueName);
+
     }
 
 }

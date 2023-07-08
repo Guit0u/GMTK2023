@@ -6914,7 +6914,7 @@ GameObject:
   - component: {fileID: 1371690079}
   - component: {fileID: 1371690078}
   m_Layer: 0
-  m_Name: Square (2)
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7699,7 +7699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7528456041438316017, guid: e46a626709bed1842a7f9e865518f223, type: 3}
       propertyPath: timeRemaining
-      value: 25
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

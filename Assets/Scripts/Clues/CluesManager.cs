@@ -91,6 +91,14 @@ public class CluesManager : MonoBehaviour
 
     }
 
+    public void HideMenu()
+    {
+        if (isDisplaying)
+        {
+            DisplayClues();
+        }
+    }
+
     public void HideAllUIClue()
     {
         foreach (KeyValuePair<Image, Clue> clue in ImagesClue)

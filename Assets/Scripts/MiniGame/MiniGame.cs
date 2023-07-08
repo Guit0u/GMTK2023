@@ -22,6 +22,7 @@ public class MiniGame : MonoBehaviour
         timerIsRunning = true;
         CM = FindObjectOfType<CluesManager>();
         CM.HideAllUIClue();
+        CM.HideMenu();
     }
     void Update()
     {
@@ -34,11 +35,10 @@ public class MiniGame : MonoBehaviour
             }
             else
             {
-                Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
+                ChangeAndDisplayUIClue();
                 SceneManager.UnloadSceneAsync(miniGameName);
-                //SceneManager.LoadScene("PromScene");
             }
         }
     }
@@ -60,14 +60,26 @@ public class MiniGame : MonoBehaviour
             }
         }
     }
-
     public void Win()
     {
         hasWin = true;
-        GetRelatedClue();
+        ChangeAndDisplayUIClue();
         relatedClue.clueState = ClueState.HasBeenAffected;
         SceneManager.UnloadSceneAsync(miniGameName);
     }
+    public void ChangeAndDisplayUIClue()
+    {
 
+        GetRelatedClue();
+        if (hasWin)
+        {
+            relatedClue.UIClue.GetComponent<UI_Clue>().textDescription.SetText(relatedClue.affectedDescription);
+        }
+        else
+        {
+            relatedClue.UIClue.GetComponent<UI_Clue>().textDescription.SetText(relatedClue.SeenDescription);
+        }    
+        relatedClue.UIClue.gameObject.SetActive(true);
+    }
 
 }
