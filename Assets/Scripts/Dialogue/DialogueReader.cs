@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DialogueReader : MonoBehaviour
@@ -58,5 +56,20 @@ public class DialogueReader : MonoBehaviour
     {
         TextEntry currentEntry = dialogue.entries[entryIndex];
         dialogueContainer.UpdateValues(currentEntry, entryTextIndex);
+    }
+
+    public bool Evaluate(DialogueCondition condition)
+    {
+        if (condition.susCondition != SusCondition.None)
+        {
+            int suspicion = SusManager.Instance.Suspicion;
+
+            if (condition.susCondition == SusCondition.Below && suspicion > condition.susValue) return false;
+            if (condition.susCondition == SusCondition.Above && suspicion < condition.susValue) return false;
+        }
+
+        
+
+        return true;
     }
 }
