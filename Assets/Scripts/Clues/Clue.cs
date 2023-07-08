@@ -15,7 +15,9 @@ public class Clue : MonoBehaviour
     public GameObject UIClue;
 
     public string clueName;
-    public ClueState clueState; 
+    public ClueState clueState;
+    public string description;
+
     [SerializeField] public string miniGame;
 
     private void Start()

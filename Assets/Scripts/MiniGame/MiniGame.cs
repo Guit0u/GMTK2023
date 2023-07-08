@@ -69,6 +69,7 @@ public class MiniGame : MonoBehaviour
     public void ChangeAndDisplayUIClue(string newText)
     {
         GetRelatedClue();
+        print(relatedClue);
         relatedClue.UIClue.GetComponent<UI_Clue>().textDescription.SetText("henlo");
         relatedClue.UIClue.gameObject.SetActive(true);
     }

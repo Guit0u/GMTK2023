@@ -12,7 +12,6 @@ public class WinZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("win");
         FindObjectOfType<MiniGame>().Win();
     }
 

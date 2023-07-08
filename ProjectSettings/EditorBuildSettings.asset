@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/PromScene.unity
+    path: Assets/Scenes/CrimeScene.unity
     guid: 0bc6842cfda8b2a42b0659d325277e2e
   - enabled: 1
     path: Assets/Scenes/MiniLab.unity
     guid: c038070771c897a44bfd2b62de070bfa
+  - enabled: 1
+    path: Assets/Scenes/MiniInterract.unity
+    guid: 26bdbb4b181f00040a725ef95c407602
   m_configObjects: {}
