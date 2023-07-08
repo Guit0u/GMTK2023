@@ -10,16 +10,19 @@ using UnityEngine.UI;
 
 public class CluesManager : MonoBehaviour
 {
-    public Clue[] Clues;
+    [SerializeField] public Clue[] Clues;
     [SerializeField] public Dictionary<Image, Clue> ImagesClue = new Dictionary<Image, Clue>();
     [SerializeField] Canvas canvas;
     bool isDisplaying = false;
     [SerializeField] Image[] images;
     [SerializeField] Image Background;
 
+    void Awake()
+    {
+        DontDestroyOnLoad(transform.gameObject);
+    }
     private void Start()
     {
-        Clues = GetComponents<Clue>();
         Background.gameObject.SetActive(false);
         foreach(Image image in images)
         {

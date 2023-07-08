@@ -13,10 +13,10 @@ public class Clue : MonoBehaviour
 {
     CluesManager CM;
     public GameObject UIClue;
-    //bool hasBeenFound = false;
+
     public string clueName;
     public ClueState clueState; 
-    [SerializeField] public MiniGame miniGame;
+    [SerializeField] public string miniGame;
 
     private void Start()
     {

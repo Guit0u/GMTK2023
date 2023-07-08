@@ -9,10 +9,11 @@ public class UI_Clue : MonoBehaviour
     public Clue clue;
     [SerializeField] Button MiniGameButton;
     [SerializeField] public Image ClueImage;
+    bool hasAlreadyDoTheMiniGame;
 
     private void Start()
     { 
-        if (clue.miniGame == null)
+        if (clue.miniGame=="")
         {
             MiniGameButton.gameObject.SetActive(false);
         }
@@ -25,7 +26,10 @@ public class UI_Clue : MonoBehaviour
 
     public void MiniGameButtonClick()
     {
-        SceneManager.LoadScene("MiniGameScene", LoadSceneMode.Additive);
-        //SceneManager.UnloadSceneAsync("MiniGameScene");
+        if (!hasAlreadyDoTheMiniGame) {
+        hasAlreadyDoTheMiniGame = true;
+        SceneManager.LoadSceneAsync(clue.miniGame, LoadSceneMode.Additive); }
+        
+
     }
 }
