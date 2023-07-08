@@ -8,7 +8,9 @@ public class Clue : MonoBehaviour
 {
     CluesManager CM;
     public GameObject UIClue;
-    bool haveBeenFound = false;
+    bool hasBeenFound = false;
+    public string ClueName;
+    public string state; //a definir
     [SerializeField] public MiniGame miniGame;
 
     private void Start()
