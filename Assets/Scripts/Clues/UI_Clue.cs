@@ -1,5 +1,6 @@
  using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ public class UI_Clue : MonoBehaviour
     public Clue clue;
     [SerializeField] Button MiniGameButton;
     [SerializeField] public Image ClueImage;
+    [SerializeField] public TMP_Text textDescription;
     bool hasAlreadyDoTheMiniGame;
 
     private void Start()

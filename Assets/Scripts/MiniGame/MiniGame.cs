@@ -34,11 +34,10 @@ public class MiniGame : MonoBehaviour
             }
             else
             {
-                Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
+                ChangeAndDisplayUIClue("a");
                 SceneManager.UnloadSceneAsync(miniGameName);
-                //SceneManager.LoadScene("PromScene");
             }
         }
     }
@@ -60,14 +59,18 @@ public class MiniGame : MonoBehaviour
             }
         }
     }
-
     public void Win()
     {
         hasWin = true;
-        GetRelatedClue();
+        ChangeAndDisplayUIClue("a");
         relatedClue.clueState = ClueState.HasBeenAffected;
         SceneManager.UnloadSceneAsync(miniGameName);
     }
-
+    public void ChangeAndDisplayUIClue(string newText)
+    {
+        GetRelatedClue();
+        relatedClue.UIClue.GetComponent<UI_Clue>().textDescription.SetText("henlo");
+        relatedClue.UIClue.gameObject.SetActive(true);
+    }
 
 }
