@@ -1,26 +1,32 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Xml;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class CluesManager : MonoBehaviour
 {
-    [SerializeField] public Clue[] Clues;
-    [SerializeField] public Dictionary<Image, Clue> ImagesClue = new Dictionary<Image, Clue>();
+    public static CluesManager Instance;
+
+    public Clue[] Clues;
+    public Dictionary<Image, Clue> ImagesClue = new Dictionary<Image, Clue>();
+    
     [SerializeField] Canvas canvas;
     bool isDisplaying = false;
+
     [SerializeField] Image[] images;
     [SerializeField] Image Background;
 
     void Awake()
     {
-        DontDestroyOnLoad(transform.gameObject);
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else Destroy(this);
     }
+
     private void Start()
     {
         Background.gameObject.SetActive(false);
