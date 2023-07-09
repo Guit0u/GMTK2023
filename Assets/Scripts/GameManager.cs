@@ -4,9 +4,15 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private float timer;
+    [SerializeField] private DialogueReader reader;
 
     private bool timerIsRunning;
     private float timeRemaining;
+
+    private void Awake()
+    {
+        reader.gameObject.SetActive(false);
+    }
 
     void Start()
     {
@@ -30,5 +36,10 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene("Tribunal");
             }
         }
+    }
+
+    public void StartDialogue()
+    {
+        reader.gameObject.SetActive(true);
     }
 }
