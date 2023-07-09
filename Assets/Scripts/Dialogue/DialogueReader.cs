@@ -49,11 +49,6 @@ public class DialogueReader : MonoBehaviour
         {
             index++;
         }
-
-        else
-        {
-            
-        }
     }
 
     public void Choose(int index)
