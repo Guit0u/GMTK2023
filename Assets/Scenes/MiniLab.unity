@@ -7735,7 +7735,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7528456041438316017, guid: e46a626709bed1842a7f9e865518f223, type: 3}
       propertyPath: relatedClue
-      value: Coffre
+      value: small note
       objectReference: {fileID: 0}
     - target: {fileID: 7528456041438316017, guid: e46a626709bed1842a7f9e865518f223, type: 3}
       propertyPath: miniGameName
