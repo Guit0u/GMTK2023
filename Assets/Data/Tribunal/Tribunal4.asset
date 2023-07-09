@@ -22,5 +22,93 @@ MonoBehaviour:
   SusModifier: 0
   SusMarieModifier: 0
   SusRobinModifier: 0
-  entries: []
-  following: []
+  entries:
+  - type: 0
+    author: Judge
+    portrait:
+      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - Right, let's move on to the next piece of evidence. We found blood on the floor
+      a few meters from the corpse, and everything suggests that it's the murderer's
+      blood, spilled as a result of a struggle
+    - 'We carried out an analysis and were able to determine that it was a type O-
+      sample. We also know that only two of our suspects have an O- profile, Mr.
+      Jeffords and Mrs. Trechton. Can you explain the presence of your blood at the
+      crime scene, Mrs. Trechton?
+
+'
+  - type: 0
+    author: Mary
+    portrait:
+      sprite: {fileID: 21300000, guid: 55a96cec6c7d46f4fa813b4c906bf573, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - 'We carried out an analysis and were able to determine that it was a type O-
+      sample. We also know that only two of our suspects have an O- profile, Mr.
+      Jeffords and Mrs. Trechton. Can you explain the presence of your blood at the
+      crime scene, Mrs. Trechton?
+
+'
+  - type: 0
+    author: 'Prosecutor '
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - 'Enough, Miss ! Can you confirm that you were not at the crime scene last night?
+
+'
+  - type: 0
+    author: Mary
+    portrait:
+      sprite: {fileID: 21300000, guid: 55a96cec6c7d46f4fa813b4c906bf573, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - I was at home.
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - ' Can you prove that?'
+  - type: 0
+    author: Mary
+    portrait:
+      sprite: {fileID: 21300000, guid: 55a96cec6c7d46f4fa813b4c906bf573, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - 'I didn''t install a camera in my apartment for your pleasure, Sir.
+
+'
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - I'll take that as a no. What about you, Mr. Jeffords? If it doesn't belong
+      to Mrs Trechton, it must be your blood.
+  - type: 1
+    author: Paul
+    portrait:
+      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - ' No, it''s the victim''s own blood'
+    - 'I''m not hurt at all, you can see for yourself '
+    - I don't know whose blood this is, but it's certainly not mine. I faint easily
+      at the sight of blood loss.
+  following:
+  - {fileID: 11400000, guid: fcf16dd608be4d644bb297cda54ef2ff, type: 2}
+  - {fileID: 11400000, guid: 449e2270b2e5a184d83ddb4d800309b8, type: 2}
+  - {fileID: 11400000, guid: 27498281fab65714a86bd886d94f1c2e, type: 2}
