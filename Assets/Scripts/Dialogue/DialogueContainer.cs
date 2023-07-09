@@ -30,20 +30,6 @@ public class DialogueContainer : MonoBehaviour
         waitBetweenLetter = 0.1f / textSpeed;
     }
 
-    public void UpdateValues(TextEntry entry, int textIndex)
-    {
-        ShowPortrait(entry.portrait);
-
-        if (entry.type == EntryType.Text)
-        {
-            StartCoroutine(TypeText(entry.author, entry.text[textIndex]));
-        }
-        else
-        {
-            SetChoice(entry.author, entry.text);
-        }
-    }
-
     public void ShowPortrait(Portrait portrait)
     {
         foreach(Image image in Portraits) image.enabled = false;
@@ -66,6 +52,12 @@ public class DialogueContainer : MonoBehaviour
         arrow.SetActive(false);
     }
 
+    public void StartTyping(TextEntry entry, int textIndex)
+    {
+        ShowPortrait(entry.portrait);
+        StartCoroutine(TypeText(entry.author, entry.text[textIndex]));
+    }
+
     public void SetText(TextEntry entry, int entryIndex)
     {
         StopAllCoroutines();
@@ -79,7 +71,7 @@ public class DialogueContainer : MonoBehaviour
         typing = false;
     }
 
-    private void SetChoice(string authorName, List<string> choices)
+    public void SetChoice(string authorName, List<string> choices)
     {
         author.text = authorName;
         dialogue.text = string.Empty;

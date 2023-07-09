@@ -10,15 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 220f8b4b417a8c545ba7074a347b26ff, type: 3}
-  m_Name: Tribunal5
+  m_Name: Tribunal10
   m_EditorClassIdentifier: 
   condition:
     susCondition: 0
     susValue: 0
-    clues: []
+    clues:
+    - name: small note
+      IsNot: 1
+      state: 2
   SusModifier: 0
   SusMarieModifier: 0
   SusRobinModifier: 0
   entries: []
-  following:
-  - {fileID: 11400000, guid: 9b8a0e4df2f5ab34f9c88ef67447c859, type: 2}
+  following: []
