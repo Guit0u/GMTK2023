@@ -455,7 +455,7 @@ PrefabInstance:
     - target: {fileID: 2905867575824968528, guid: 386c99ce64ac5cf468028e2b03ce014d, type: 3}
       propertyPath: dialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 2e848b7df9e4d1d4abcbbb26a311191c, type: 2}
+      objectReference: {fileID: 11400000, guid: 15591c696176cf04c95c1c241aefa334, type: 2}
     - target: {fileID: 3541850835138002735, guid: 386c99ce64ac5cf468028e2b03ce014d, type: 3}
       propertyPath: m_Name
       value: Dialogue Container
