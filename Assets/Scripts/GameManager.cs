@@ -1,10 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+enum Chapter 
+{
+    Intro,Crime,Tribunal,End
+}
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private float timer;
     [SerializeField] private DialogueReader reader;
+    [SerializeField] Chapter chapter;
 
     private bool timerIsRunning;
     private float timeRemaining;
@@ -17,7 +22,16 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         timeRemaining = timer; 
-        timerIsRunning = true;
+        //timerIsRunning = true;
+        if (chapter == Chapter.Intro)
+        {
+            Intro();
+        }
+    }
+
+    void Intro()
+    {
+        StartDialogue();
     }
 
     void Update()
