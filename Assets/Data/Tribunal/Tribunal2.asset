@@ -143,4 +143,6 @@ MonoBehaviour:
       infamous crime. Let's see what evidence was left at the crime scene.
   following:
   - {fileID: 11400000, guid: afcfcebeae3d1544fb7ef83a88dc4bbe, type: 2}
-  - {fileID: 11400000, guid: afcfcebeae3d1544fb7ef83a88dc4bbe, type: 2}
+  - {fileID: 11400000, guid: 6c0e2fd315797574b807eee84531966c, type: 2}
+  - {fileID: 11400000, guid: 0880faa0681196a4ea6ca0b4c9897cdd, type: 2}
+  - {fileID: 11400000, guid: 1c0c68290e8a46945a111a795eb08149, type: 2}
