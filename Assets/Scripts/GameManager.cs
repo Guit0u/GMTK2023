@@ -6,11 +6,15 @@ enum Chapter
 {
     Intro,Crime,Tribunal,End
 }
+
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
+
     [SerializeField] private float timer;
     [SerializeField] private DialogueReader reader;
-    [SerializeField] Chapter chapter;
+
+    [SerializeField] private Chapter chapter;
 
     private Dictionary<Choice, bool> choices;
 
@@ -19,6 +23,13 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else Destroy(gameObject);
+
         reader.gameObject.SetActive(false);
     }
 
@@ -50,7 +61,7 @@ public class GameManager : MonoBehaviour
                 timeRemaining = 0;
                 timerIsRunning = false;
 
-                SceneManager.LoadScene("Tribunal");
+                NextChapter();
             }
         }
     }
@@ -69,8 +80,23 @@ public class GameManager : MonoBehaviour
         else choices.Add(choice, state);
     }
 
-    public static void NextChapter()
+    public void NextChapter()
     {
-
+        if (chapter == Chapter.Intro)
+        {
+            SceneManager.LoadScene("CrimeScene");
+        }
+        else if (chapter == Chapter.Crime)
+        {
+            SceneManager.LoadScene("Tribunal");
+        }
+        else if (chapter == Chapter.Tribunal)
+        {
+            SceneManager.LoadScene("End");
+        }
+        else if (chapter == Chapter.End)
+        {
+            Application.Quit();
+        }
     }
 }
