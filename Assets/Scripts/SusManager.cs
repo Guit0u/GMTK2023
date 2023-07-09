@@ -16,6 +16,9 @@ public class SusManager : MonoBehaviour
 
     [Header("Debug")]
     [SerializeField] private int suspicion = 0;
+    [SerializeField] private int suspicionMarie = 0;
+    [SerializeField] private int suspicionRobin = 0;
+
     public int Suspicion { get => suspicion; }
 
     private void Awake()
@@ -29,6 +32,9 @@ public class SusManager : MonoBehaviour
         suspicion += value;
         StartCoroutine(UpdateSlider());
     }
+
+    public void ChangeSusMarie(int value) => suspicionMarie += value;
+    public void CHangeSusRobin(int value) => suspicionRobin += value;
 
     private IEnumerator UpdateSlider()
     {

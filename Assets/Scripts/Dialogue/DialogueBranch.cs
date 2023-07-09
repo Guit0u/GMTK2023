@@ -5,7 +5,10 @@ using UnityEngine;
 public class DialogueBranch : ScriptableObject
 {
     public DialogueCondition condition;
+
     public int SusModifier;
+    public int SusMarieModifier;
+    public int SusRobinModifier;
     
     [Space(10)]
 
