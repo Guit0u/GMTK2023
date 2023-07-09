@@ -43,8 +43,8 @@ public class GameManager : MonoBehaviour
 
         if (chapter == Chapter.Intro)
         {
-            StartDialogue();
             reader.SetDialogue(dialogues[0]);
+            StartDialogue();
         }
     }
 

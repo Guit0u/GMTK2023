@@ -8,11 +8,6 @@ public class DialogueReader : MonoBehaviour
     private int entryIndex = 0;
     private int entryTextIndex = 0;
 
-    void Start()
-    {
-        UpdateContainer();
-    }
-
     public void Reset()
     {
         entryIndex = 0;
