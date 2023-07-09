@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private float timer;
     [SerializeField] private DialogueReader reader;
+
+    private Dictionary<Choice, bool> choices;
 
     private bool timerIsRunning;
     private float timeRemaining;
@@ -41,5 +44,19 @@ public class GameManager : MonoBehaviour
     public void StartDialogue()
     {
         reader.gameObject.SetActive(true);
+    }
+
+    public void SetChoice(Choice choice, bool state)
+    {
+        if (choices.ContainsKey(choice))
+        {
+            choices[choice] = state;
+        }
+        else choices.Add(choice, state);
+    }
+
+    public static void NextChapter()
+    {
+
     }
 }
