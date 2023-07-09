@@ -13,6 +13,12 @@ public class DialogueReader : MonoBehaviour
         UpdateContainer();
     }
 
+    public void Reset()
+    {
+        entryIndex = 0;
+        entryTextIndex = 0;
+    }
+
     public void Next()
     {
         if (dialogueContainer.IsTyping)
@@ -55,6 +61,8 @@ public class DialogueReader : MonoBehaviour
             
             index++;
         }
+
+        GameManager.Instance.NextChapter();
     }
 
     public void Choose(int index)
