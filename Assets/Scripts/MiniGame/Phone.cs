@@ -5,21 +5,14 @@ using UnityEngine.EventSystems;
 
 public class Phone : MonoBehaviour
 {
-    BoxCollider2D[] boxs;
 
-    private void Start()
+    public void IsGood()
     {
-        boxs=GetComponentsInChildren<BoxCollider2D>();
+        FindObjectOfType<MiniGame>().Win();
     }
 
-    private void Update()
+    public void IsBad()
     {
-        //print(boxs[1]);
-        //print(boxs[1].tag);
-    }
-
-    private void OnMouseDown()
-    {
-        print("oooooooooooooooooo");
+        FindObjectOfType<MiniGame>().timeRemaining = 0;
     }
 }
