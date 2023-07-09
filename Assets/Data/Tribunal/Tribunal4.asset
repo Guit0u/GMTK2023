@@ -10,23 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 220f8b4b417a8c545ba7074a347b26ff, type: 3}
-  m_Name: DiagCrimeScene
+  m_Name: Tribunal4
   m_EditorClassIdentifier: 
   condition:
     susCondition: 0
     susValue: 0
-    clues: []
+    clues:
+    - name: Blood
+      IsNot: 1
+      state: 2
   SusModifier: 0
   SusMarieModifier: 0
   SusRobinModifier: 0
-  entries:
-  - type: 0
-    author: Paul
-    portrait:
-      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
-      position: 2
-      reversed: 1
-    text:
-    - A neighbor will have heard the shot and I've got to get out of here fast. But
-      first I'd better clean up this mess.
+  entries: []
   following: []
