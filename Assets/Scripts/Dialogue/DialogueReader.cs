@@ -88,7 +88,7 @@ public class DialogueReader : MonoBehaviour
         }
     }
 
-    private void UpdateContainer()
+    public void UpdateContainer()
     {
         TextEntry currentEntry = dialogue.entries[entryIndex];
         dialogueContainer.UpdateValues(currentEntry, entryTextIndex);

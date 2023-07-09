@@ -69,6 +69,7 @@ public class GameManager : MonoBehaviour
     public void StartDialogue()
     {
         reader.gameObject.SetActive(true);
+        reader.UpdateContainer();
     }
 
     public void SetChoice(Choice choice, bool state)
