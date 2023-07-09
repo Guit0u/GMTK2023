@@ -35,7 +35,20 @@ public class DialogueReader : MonoBehaviour
             entryTextIndex = 0;
 
             if (entryIndex < dialogue.entries.Count) UpdateContainer();
-            else GameManager.Instance.NextChapter();
+            else NextBranch();
+        }
+    }
+
+    private void NextBranch()
+    {
+        if (dialogue.following == null) GameManager.Instance.NextChapter();
+        else
+        {
+            int index = 0;
+            while (!Evaluate(dialogue.following[index].condition))
+            {
+                index++;
+            }
         }
     }
 
@@ -70,11 +83,11 @@ public class DialogueReader : MonoBehaviour
             if (condition.susCondition == SusCondition.Above && suspicion < condition.susValue) return false;
         }
 
-        foreach (ClueData clueData in CluesManager.Instance.Clues.Values)
+        foreach (ClueCondition clueCondition in condition.clues)
         {
-            if (condition.clues.TryGetValue(clueData.clueName, out ClueState clueState))
+            if (CluesManager.Instance.Clues.TryGetValue(clueCondition.name, out ClueData data))
             {
-                if (clueData.clueState != clueState) return false;
+                if (data.clueState != clueCondition.state) return false;
             }
         }
 

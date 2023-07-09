@@ -10,10 +10,17 @@ public enum SusCondition
 }
 
 [Serializable]
+public class ClueCondition
+{
+    public string name;
+    public ClueState state;
+}
+
+[Serializable]
 public class DialogueCondition
 {
     public SusCondition susCondition;
     public int susValue;
 
-    public Dictionary<string, ClueState> clues;
+    public List<ClueCondition> clues;
 }
