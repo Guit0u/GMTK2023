@@ -10,22 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 220f8b4b417a8c545ba7074a347b26ff, type: 3}
-  m_Name: DiagCrimeScene
+  m_Name: Tribunal3
   m_EditorClassIdentifier: 
   condition:
     susCondition: 0
     susValue: 0
+    clues: []
   SusModifier: 0
+  SusMarieModifier: 0
+  SusRobinModifier: 0
   entries:
   - type: 0
-    author: Paul
+    author: Prosecutor
     portrait:
-      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
-      position: 2
-      reversed: 1
-    text:
-    - Shit, I've really got to go.
-  following:
-  - {fileID: 11400000, guid: 6ca4446a849ed37448059f7dff6a62c8, type: 2}
-  - {fileID: 11400000, guid: 77507444db1faa348a02aa8b282b258f, type: 2}
-  - {fileID: 11400000, guid: 6fcfa0538f1f14f449b6d7915902706f, type: 2}
+      sprite: {fileID: 0}
+      position: 0
+      reversed: 0
+    text: []
+  following: []

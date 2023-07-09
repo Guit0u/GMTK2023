@@ -89,19 +89,22 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene("CrimeScene");
             reader.SetDialogue(dialogues[1]);
+            StartDialogue();
             timerIsRunning = true;
+           
         }
         else if (chapter == Chapter.Crime)
-        {
+        {            
             timerIsRunning = false;
             SceneManager.LoadScene("Tribunal");
             reader.SetDialogue(dialogues[2]);
+            StartDialogue();
         }
         else if (chapter == Chapter.Tribunal)
         {
-            
             SceneManager.LoadScene("End");
             reader.SetDialogue(dialogues[3]);
+            StartDialogue();
         }
         else if (chapter == Chapter.End)
         {
