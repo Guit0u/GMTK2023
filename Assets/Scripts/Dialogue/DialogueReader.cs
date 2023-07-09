@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DialogueReader : MonoBehaviour
@@ -7,11 +8,6 @@ public class DialogueReader : MonoBehaviour
 
     private int entryIndex = 0;
     private int entryTextIndex = 0;
-
-    void Start()
-    {
-        UpdateContainer();
-    }
 
     public void Reset()
     {
@@ -29,7 +25,6 @@ public class DialogueReader : MonoBehaviour
         {
             TextEntry currentEntry = dialogue.entries[entryIndex];
             dialogueContainer.SetText(currentEntry, entryTextIndex);
-
             return;
         }
 
@@ -81,17 +76,45 @@ public class DialogueReader : MonoBehaviour
             entryIndex = 0;
             entryTextIndex = 0;
 
-            if (!Evaluate(dialogue.condition)) Choose(0);
-
             SusManager.Instance.ChangeSus(dialogue.SusModifier);
+            SusManager.Instance.CHangeSusRobin(dialogue.SusRobinModifier);
+            SusManager.Instance.ChangeSusMarie(dialogue.SusMarieModifier);
+
             UpdateContainer();
         }
     }
 
-    private void UpdateContainer()
+    public void UpdateContainer()
     {
         TextEntry currentEntry = dialogue.entries[entryIndex];
-        dialogueContainer.UpdateValues(currentEntry, entryTextIndex);
+
+        if (currentEntry.type == EntryType.Text)
+        {
+            dialogueContainer.StartTyping(currentEntry, entryTextIndex);
+        }
+        else if (currentEntry.type == EntryType.Choice)
+        {
+            List<string> choices = new();
+            List<int> removeIndexes = new();
+
+            for (int index = 0; index < dialogue.following.Count; index++ )
+            {
+                if (Evaluate(dialogue.following[index].condition))
+                {
+                    choices.Add(currentEntry.text[index]);
+                }
+                else removeIndexes.Add(index);
+            }
+
+            //Remove inaccessible followings
+            for(int i = removeIndexes.Count - 1; i >= 0; i--)
+            {
+                dialogue.following.RemoveAt(i);
+            }
+
+            dialogueContainer.ShowPortrait(currentEntry.portrait);
+            dialogueContainer.SetChoice(currentEntry.author, choices);
+        }
     }
 
     public bool Evaluate(DialogueCondition condition)

@@ -43,8 +43,8 @@ public class GameManager : MonoBehaviour
 
         if (chapter == Chapter.Intro)
         {
-            StartDialogue();
             reader.SetDialogue(dialogues[0]);
+            StartDialogue();
         }
     }
 
@@ -69,6 +69,7 @@ public class GameManager : MonoBehaviour
     public void StartDialogue()
     {
         reader.gameObject.SetActive(true);
+        reader.UpdateContainer();
     }
 
     public void SetChoice(Choice choice, bool state)
