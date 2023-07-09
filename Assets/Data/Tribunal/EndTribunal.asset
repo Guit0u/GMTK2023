@@ -10,16 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 220f8b4b417a8c545ba7074a347b26ff, type: 3}
-  m_Name: Tribunal8
+  m_Name: EndTribunal
   m_EditorClassIdentifier: 
   condition:
     susCondition: 0
-    susValue: 20
-    clues:
-    - name: Phone
-      IsNot: 0
-      state: 2
-  SusModifier: 20
+    susValue: 0
+    clues: []
+  SusModifier: 0
   SusMarieModifier: 0
   SusRobinModifier: 0
   entries:
@@ -30,18 +27,41 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - We've been able to recover the victim's phone, and we've gone through his call
-      history.
+    - 'Well, in view of the elements that have been presented to us, although there
+      is still some vagueness about the case, we can deduce that it''s a question
+      of revenge, the ins and outs of which I don''t quite understand.
+
+'
+  - type: 0
+    author: 'Paul '
+    portrait:
+      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - 'What?
+
+'
   - type: 0
     author: Prosecutor
     portrait:
       sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
-      position: 2
+      position: 1
       reversed: 0
     text:
-    - The old man didn't make many calls, but there were two on the day of the murder.
-      One was to a construction company called Wisserman, and the other was to you,
-      Mr. Jeffords.
+    - 'It probably has something to do with the army and the past of the two men,
+      Your Honor. In any case, we don''t need the whole story because we have more
+      than enough evidence.
+
+'
+  - type: 0
+    author: Judge
+    portrait:
+      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - Quite right, Counselor.
   - type: 0
     author: Paul
     portrait:
@@ -49,26 +69,13 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - ...
+    - No...
   - type: 0
-    author: Prosecutor
+    author: Judge
     portrait:
-      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
-      position: 2
+      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
+      position: 0
       reversed: 0
     text:
-    - Can you tell us more about this call?
-  - type: 1
-    author: Paul
-    portrait:
-      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
-      position: 1
-      reversed: 0
-    text:
-    - A wrong number, I wanted to call my father
-    - We had to talk about my father, they knew each other well
-    - Did you say Wisserman ?
-  following:
-  - {fileID: 11400000, guid: 8f11295715256a4498567c26dbd2cffa, type: 2}
-  - {fileID: 11400000, guid: 38d2dcc4b9d5c8f48b3106eb3242634b, type: 2}
-  - {fileID: 11400000, guid: 80080545bc982e1408cbbf05c138aef8, type: 2}
+    - Mr Robin Wisserman, I find you guilty of the murder of Mr Jeremiah Trechton.
+  following: []

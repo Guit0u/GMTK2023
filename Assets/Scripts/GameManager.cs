@@ -4,16 +4,18 @@ using UnityEngine.SceneManagement;
 
 enum Chapter 
 {
-    Intro,Crime,CrimeExplore,Tribunal,End
+    Intro,Crime,CrimeExplore,Tribunal,End,GameOver
 }
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    [SerializeField] private int suspicionGameOverValue;
+    [Space(10)]
     [SerializeField] private float timer;
     [SerializeField] private DialogueReader reader;
-
+    [Space(10)]
     [SerializeField] private Chapter chapter;
     [SerializeField] private List<DialogueBranch> dialogues;
 
@@ -64,6 +66,13 @@ public class GameManager : MonoBehaviour
                 NextChapter();
             }
         }
+
+        if (SusManager.Instance.Suspicion > suspicionGameOverValue)
+        {
+            chapter = Chapter.GameOver;
+            reader.SetDialogue(dialogues[3]);
+            StartDialogue();
+        }
     }
 
     public void StartDialogue()
@@ -111,13 +120,9 @@ public class GameManager : MonoBehaviour
         }
         else if (chapter == Chapter.Tribunal)
         {
-            SceneManager.LoadScene("End");
-            chapter = Chapter.End;
-
-            reader.SetDialogue(dialogues[3]);
-            StartDialogue();
+            Application.Quit();
         }
-        else if (chapter == Chapter.End)
+        else if (chapter == Chapter.GameOver)
         {
             Application.Quit();
         }

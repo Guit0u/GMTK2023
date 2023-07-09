@@ -358,6 +358,10 @@ PrefabInstance:
       value: bidule
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
+      propertyPath: clueData.image
+      value: 
+      objectReference: {fileID: 21300000, guid: e1028b5c4b75f6846a2ee6f2a9a08876, type: 3}
+    - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: SeenDescription
       value: vu bidule
       objectReference: {fileID: 0}
@@ -371,15 +375,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
-      value: C'est de l'herbe
+      value: Its my hat
       objectReference: {fileID: 0}
+    - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
+      propertyPath: clueData.affectedImage
+      value: 
+      objectReference: {fileID: 21300000, guid: e1028b5c4b75f6846a2ee6f2a9a08876, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.SeenDescription
       value: C'est toujours de l'herbe
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: C'est encore de l'herbe
+      value: Its my hat
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -518,7 +526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: miniGame
-      value: MiniLab
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: description
@@ -688,7 +696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: miniGame
-      value: MiniLab
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: description
@@ -1644,7 +1652,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: miniGame
-      value: MiniLab
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: description

@@ -15,10 +15,7 @@ MonoBehaviour:
   condition:
     susCondition: 0
     susValue: 0
-    clues:
-    - name: small note
-      IsNot: 1
-      state: 2
+    clues: []
   SusModifier: 0
   SusMarieModifier: 0
   SusRobinModifier: 0
