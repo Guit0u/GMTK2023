@@ -27,7 +27,7 @@ public class CluesManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(transform.gameObject);
         }
-        else Destroy(this);
+        else Destroy(this.gameObject);
     }
 
     private void Start()
