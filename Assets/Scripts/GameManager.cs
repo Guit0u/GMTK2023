@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 enum Chapter 
 {
-    Intro,Crime,Tribunal,End
+    Intro,Crime,CrimeExplore,Tribunal,End
 }
 
 public class GameManager : MonoBehaviour
@@ -88,21 +88,31 @@ public class GameManager : MonoBehaviour
         if (chapter == Chapter.Intro)
         {
             SceneManager.LoadScene("CrimeScene");
+            chapter = Chapter.Crime;
+
             reader.SetDialogue(dialogues[1]);
             StartDialogue();
+
             timerIsRunning = true;
-           
         }
         else if (chapter == Chapter.Crime)
-        {            
+        {
+            chapter = Chapter.CrimeExplore;
+        }
+        else if (chapter == Chapter.CrimeExplore)
+        {
             timerIsRunning = false;
             SceneManager.LoadScene("Tribunal");
+            chapter = Chapter.Tribunal;
+
             reader.SetDialogue(dialogues[2]);
             StartDialogue();
         }
         else if (chapter == Chapter.Tribunal)
         {
             SceneManager.LoadScene("End");
+            chapter = Chapter.End;
+
             reader.SetDialogue(dialogues[3]);
             StartDialogue();
         }

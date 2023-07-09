@@ -49,7 +49,11 @@ public class DialogueReader : MonoBehaviour
 
     private void NextBranch()
     {
-        if (dialogue.following.Count == 0) GameManager.Instance.NextChapter();
+        if (dialogue.following.Count == 0)
+        {
+            GameManager.Instance.NextChapter();
+            return;
+        }
 
         int index = 0;
         while (index < dialogue.following.Count)
