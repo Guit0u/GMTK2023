@@ -15,16 +15,132 @@ MonoBehaviour:
   condition:
     susCondition: 0
     susValue: 0
+    clues: []
   SusModifier: 0
+  SusMarieModifier: 0
+  SusRobinModifier: 0
   entries:
   - type: 0
-    author: 
+    author: Judge
     portrait:
-      sprite: {fileID: 0}
+      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - We also have with us Mrs Mary Trechton, the victim's daughter.
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - 'Indeed, Mrs Trechton is Jeremiah Trechton''s only daughter and therefore will
+
+      inherit
+      his house and all his property.
+
+'
+  - type: 0
+    author: Mary
+    portrait:
+      sprite: {fileID: 21300000, guid: 55a96cec6c7d46f4fa813b4c906bf573, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - 'That doesn''t make me a criminal, Mr. Prosecutor.
+
+'
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - True, but the coincidence is disturbing.
+  - type: 0
+    author: 'Mary '
+    portrait:
+      sprite: {fileID: 21300000, guid: 55a96cec6c7d46f4fa813b4c906bf573, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - Hmpf
+  - type: 0
+    author: Judge
+    portrait:
+      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - ' Finally, we have a third suspect, Mr. Robin Wisserman, who... Took pictures
+      of the surrounding houses?
+
+'
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - That's right, Your Honor. He was scouting, and could have enter the victim's
+      house to steal stuff, and then attacked the victim.
+  - type: 0
+    author: Robin
+    portrait:
+      sprite: {fileID: 21300000, guid: 783afd81d36bc844991a358802153e46, type: 3}
       position: 0
       reversed: 0
     text:
-    - a
+    - Well, no, not at all, I don't know what you're talking about, and I don't even
+      have a camera!
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - 'Yes, because the police confiscated it.
+
+'
+  - type: 0
+    author: Robin
+    portrait:
+      sprite: {fileID: 21300000, guid: 783afd81d36bc844991a358802153e46, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - Well, you see, I'm telling the truth, I'm confoundingly honest.
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - 'In that case, it would be a pity if you were mistaken for the murderer.
+
+'
+  - type: 0
+    author: Robin
+    portrait:
+      sprite: {fileID: 21300000, guid: 783afd81d36bc844991a358802153e46, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - glup
+  - type: 0
+    author: Judge
+    portrait:
+      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - Well, we need to find out which of the three of you could have committed this
+      infamous crime. Let's see what evidence was left at the crime scene.
   following:
-  - {fileID: 11400000, guid: 6ca4446a849ed37448059f7dff6a62c8, type: 2}
-  - {fileID: 11400000, guid: 77507444db1faa348a02aa8b282b258f, type: 2}
+  - {fileID: 11400000, guid: afcfcebeae3d1544fb7ef83a88dc4bbe, type: 2}
+  - {fileID: 11400000, guid: afcfcebeae3d1544fb7ef83a88dc4bbe, type: 2}

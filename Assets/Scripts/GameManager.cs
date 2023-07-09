@@ -82,6 +82,7 @@ public class GameManager : MonoBehaviour
 
     public void NextChapter()
     {
+        print("plop");
         if (chapter == Chapter.Intro)
         {
             SceneManager.LoadScene("CrimeScene");
