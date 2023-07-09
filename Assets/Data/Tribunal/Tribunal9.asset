@@ -14,14 +14,113 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition:
     susCondition: 0
-    susValue: 20
+    susValue: 0
     clues:
     - name: Picture
-      IsNot: 1
+      IsNot: 0
       state: 2
-  SusModifier: 0
+  SusModifier: 20
   SusMarieModifier: 0
   SusRobinModifier: 0
-  entries: []
+  entries:
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - "Right, let's get on with it. Near the crime scene, a broken photo caught our
+      eye. We might not have been interested in this object, but it was one of the
+      only broken ones in the room. It shows a broken photo of a younger Trechton
+      and another young soldier, it seems.\r"
+  - type: 0
+    author: Judge
+    portrait:
+      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - What does that mean?
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - Maybe there was a struggle, or maybe the photo meant something to the killer.
+      In any case, there are a few traces of blood, so the assailant must have cut
+      himself breaking the object. Mrs. Trechton, do you have any idea what this
+      photo meant to your father?
+  - type: 0
+    author: Mary
+    portrait:
+      sprite: {fileID: 21300000, guid: 55a96cec6c7d46f4fa813b4c906bf573, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - A souvenir of the army, no doubt. That was my father's favorite period. But
+      I don't recognize the man in the photo.
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - What about you, Jeffords? Does this mean anything to you?
+  - type: 0
+    author: Paul
+    portrait:
+      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - What about No Sir, nothing at all.
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - ' Wait, Jeffords, I just saw... Do you have a bandage on your hand?'
+  - type: 0
+    author: Paul
+    portrait:
+      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - Huh?
+  - type: 0
+    author: Judge
+    portrait:
+      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - ' What does it mean?'
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - Can you explain the purpose of this bandage, Mr Jeffords?
+  - type: 1
+    author: Paul
+    portrait:
+      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - 'I cut myself shaving this morning '
+    - This bandage doesn't matter, the case clearly is a burglary
+    - I cut myself a few days ago, it's already healed.
   following:
+  - {fileID: 11400000, guid: 5203bea11014ad742a7df53ad4f5a177, type: 2}
+  - {fileID: 11400000, guid: 5203bea11014ad742a7df53ad4f5a177, type: 2}
   - {fileID: 11400000, guid: 5203bea11014ad742a7df53ad4f5a177, type: 2}
