@@ -15,7 +15,13 @@ MonoBehaviour:
   condition:
     susCondition: 0
     susValue: 0
+    clues:
+    - name: 
+      IsNot: 0
+      state: 0
   SusModifier: 0
+  SusMarieModifier: 0
+  SusRobinModifier: 0
   entries:
   - type: 0
     author: Paul
