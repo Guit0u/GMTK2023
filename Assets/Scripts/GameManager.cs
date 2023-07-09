@@ -87,13 +87,16 @@ public class GameManager : MonoBehaviour
         if (chapter == Chapter.Intro)
         {
             SceneManager.LoadScene("CrimeScene");
+            timerIsRunning = true;
         }
         else if (chapter == Chapter.Crime)
         {
+            timerIsRunning = false;
             SceneManager.LoadScene("Tribunal");
         }
         else if (chapter == Chapter.Tribunal)
         {
+            
             SceneManager.LoadScene("End");
         }
         else if (chapter == Chapter.End)
