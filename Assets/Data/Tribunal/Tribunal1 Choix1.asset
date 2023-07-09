@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition:
     susCondition: 0
-    susValue: 20
-  SusModifier: 0
+    susValue: 0
+    clues: []
+  SusModifier: 20
+  SusMarieModifier: 0
+  SusRobinModifier: 0
   entries:
   - type: 0
     author: Judge

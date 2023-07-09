@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition:
     susCondition: 0
-    susValue: 30
+    susValue: 0
     clues:
     - name: small note
       IsNot: 1

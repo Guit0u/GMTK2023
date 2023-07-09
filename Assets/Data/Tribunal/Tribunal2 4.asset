@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition:
     susCondition: 0
-    susValue: 60
+    susValue: 0
     clues:
     - name: My gun
       IsNot: 1
@@ -22,7 +22,7 @@ MonoBehaviour:
     - name: Cartridge
       IsNot: 1
       state: 2
-  SusModifier: 0
+  SusModifier: 60
   SusMarieModifier: 0
   SusRobinModifier: 0
   entries:
