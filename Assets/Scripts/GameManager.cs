@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private DialogueReader reader;
 
     [SerializeField] private Chapter chapter;
+    [SerializeField] private List<DialogueBranch> dialogues;
 
     private Dictionary<Choice, bool> choices;
 
@@ -35,17 +36,16 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        timeRemaining = timer; 
-        //timerIsRunning = true;
+        reader.Reset();
+        reader.gameObject.SetActive(false);
+
+        timeRemaining = timer;
+
         if (chapter == Chapter.Intro)
         {
-            Intro();
+            StartDialogue();
+            reader.SetDialogue(dialogues[0]);
         }
-    }
-
-    void Intro()
-    {
-        StartDialogue();
     }
 
     void Update()
@@ -83,18 +83,22 @@ public class GameManager : MonoBehaviour
     public void NextChapter()
     {
         reader.Reset();
+        reader.gameObject.SetActive(false);
 
         if (chapter == Chapter.Intro)
         {
             SceneManager.LoadScene("CrimeScene");
+            reader.SetDialogue(dialogues[1]);
         }
         else if (chapter == Chapter.Crime)
         {
             SceneManager.LoadScene("Tribunal");
+            reader.SetDialogue(dialogues[2]);
         }
         else if (chapter == Chapter.Tribunal)
         {
             SceneManager.LoadScene("End");
+            reader.SetDialogue(dialogues[3]);
         }
         else if (chapter == Chapter.End)
         {

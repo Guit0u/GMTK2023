@@ -19,6 +19,8 @@ public class DialogueReader : MonoBehaviour
         entryTextIndex = 0;
     }
 
+    public void SetDialogue(DialogueBranch dialogue) => this.dialogue = dialogue;
+
     public void Next()
     {
         if (dialogueContainer.IsTyping)
