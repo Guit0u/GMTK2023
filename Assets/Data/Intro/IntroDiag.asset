@@ -36,15 +36,13 @@ MonoBehaviour:
     - You're just like your father, a coward, attached to futile things. I stand
       by what I told you. If you want your revenge, come and get it.
   - type: 0
-    author: Evening
+    author: 
     portrait:
       sprite: {fileID: 21300000, guid: 8342659af7ab1cc4bbe3984b28ba0b81, type: 3}
       position: 1
       reversed: 0
     text:
-    - '
-
-'
+    - '- Evening -'
   - type: 0
     author: Paul
     portrait:
@@ -100,6 +98,90 @@ MonoBehaviour:
     - We used to be friends, we went through a lot together. But your father turned
       out to be an idealist. We have a jargon in the army for that. A pain in the
       ass.
+  - type: 0
+    author: Paul
+    portrait:
+      sprite: {fileID: 21300000, guid: 8342659af7ab1cc4bbe3984b28ba0b81, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - What are you...
+  - type: 0
+    author: Jeremiah
+    portrait:
+      sprite: {fileID: 21300000, guid: 8342659af7ab1cc4bbe3984b28ba0b81, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - He refused to obey orders. We've got a word for that too. A deserter.
+  - type: 0
+    author: Paul
+    portrait:
+      sprite: {fileID: 21300000, guid: 8342659af7ab1cc4bbe3984b28ba0b81, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - No...
+  - type: 0
+    author: Jeremiah
+    portrait:
+      sprite: {fileID: 21300000, guid: 8342659af7ab1cc4bbe3984b28ba0b81, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - 'a weakling, a coward, like you. You came to my house, threatening me with
+      a gun under my roof. '
+    - But you'd never dare. All I have to do is stand up and approach you gently.
+  - type: 0
+    author: Paul
+    portrait:
+      sprite: {fileID: 21300000, guid: 8342659af7ab1cc4bbe3984b28ba0b81, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - 'Stop right there
+
+      Humpf
+
+'
+  - type: 0
+    author: Jeremiah
+    portrait:
+      sprite: {fileID: 21300000, guid: 8342659af7ab1cc4bbe3984b28ba0b81, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - 'you little...
+
+      Herf
+
+'
+  - type: 0
+    author: Paul
+    portrait:
+      sprite: {fileID: 21300000, guid: 8342659af7ab1cc4bbe3984b28ba0b81, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - Wait, you
+  - type: 0
+    author: 
+    portrait:
+      sprite: {fileID: 21300000, guid: 8342659af7ab1cc4bbe3984b28ba0b81, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - PAAAAAAAAAAAAAAAN !
+  - type: 0
+    author: Paul
+    portrait:
+      sprite: {fileID: 21300000, guid: 8342659af7ab1cc4bbe3984b28ba0b81, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - "Oh shit, oh shit, oh shit. Plus he managed to hurt me, the bastard. \r\n"
+    - A neighbor will have heard the shot and I've got to get out of here fast. But
+      first I'd better clean up this mess.
   following:
   - {fileID: 11400000, guid: 6ca4446a849ed37448059f7dff6a62c8, type: 2}
   - {fileID: 11400000, guid: 77507444db1faa348a02aa8b282b258f, type: 2}
