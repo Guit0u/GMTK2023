@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220f8b4b417a8c545ba7074a347b26ff, type: 3}
+  m_Name: Tribunal8 4
+  m_EditorClassIdentifier: 
+  condition:
+    susCondition: 0
+    susValue: 0
+    clues: []
+  SusModifier: 0
+  SusMarieModifier: 0
+  SusRobinModifier: 20
+  entries:
+  - type: 0
+    author: Paul
+    portrait:
+      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - Did you say Wisserman?
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - Yes, that's the name of the other caller's company, but it's not...
+  - type: 0
+    author: Paul
+    portrait:
+      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - Wisserman as in *Robin Wisserman*?
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - 'I, uh... yes, it is. Do you have any connection with this company, Mr. Wisserman?
+
+'
+  - type: 0
+    author: Robin
+    portrait:
+      sprite: {fileID: 21300000, guid: 783afd81d36bc844991a358802153e46, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - 'I don''t suppose you''d have any trouble finding out: my brother owns the
+      Wisserman company, and I help him out here and there.'
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - " And so you came to see your client in the evening?\r"
+  - type: 0
+    author: Robin
+    portrait:
+      sprite: {fileID: 21300000, guid: 783afd81d36bc844991a358802153e46, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - "Oh, he's not really my client, and I was just... surveying. Giving my brother
+      information on the type of house in the neighborhood, and all that...\r"
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - "That's not how the construction business works, Mr. Wisserman. Your alibi
+      is getting thinner and thinner...\r"
+  following:
+  - {fileID: 11400000, guid: 6a4452ff2f617834bb9dbc11b9d5c2b7, type: 2}
+  - {fileID: 11400000, guid: 5203bea11014ad742a7df53ad4f5a177, type: 2}

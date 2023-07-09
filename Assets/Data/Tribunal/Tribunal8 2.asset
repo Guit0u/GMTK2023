@@ -10,38 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 220f8b4b417a8c545ba7074a347b26ff, type: 3}
-  m_Name: Tribunal8
+  m_Name: Tribunal8 2
   m_EditorClassIdentifier: 
   condition:
     susCondition: 0
     susValue: 0
-    clues:
-    - name: Phone
-      IsNot: 1
-      state: 2
-  SusModifier: 20
+    clues: []
+  SusModifier: 15
   SusMarieModifier: 0
   SusRobinModifier: 0
   entries:
-  - type: 0
-    author: Judge
-    portrait:
-      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
-      position: 1
-      reversed: 0
-    text:
-    - We've been able to recover the victim's phone, and we've gone through his call
-      history.
-  - type: 0
-    author: Prosecutor
-    portrait:
-      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
-      position: 2
-      reversed: 0
-    text:
-    - The old man didn't make many calls, but there were two on the day of the murder.
-      One was to a construction company called Wisserman, and the other was to you,
-      Mr. Jeffords.
   - type: 0
     author: Paul
     portrait:
@@ -49,7 +27,8 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - ...
+    - "It was a wrong number, the victim's name is next to my father's on my phone,
+      so I hung up immediately.\r"
   - type: 0
     author: Prosecutor
     portrait:
@@ -57,18 +36,32 @@ MonoBehaviour:
       position: 2
       reversed: 0
     text:
-    - Can you tell us more about this call?
-  - type: 1
+    - "But your father is... dead?\r"
+  - type: 0
+    author: Paul
+    portrait:
+      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
+      position: 0
+      reversed: 1
+    text:
+    - "That's true. However, I... I call him from time to time to hear the voice
+      on his answering machine.\r"
+  - type: 0
+    author: Judge
+    portrait:
+      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - "You're still paying him a phone bill for this?\r"
+  - type: 0
     author: Paul
     portrait:
       sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
       position: 1
       reversed: 0
     text:
-    - A wrong number, I wanted to call my father
-    - We had to talk about my father, they knew each other well
-    - Did you say Wisserman ?
+    - "Absolutely. And it's awfully expensive.\r\r"
   following:
-  - {fileID: 11400000, guid: 8f11295715256a4498567c26dbd2cffa, type: 2}
-  - {fileID: 11400000, guid: 38d2dcc4b9d5c8f48b3106eb3242634b, type: 2}
-  - {fileID: 11400000, guid: 80080545bc982e1408cbbf05c138aef8, type: 2}
+  - {fileID: 11400000, guid: 6a4452ff2f617834bb9dbc11b9d5c2b7, type: 2}
+  - {fileID: 11400000, guid: 5203bea11014ad742a7df53ad4f5a177, type: 2}
