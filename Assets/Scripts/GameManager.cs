@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
                 timeRemaining = 0;
                 timerIsRunning = false;
 
-                SceneManager.LoadScene(4);
+                SceneManager.LoadScene("Tribunal");
             }
         }
     }

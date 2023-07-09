@@ -1018,7 +1018,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Interract
+  m_text: 'Interact
 
 '
   m_isRightToLeft: 0
