@@ -490,8 +490,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 15591c696176cf04c95c1c241aefa334, type: 2}
     - target: {fileID: 2945961490854696386, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: timer
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2945961490854696386, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
       propertyPath: dialogues.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2945961490854696386, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: suspicionGameOverValue
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 2945961490854696386, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
       propertyPath: dialogues.Array.data[0]
