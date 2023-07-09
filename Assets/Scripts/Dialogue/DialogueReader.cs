@@ -44,9 +44,15 @@ public class DialogueReader : MonoBehaviour
         if (dialogue.following.Count == 0) GameManager.Instance.NextChapter();
 
         int index = 0;
-        while (index < dialogue.following.Count &&
-            !Evaluate(dialogue.following[index].condition))
+        while (index < dialogue.following.Count)
         {
+            if (dialogue.following[index] != null &&
+                Evaluate(dialogue.following[index].condition))
+            {
+                dialogue = dialogue.following[index];
+                return;
+            }
+            
             index++;
         }
     }
