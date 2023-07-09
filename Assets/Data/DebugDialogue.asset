@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 220f8b4b417a8c545ba7074a347b26ff, type: 3}
-  m_Name: DialogueBranch2
+  m_Name: DebugDialogue
   m_EditorClassIdentifier: 
   condition:
     susCondition: 0
     susValue: 0
-  SusModifier: 50
+  SusModifier: 0
   entries:
   - type: 0
     author: Paul
@@ -24,14 +24,26 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - "Ban kaaliss j'ai vramennt but\xE9 un gars la"
-    - 
+    - Hello mon chum
   - type: 0
+    author: Jeremiah
+    portrait:
+      sprite: {fileID: 21300000, guid: 4b373b45409a4fc44a10f67edad8a6cb, type: 3}
+      position: 2
+      reversed: 1
+    text:
+    - J'appelle la poilice moi monsieur
+  - type: 1
     author: Paul
     portrait:
       sprite: {fileID: 21300000, guid: ebd60b8bc9fe7a84b9db5e31665de562, type: 3}
       position: 1
       reversed: 0
     text:
-    - time for the proces
-  following: []
+    - Le buter
+    - Appeler la police
+    - "Se tourner v\xE9ritablement les pouces"
+  following:
+  - {fileID: 11400000, guid: 6ca4446a849ed37448059f7dff6a62c8, type: 2}
+  - {fileID: 11400000, guid: 77507444db1faa348a02aa8b282b258f, type: 2}
+  - {fileID: 11400000, guid: 6fcfa0538f1f14f449b6d7915902706f, type: 2}

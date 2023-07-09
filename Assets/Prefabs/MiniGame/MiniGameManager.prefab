@@ -148,12 +148,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2e9df3b329e96343b496a0a0bb8cadc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 20
-  timerIsRunning: 0
-  timerText: {fileID: 3479769317233842957}
-  hasWin: 0
-  relatedClue: {fileID: 0}
   miniGameName: 
+  relatedClue:
+    clueName: 
+    clueState: 0
+    description: 
+    affectedDescription: 
+    image: {fileID: 0}
+    affectedImage: {fileID: 0}
+  timerText: {fileID: 3479769317233842957}
+  timeRemaining: 20
 --- !u!1 &6335212315281067532
 GameObject:
   m_ObjectHideFlags: 0

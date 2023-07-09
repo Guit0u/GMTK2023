@@ -189,7 +189,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &790273285 stripped
 RectTransform:
@@ -207,6 +207,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1041334405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1041334407}
+  - component: {fileID: 1041334406}
+  m_Layer: 0
+  m_Name: Clues Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1041334406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041334405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb31c298b86f8409fe1a718f88b7fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clues: []
+--- !u!4 &1041334407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041334405}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1048642106
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,7 +457,7 @@ RectTransform:
   - {fileID: 790273285}
   - {fileID: 1326893355}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -427,6 +472,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1767754291}
     m_Modifications:
+    - target: {fileID: 2905867575824968528, guid: 386c99ce64ac5cf468028e2b03ce014d, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e848b7df9e4d1d4abcbbb26a311191c, type: 2}
     - target: {fileID: 3541850835138002735, guid: 386c99ce64ac5cf468028e2b03ce014d, type: 3}
       propertyPath: m_Name
       value: Dialogue Container
@@ -530,7 +579,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2927666179721969948, guid: c7cb8f2d03b52cb4d8b5c21ca734eafa, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2927666179721969948, guid: c7cb8f2d03b52cb4d8b5c21ca734eafa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -684,10 +733,6 @@ PrefabInstance:
     - target: {fileID: 4435204752591717744, guid: 61689950c8a862d48a985f468f239c34, type: 3}
       propertyPath: m_Name
       value: Suspicion Slider
-      objectReference: {fileID: 0}
-    - target: {fileID: 5313469271644883701, guid: 61689950c8a862d48a985f468f239c34, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

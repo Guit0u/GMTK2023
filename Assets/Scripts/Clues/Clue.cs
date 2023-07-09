@@ -1,41 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-
-public enum ClueState
-{
-    NotFound,HasBeenFound,HasBeenAffected
-}
 public class Clue : MonoBehaviour
 {
-    CluesManager CM;
-    public GameObject UIClue;
+    [SerializeField] private ClueData clueData;
+    [SerializeField] private string miniGame;
 
-    public string clueName;
-    public ClueState clueState;
-    public string description;
-    public string SeenDescription;
-    public string affectedDescription;
+    [SerializeField] private GameObject UiCluePrefab;
 
-    [SerializeField] public string miniGame;
+    private bool miniGameDone;
 
-    private void Start()
+    public void MiniGameDone() => miniGameDone = true;
+
+    private void OpenUI()
     {
-        CM = FindObjectOfType<CluesManager>();
-    }
-
-    protected void AddClue()
-    {
-        CM.FoundClue(this);
-    }
-
-    public void DisplayUI()
-    {
-        CM.HideAllUIClue();
-        UIClue.gameObject.SetActive(true);
+        GameObject uiClue = Instantiate(UiCluePrefab, transform);
+        uiClue.GetComponent<UI_Clue>().Setup(this, clueData, miniGame, miniGameDone);
     }
 
     private void OnMouseDown()
@@ -44,25 +25,15 @@ public class Clue : MonoBehaviour
         {
             return;
         }
-        if (clueState== ClueState.NotFound)
+
+        clueData.clueState = CluesManager.Instance.GetClueState(clueData.clueName);
+
+        if (clueData.clueState == ClueState.NotFound)
         {
-            SpawnUI();
-            AddClue();
-            clueState = ClueState.HasBeenFound;
+            clueData.clueState = ClueState.Found;
+            CluesManager.Instance.FoundClue(clueData);
         }
-        else
-        {
-            DisplayUI();
-        }
+
+        OpenUI();
     }
-
-    private void SpawnUI()
-    {
-        UIClue = Instantiate(UIClue, transform.position, Quaternion.identity);
-        UIClue.GetComponent<UI_Clue>().clue = this;
-        UIClue.GetComponent<UI_Clue>().textDescription.SetText(description);
-        UIClue.GetComponent<UI_Clue>().textName.SetText(clueName);
-
-    }
-
 }

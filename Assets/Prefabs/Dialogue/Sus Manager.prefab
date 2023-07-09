@@ -76,6 +76,6 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  changeSpeed: 0.5
-  pauseTime: 0.5
+  changeSpeed: 0.15
+  pauseTime: 0.8
   suspicion: 0

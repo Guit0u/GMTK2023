@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MiniInterract.unity
     guid: 26bdbb4b181f00040a725ef95c407602
+  - enabled: 1
+    path: Assets/Scenes/DialogueTest.unity
+    guid: 7ac057c8d652c9f4ebb3ab735516917a
   m_configObjects: {}

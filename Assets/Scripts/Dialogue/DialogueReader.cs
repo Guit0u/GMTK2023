@@ -70,11 +70,11 @@ public class DialogueReader : MonoBehaviour
             if (condition.susCondition == SusCondition.Above && suspicion < condition.susValue) return false;
         }
 
-        foreach (Clue clue in CluesManager.Instance.Clues)
+        foreach (ClueData clueData in CluesManager.Instance.Clues.Values)
         {
-            if (condition.clues.TryGetValue(clue.name, out ClueState clueState))
+            if (condition.clues.TryGetValue(clueData.clueName, out ClueState clueState))
             {
-                if (clue.clueState != clueState) return false;
+                if (clueData.clueState != clueState) return false;
             }
         }
 

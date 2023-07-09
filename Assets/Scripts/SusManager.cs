@@ -11,8 +11,8 @@ public class SusManager : MonoBehaviour
     [SerializeField] private Gradient gradient;
 
     [Header("Parameters")]
-    [SerializeField, Range(0, 1)] private float changeSpeed;
-    [SerializeField, Range(0, 1)] private float pauseTime;
+    [SerializeField, Range(0, 1)] private float changeSpeed = 0.5f;
+    [SerializeField, Range(0, 1)] private float pauseTime = 0.5f;
 
     [Header("Debug")]
     [SerializeField] private int suspicion = 0;
