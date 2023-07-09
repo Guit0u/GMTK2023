@@ -17,6 +17,8 @@ public class DialogueReader : MonoBehaviour
     {
         entryIndex = 0;
         entryTextIndex = 0;
+        
+        dialogueContainer.ResetText();
     }
 
     public void SetDialogue(DialogueBranch dialogue) => this.dialogue = dialogue;
