@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition:
     susCondition: 0
-    susValue: 0
+    susValue: 15
     clues:
     - name: footprint
-      IsNot: 1
+      IsNot: 0
       state: 2
   SusModifier: 0
   SusMarieModifier: 0

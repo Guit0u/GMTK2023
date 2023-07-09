@@ -508,6 +508,10 @@ PrefabInstance:
     - target: {fileID: 2945961490854696386, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
       propertyPath: dialogues.Array.data[3]
       value: 
+      objectReference: {fileID: 11400000, guid: 83392b7f629de2a4f85bf5571bb21982, type: 2}
+    - target: {fileID: 2945961490854696386, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: dialogues.Array.data[4]
+      value: 
       objectReference: {fileID: 11400000, guid: 2e848b7df9e4d1d4abcbbb26a311191c, type: 2}
     - target: {fileID: 7679469732265312690, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
       propertyPath: m_RootOrder
