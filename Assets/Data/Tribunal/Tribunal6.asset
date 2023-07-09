@@ -19,12 +19,163 @@ MonoBehaviour:
     - name: small note
       IsNot: 1
       state: 2
-  SusModifier: 0
-  SusMarieModifier: 0
+  SusModifier: 30
+  SusMarieModifier: 30
   SusRobinModifier: 0
-  entries: []
+  entries:
+  - type: 0
+    author: Judge
+    portrait:
+      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - Let's continue. We also found a note left at the crime scene. Can you read
+      it for us, Sir ?
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - '"Come and get what''s rightfully yours, if you dare."'
+  - type: 0
+    author: Judge
+    portrait:
+      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - ' That sounds like a provocation.'
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - "Indeed, and it seems clear that it refers to the inheritance Mrs. Trechton
+      will receive as a result of this murder.\r"
+  - type: 0
+    author: Judge
+    portrait:
+      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - "Exactly, that's my impression too.\r"
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - "Mrs. Trechton, what do you have to say about this?\r"
+  - type: 0
+    author: Mary
+    portrait:
+      sprite: {fileID: 21300000, guid: 55a96cec6c7d46f4fa813b4c906bf573, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - Well, I didn't kill my father for money!
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - But you were seen on the spot the night of the murder.
+  - type: 0
+    author: Mary
+    portrait:
+      sprite: {fileID: 21300000, guid: 55a96cec6c7d46f4fa813b4c906bf573, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - I still have the right to visit my father whenever I want without murdering
+      him.
+  - type: 0
+    author: Judge
+    portrait:
+      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - "Were you on good terms with the victim?\r"
+  - type: 0
+    author: Mary
+    portrait:
+      sprite: {fileID: 21300000, guid: 55a96cec6c7d46f4fa813b4c906bf573, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - "...\r"
+  - type: 0
+    author: Judge
+    portrait:
+      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - "So ?\r"
+  - type: 0
+    author: Mary
+    portrait:
+      sprite: {fileID: 21300000, guid: 55a96cec6c7d46f4fa813b4c906bf573, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - "On good terms wouldn't be the right word. But that doesn't mean I killed him.\r"
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - "That word still seems to accuse you\r"
+  - type: 0
+    author: Mary
+    portrait:
+      sprite: {fileID: 21300000, guid: 55a96cec6c7d46f4fa813b4c906bf573, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - "It seems to me that it's equally damning to Jeffords. He knew my father and
+      the word may well refer to something other than inheritance.\r"
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - "That's true. Jeffords, can you tell us more about your connection with the
+      victim?\r\r"
+  - type: 0
+    author: Paul
+    portrait:
+      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - "...\r\r"
+  - type: 1
+    author: Paul
+    portrait:
+      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - " I have no connection with the victim, it's very clearly about inheritance.
+      \r\r"
+    - "It's all about my father\r\r"
+    - It's a set-up!
   following:
-  - {fileID: 11400000, guid: 985fd271e491087448b569e98886bcbb, type: 2}
-  - {fileID: 11400000, guid: 9ee66e79c5bf26e4eb3e37e1d320cdfd, type: 2}
-  - {fileID: 11400000, guid: 6a4452ff2f617834bb9dbc11b9d5c2b7, type: 2}
-  - {fileID: 11400000, guid: 5203bea11014ad742a7df53ad4f5a177, type: 2}
+  - {fileID: 11400000, guid: 45351ad0f5d1af243ba8db1c4606ba4a, type: 2}
+  - {fileID: 11400000, guid: 43fe752fbd414414f84a7679133b6da6, type: 2}
+  - {fileID: 11400000, guid: 8c77fedcb485ed1418c65470aa064522, type: 2}

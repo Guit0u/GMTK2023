@@ -19,5 +19,12 @@ MonoBehaviour:
   SusModifier: 0
   SusMarieModifier: 0
   SusRobinModifier: 0
-  entries: []
+  entries:
+  - type: 0
+    author: 
+    portrait:
+      sprite: {fileID: 0}
+      position: 0
+      reversed: 0
+    text: []
   following: []
