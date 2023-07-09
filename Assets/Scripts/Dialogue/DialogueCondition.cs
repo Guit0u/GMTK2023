@@ -13,6 +13,7 @@ public enum SusCondition
 public class ClueCondition
 {
     public string name;
+    public bool IsNot;
     public ClueState state;
 }
 

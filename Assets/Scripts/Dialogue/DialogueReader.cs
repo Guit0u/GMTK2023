@@ -41,14 +41,18 @@ public class DialogueReader : MonoBehaviour
 
     private void NextBranch()
     {
-        if (dialogue.following == null) GameManager.Instance.NextChapter();
+        if (dialogue.following.Count == 0) GameManager.Instance.NextChapter();
+
+        int index = 0;
+        while (index < dialogue.following.Count &&
+            !Evaluate(dialogue.following[index].condition))
+        {
+            index++;
+        }
+
         else
         {
-            int index = 0;
-            while (!Evaluate(dialogue.following[index].condition))
-            {
-                index++;
-            }
+            
         }
     }
 
@@ -87,7 +91,8 @@ public class DialogueReader : MonoBehaviour
         {
             if (CluesManager.Instance.Clues.TryGetValue(clueCondition.name, out ClueData data))
             {
-                if (data.clueState != clueCondition.state) return false;
+                if (clueCondition.IsNot ^ data.clueState == clueCondition.state) 
+                    return false;
             }
         }
 
