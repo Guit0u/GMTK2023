@@ -185,7 +185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7528456041438316017, guid: e46a626709bed1842a7f9e865518f223, type: 3}
       propertyPath: miniGameName
-      value: MiniInterract
+      value: MiniInterractCadre
       objectReference: {fileID: 0}
     - target: {fileID: 7528456041438316017, guid: e46a626709bed1842a7f9e865518f223, type: 3}
       propertyPath: timeRemaining
@@ -295,7 +295,7 @@ PrefabInstance:
     - target: {fileID: 2160078537447880278, guid: a1e44982d2646194dbc65eee827e02ac, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 80ebc456680623d40bab60a6fd35f3fc, type: 3}
+      objectReference: {fileID: 21300000, guid: 7654eaa4aefb67246bec2155014cf6c3, type: 3}
     - target: {fileID: 2160078537447880278, guid: a1e44982d2646194dbc65eee827e02ac, type: 3}
       propertyPath: m_SortingLayer
       value: 1
@@ -309,8 +309,12 @@ PrefabInstance:
       value: ObjectToClick
       objectReference: {fileID: 0}
     - target: {fileID: 4727801232526795853, guid: a1e44982d2646194dbc65eee827e02ac, type: 3}
+      propertyPath: newSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 55edeb1af05f71349a35d727da626121, type: 3}
+    - target: {fileID: 4727801232526795853, guid: a1e44982d2646194dbc65eee827e02ac, type: 3}
       propertyPath: numberOfClick
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4728034757979466011, guid: a1e44982d2646194dbc65eee827e02ac, type: 3}
       propertyPath: m_RootOrder
