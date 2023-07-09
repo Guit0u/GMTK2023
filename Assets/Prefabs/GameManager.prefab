@@ -31,7 +31,7 @@ Transform:
   m_Children:
   - {fileID: 5772066251039494775}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2945961490854696386
 MonoBehaviour:
@@ -61,15 +61,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3072665846952398179, guid: 77c55cb096ccc3840aad9f7f51c03681, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -439.2687
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3072665846952398179, guid: 77c55cb096ccc3840aad9f7f51c03681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -255.59128
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3072665846952398179, guid: 77c55cb096ccc3840aad9f7f51c03681, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.1113396
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3072665846952398179, guid: 77c55cb096ccc3840aad9f7f51c03681, type: 3}
       propertyPath: m_LocalRotation.w
@@ -99,17 +99,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8265244891507410010, guid: 77c55cb096ccc3840aad9f7f51c03681, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8538156239386254768, guid: 77c55cb096ccc3840aad9f7f51c03681, type: 3}
       propertyPath: m_Name
       value: Dialogue Prefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 8538156239386254768, guid: 77c55cb096ccc3840aad9f7f51c03681, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
