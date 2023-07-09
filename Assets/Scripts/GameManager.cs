@@ -88,11 +88,8 @@ public class GameManager : MonoBehaviour
         if (chapter == Chapter.Intro)
         {
             SceneManager.LoadScene("CrimeScene");
-<<<<<<< HEAD
             reader.SetDialogue(dialogues[1]);
-=======
             timerIsRunning = true;
->>>>>>> 8aa0fa8dc0dc7e4adce5fdd37de031366a407114
         }
         else if (chapter == Chapter.Crime)
         {
