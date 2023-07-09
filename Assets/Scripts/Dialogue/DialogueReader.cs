@@ -35,7 +35,7 @@ public class DialogueReader : MonoBehaviour
             entryTextIndex = 0;
 
             if (entryIndex < dialogue.entries.Count) UpdateContainer();
-            else Debug.Log("End of dialogue.");
+            else GameManager.NextChapter();
         }
     }
 
