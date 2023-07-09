@@ -16,9 +16,29 @@ MonoBehaviour:
     susCondition: 0
     susValue: 0
     clues: []
-  SusModifier: 15
+  SusModifier: 5
   SusMarieModifier: 0
   SusRobinModifier: 0
-  entries: []
+  entries:
+  - type: 0
+    author: Paul
+    portrait:
+      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - 'Oh, it''s nothing, I cut myself a bit at work with an A4 sheet several days
+      ago. You can ask my colleagues, they must have seen me with it. '
+    - It's almost healed already, so if you like I can take off my bandage and show
+      you and...
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - No, no, I'll be fine, thanks.
+    - Let's move on.
   following:
   - {fileID: 11400000, guid: 5203bea11014ad742a7df53ad4f5a177, type: 2}

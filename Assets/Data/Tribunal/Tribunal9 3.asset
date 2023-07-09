@@ -67,13 +67,61 @@ MonoBehaviour:
 
 '
   - type: 0
-    author: Judge
+    author: Prosecutor
     portrait:
-      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
-      position: 1
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
       reversed: 0
     text:
     - The burglary trail leads us back to Mr. Wisserman in the first place. Show
       us your hands.
+  - type: 0
+    author: Robin
+    portrait:
+      sprite: {fileID: 21300000, guid: 783afd81d36bc844991a358802153e46, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - "My hands?\r"
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - Yes, your hands. Ah ah, they look quite damaged!
+  - type: 0
+    author: Robin
+    portrait:
+      sprite: {fileID: 21300000, guid: 783afd81d36bc844991a358802153e46, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - "You know, those are the risks of life. I do a manual job, these things happen.\r\r"
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - " A manual trade which is photographing houses hhm?\r\r"
+  - type: 0
+    author: Robin
+    portrait:
+      sprite: {fileID: 21300000, guid: 783afd81d36bc844991a358802153e46, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - "Among other things...\r\r"
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - "You're not helping your case. Let's move on\r\r"
   following:
   - {fileID: 11400000, guid: 5203bea11014ad742a7df53ad4f5a177, type: 2}
