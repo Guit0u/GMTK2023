@@ -15,7 +15,10 @@ MonoBehaviour:
   condition:
     susCondition: 0
     susValue: 0
+    clues: []
   SusModifier: 0
+  SusMarieModifier: 0
+  SusRobinModifier: 0
   entries:
   - type: 0
     author: Judge
@@ -26,14 +29,15 @@ MonoBehaviour:
     text:
     - 'I call this session to order for the triple trial for the murder of Mr. Jeremiah
       Trechton. '
-    - "I remind you that, in view of the lack of funds of both the police and the
-      justice system, it was decided by our coordinated ministries that the suspects
-      would be judged at the same time, and only the most suspicious of them would
-      be sentenced. \r\n"
-    - 'This not only saves resources, but also increases our chances of actually
-      catching the killer.
+    - 'I remind you that, in view of the lack of funds of both the police and the
+      justice system
 
-      Mr. Prosecutor, please review the facts.'
+'
+    - it was decided by our coordinated ministries that the suspects would be judged
+      at the same time, and only the most suspicious of them would be sentenced.
+    - This not only saves resources, but also increases our chances of actually catching
+      the killer.
+    - Mr. Prosecutor, please review the facts.
   - type: 0
     author: Prosecutor
     portrait:
@@ -44,7 +48,7 @@ MonoBehaviour:
     - "Yes, Your Honor. Last night, at approximately 8:30 p.m., Mr. Jeremiah Trechton
       was killed in his home, shot in the chest.. \r\n"
     - You, Mr Paul Jeffords, were seen and questioned at around 8.45pm in the neighborhood,
-      not far from the scene of the crime, walking away from the victim's house.
+    - not far from the scene of the crime, walking away from the victim's house.
       What were you doing there?
   - type: 1
     author: 
