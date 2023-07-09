@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MiniInterractCadre.unity
     guid: 9ffd4e787a1ecae47b3a0cd76e677610
+  - enabled: 1
+    path: Assets/Scenes/MiniInterractSang.unity
+    guid: ca5c38c685ba13a42a02a52ec3ceb06b
   m_configObjects: {}
