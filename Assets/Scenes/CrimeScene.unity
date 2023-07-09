@@ -202,14 +202,14 @@ PrefabInstance:
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.image
       value: 
-      objectReference: {fileID: 21300000, guid: 4b373b45409a4fc44a10f67edad8a6cb, type: 3}
+      objectReference: {fileID: 21300000, guid: 80ebc456680623d40bab60a6fd35f3fc, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: SeenDescription
       value: voir truc
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.clueName
-      value: Coffre
+      value: My gun
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: affectedDescription
@@ -217,19 +217,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
-      value: "Le coffre est ferm\xE9"
+      value: I shot him
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedImage
       value: 
-      objectReference: {fileID: 21300000, guid: 4b373b45409a4fc44a10f67edad8a6cb, type: 3}
+      objectReference: {fileID: 21300000, guid: 80ebc456680623d40bab60a6fd35f3fc, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.SeenDescription
       value: "Le coffre est toujours ferm\xE9"
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: Vous avez ouvert le coffre
+      value: I took it with me
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -346,7 +346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.clueName
-      value: De l'herbe
+      value: My hat
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: affectedDescription
@@ -493,14 +493,14 @@ PrefabInstance:
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.image
       value: 
-      objectReference: {fileID: 21300000, guid: 4b373b45409a4fc44a10f67edad8a6cb, type: 3}
+      objectReference: {fileID: 21300000, guid: c11f5182cd44fd44c988c520aefd497b, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: SeenDescription
       value: voir truc
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.clueName
-      value: Coffre
+      value: Victim's blood
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: affectedDescription
@@ -508,19 +508,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
-      value: "Le coffre est ferm\xE9"
+      value: A lot of it
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedImage
       value: 
-      objectReference: {fileID: 21300000, guid: 4b373b45409a4fc44a10f67edad8a6cb, type: 3}
+      objectReference: {fileID: 21300000, guid: bab9a904162ebc646baa906484f72ff6, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.SeenDescription
       value: "Le coffre est toujours ferm\xE9"
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: Vous avez ouvert le coffre
+      value: 'I walked in it '
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -646,14 +646,14 @@ PrefabInstance:
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.image
       value: 
-      objectReference: {fileID: 21300000, guid: 4b373b45409a4fc44a10f67edad8a6cb, type: 3}
+      objectReference: {fileID: 21300000, guid: 54d83866ef657684bb8da3c88a2a2c65, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: SeenDescription
       value: voir truc
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.clueName
-      value: Coffre
+      value: footprint
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: affectedDescription
@@ -661,19 +661,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
-      value: "Le coffre est ferm\xE9"
+      value: my footprint
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedImage
       value: 
-      objectReference: {fileID: 21300000, guid: 4b373b45409a4fc44a10f67edad8a6cb, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.SeenDescription
       value: "Le coffre est toujours ferm\xE9"
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: Vous avez ouvert le coffre
+      value: i cleaned it
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -942,7 +942,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: miniGame
-      value: MiniLab
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: description
@@ -951,14 +951,14 @@ PrefabInstance:
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.image
       value: 
-      objectReference: {fileID: 21300000, guid: 4b373b45409a4fc44a10f67edad8a6cb, type: 3}
+      objectReference: {fileID: 21300000, guid: 4f684f252288c8b43a25b44c9052fb8b, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: SeenDescription
       value: voir truc
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.clueName
-      value: Coffre
+      value: Blood
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: affectedDescription
@@ -966,19 +966,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
-      value: "Le coffre est ferm\xE9"
+      value: Its my Blood
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedImage
       value: 
-      objectReference: {fileID: 21300000, guid: 4b373b45409a4fc44a10f67edad8a6cb, type: 3}
+      objectReference: {fileID: 21300000, guid: 1e9b7e55fcc84ab4a8fe91ac3cfc0d0d, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.SeenDescription
       value: "Le coffre est toujours ferm\xE9"
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: Vous avez ouvert le coffre
+      value: I wiped it
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -1100,14 +1100,14 @@ PrefabInstance:
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.image
       value: 
-      objectReference: {fileID: 21300000, guid: 4b373b45409a4fc44a10f67edad8a6cb, type: 3}
+      objectReference: {fileID: 21300000, guid: 14ca07bb648fe9e4a84b1ca90c90d5f3, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: SeenDescription
       value: voir truc
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.clueName
-      value: Coffre
+      value: small note
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: affectedDescription
@@ -1115,19 +1115,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
-      value: "Le coffre est ferm\xE9"
+      value: '"Come and get what''s rightfully yours, if you dare"'
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedImage
       value: 
-      objectReference: {fileID: 21300000, guid: 4b373b45409a4fc44a10f67edad8a6cb, type: 3}
+      objectReference: {fileID: 21300000, guid: 14ca07bb648fe9e4a84b1ca90c90d5f3, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.SeenDescription
       value: "Le coffre est toujours ferm\xE9"
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: Vous avez ouvert le coffre
+      value: i took it
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -1241,14 +1241,14 @@ PrefabInstance:
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.image
       value: 
-      objectReference: {fileID: 21300000, guid: 4b373b45409a4fc44a10f67edad8a6cb, type: 3}
+      objectReference: {fileID: 21300000, guid: 7654eaa4aefb67246bec2155014cf6c3, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: SeenDescription
       value: voir truc
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.clueName
-      value: Coffre
+      value: Picture
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: affectedDescription
@@ -1256,19 +1256,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
-      value: "Le coffre est ferm\xE9"
+      value: A picture
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedImage
       value: 
-      objectReference: {fileID: 21300000, guid: 4b373b45409a4fc44a10f67edad8a6cb, type: 3}
+      objectReference: {fileID: 21300000, guid: 55edeb1af05f71349a35d727da626121, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.SeenDescription
       value: "Le coffre est toujours ferm\xE9"
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: Vous avez ouvert le coffre
+      value: I broke it
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -1486,14 +1486,14 @@ PrefabInstance:
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.image
       value: 
-      objectReference: {fileID: 21300000, guid: 4b373b45409a4fc44a10f67edad8a6cb, type: 3}
+      objectReference: {fileID: 21300000, guid: f4b702a27052b4e4bac6556d4348e406, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: SeenDescription
       value: voir truc
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.clueName
-      value: Coffre
+      value: Cartridge
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: affectedDescription
@@ -1501,19 +1501,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
-      value: "Le coffre est ferm\xE9"
+      value: It fell after i shot
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedImage
       value: 
-      objectReference: {fileID: 21300000, guid: 4b373b45409a4fc44a10f67edad8a6cb, type: 3}
+      objectReference: {fileID: 21300000, guid: f4b702a27052b4e4bac6556d4348e406, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.SeenDescription
       value: "Le coffre est toujours ferm\xE9"
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: Vous avez ouvert le coffre
+      value: i took it with me
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -1651,14 +1651,14 @@ PrefabInstance:
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.image
       value: 
-      objectReference: {fileID: 21300000, guid: f2907d4399540694cae88ddead3826c6, type: 3}
+      objectReference: {fileID: 21300000, guid: 1cd80ec6d8c135c42b8808e2df88fb8e, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: SeenDescription
       value: vu machin
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.clueName
-      value: Vase
+      value: Phone
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: affectedDescription
@@ -1666,19 +1666,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
-      value: c'est un joli vase
+      value: Victim's Phone
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedImage
       value: 
-      objectReference: {fileID: 21300000, guid: ebd60b8bc9fe7a84b9db5e31665de562, type: 3}
+      objectReference: {fileID: 21300000, guid: 1cd80ec6d8c135c42b8808e2df88fb8e, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.SeenDescription
       value: vous avez vu le joli vase
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: le vase il est tout cassew
+      value: I deleted my number
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
