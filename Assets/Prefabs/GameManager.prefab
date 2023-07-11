@@ -45,8 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 870c03e2c9838ea4f9dc147b8c346a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  suspicionGameOverValue: 0
   timer: 40
   reader: {fileID: 1260628741274226481}
+  chapter: 0
+  dialogues: []
 --- !u!1001 &8844562666864795412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98,6 +101,14 @@ PrefabInstance:
     - target: {fileID: 3072665846952398179, guid: 77c55cb096ccc3840aad9f7f51c03681, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094068227363352660, guid: 77c55cb096ccc3840aad9f7f51c03681, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1300
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094068227363352660, guid: 77c55cb096ccc3840aad9f7f51c03681, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -22
       objectReference: {fileID: 0}
     - target: {fileID: 8538156239386254768, guid: 77c55cb096ccc3840aad9f7f51c03681, type: 3}
       propertyPath: m_Name

@@ -36,11 +36,17 @@ public class DialogueReader : MonoBehaviour
 
         }
         else
-        {          
+        {
             entryTextIndex = 0;
-            if (entryIndex < dialogue.entries.Count) UpdateContainer();
-            else NextBranch();
             entryIndex++;
+            if (entryIndex < dialogue.entries.Count)
+            {
+                UpdateContainer();
+            }
+            else 
+            {
+                NextBranch();
+            }
         }
     }
 
@@ -51,7 +57,6 @@ public class DialogueReader : MonoBehaviour
             GameManager.Instance.NextChapter();
             return;
         }
-        entryIndex = 0;
         int index = 0;
         while (index < dialogue.following.Count)
         {
@@ -59,6 +64,9 @@ public class DialogueReader : MonoBehaviour
                 Evaluate(dialogue.following[index].condition))
             {
                 dialogue = dialogue.following[index];
+                entryIndex = 0;
+                entryTextIndex = 0;
+                UpdateContainer();
                 return;
             }
             

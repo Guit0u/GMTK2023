@@ -19,7 +19,7 @@ public class SusManager : MonoBehaviour
     [SerializeField] private int suspicionMarie = 0;
     [SerializeField] private int suspicionRobin = 0;
 
-    public int Suspicion { get => suspicion; }
+    public int Suspicion { get => suspicion; set => suspicion = value; }
 
     private void Awake()
     {
