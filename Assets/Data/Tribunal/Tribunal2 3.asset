@@ -19,9 +19,6 @@ MonoBehaviour:
     - name: My gun
       IsNot: 0
       state: 2
-    - name: Cartridge
-      IsNot: 1
-      state: 2
   SusModifier: 20
   SusMarieModifier: 0
   SusRobinModifier: 0
