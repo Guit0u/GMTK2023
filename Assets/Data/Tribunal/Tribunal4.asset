@@ -99,7 +99,7 @@ MonoBehaviour:
     author: Paul
     portrait:
       sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
-      position: 1
+      position: 0
       reversed: 0
     text:
     - ' No, it''s the victim''s own blood'

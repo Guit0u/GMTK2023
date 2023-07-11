@@ -57,7 +57,7 @@ MonoBehaviour:
     author: Prosecutor
     portrait:
       sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
-      position: 2
+      position: 1
       reversed: 0
     text:
     - ' If you can''t prove it, I''m afraid the inheritance trail is the strongest...'
