@@ -72,6 +72,7 @@ public class GameManager : MonoBehaviour
             chapter = Chapter.GameOver;
             reader.SetDialogue(dialogues[3]);
             StartDialogue();
+            SusManager.Instance.Suspicion = 0;
         }
     }
 

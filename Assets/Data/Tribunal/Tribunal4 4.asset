@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition:
     susCondition: 0
-    susValue: 10
+    susValue: 0
     clues: []
-  SusModifier: 0
+  SusModifier: 10
   SusMarieModifier: 0
   SusRobinModifier: 0
   entries:

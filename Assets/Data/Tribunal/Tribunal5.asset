@@ -19,7 +19,15 @@ MonoBehaviour:
   SusModifier: 0
   SusMarieModifier: 0
   SusRobinModifier: 0
-  entries: []
+  entries:
+  - type: 0
+    author: Judge
+    portrait:
+      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - Hmm....
   following:
   - {fileID: 11400000, guid: 9b8a0e4df2f5ab34f9c88ef67447c859, type: 2}
   - {fileID: 11400000, guid: 985fd271e491087448b569e98886bcbb, type: 2}

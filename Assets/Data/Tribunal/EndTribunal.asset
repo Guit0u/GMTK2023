@@ -61,7 +61,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - Quite right, Counselor.
+    - Quite right, Sir.
   - type: 0
     author: Paul
     portrait:
@@ -77,5 +77,5 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - Mr Robin Wisserman, I find you guilty of the murder of Mr Jeremiah Trechton.
+    - Mr Paul Jeffords, I find you guilty of the murder of Mr Jeremiah Trechton.
   following: []
