@@ -70,7 +70,7 @@ MonoBehaviour:
       position: 2
       reversed: 0
     text:
-    - " And so you came to see your client in the evening?\r"
+    - "And so you came to see your client in the evening?\r"
   - type: 0
     author: Robin
     portrait:

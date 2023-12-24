@@ -43,7 +43,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - You held the murder weapon in your hands to know the model so well?
+    - Did you hold the murder weapon in your hands to know the model so well?
   - type: 0
     author: Paul
     portrait:
@@ -61,7 +61,7 @@ MonoBehaviour:
       reversed: 0
     text:
     - You have a vivid imagination, Mr Jeffords. Just make sure it doesn't get too
-      out of hand.
+      much out of hand.
   - type: 0
     author: Paul
     portrait:

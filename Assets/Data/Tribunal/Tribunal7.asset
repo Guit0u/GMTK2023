@@ -89,7 +89,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - " That remains to be seen. In any case, it doesn't help your case, Mr. Wisserman.\r\r"
+    - "That remains to be seen. In any case, it doesn't help your case, Mr. Wisserman.\r\r"
   - type: 0
     author: Robin
     portrait:
@@ -97,7 +97,7 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - " Wait, there's no reason why it should be my fingerprints rather than someone
+    - "Wait, there's no reason why it should be my fingerprints rather than someone
       else's.\r\r"
   - type: 0
     author: Prosecutor

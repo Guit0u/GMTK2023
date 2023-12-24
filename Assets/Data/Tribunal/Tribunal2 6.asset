@@ -46,6 +46,6 @@ MonoBehaviour:
     text:
     - The prosecutor is right, Mr. Jeffords. Your behavior is odd, to say the least.
       Pull yourself together if you don't want to try the court's patience. Let's
-      move on to Mrs Trechton
+      move on to Mrs Trechton.
   following:
   - {fileID: 11400000, guid: 44fd70c4b5dfd4846bc5e59c2c69983d, type: 2}

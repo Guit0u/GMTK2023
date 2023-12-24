@@ -45,7 +45,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - '- Evening -'
+    - '- The evening -'
   - type: 0
     author: Paul
     portrait:
@@ -53,7 +53,7 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - Good evening Jeremiah
+    - Good evening Jeremiah.
   - type: 0
     author: Jeremiah
     portrait:
@@ -132,8 +132,8 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - 'a weakling, a coward, like you. You came to my house, threatening me with
-      a gun under my roof. '
+    - A weakling, a coward, like you. You came to my house, threatening me with a
+      gun under my own roof.
     - But you'd never dare. All I have to do is stand up and approach you gently.
   - type: 0
     author: Paul
@@ -142,9 +142,9 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - 'Stop right there
+    - 'Stop right there-
 
-      Humpf
+      *Humpf*
 
 '
   - type: 0
@@ -154,9 +154,8 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - 'you little...
+    - 'You little...
 
-      Herf
 
 '
   - type: 0
@@ -166,7 +165,7 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - Wait, you
+    - Wait. You-
   - type: 0
     author: 
     portrait:
@@ -174,7 +173,7 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - PAAAAAAAAAAAAAAAN !
+    - '* BANG *'
   - type: 0
     author: Paul
     portrait:
@@ -182,5 +181,5 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - "Oh shit, oh shit, oh shit. Plus he managed to hurt me, the bastard. \r\n"
+    - "Oh shit, oh shit, oh shit. And he managed to hurt me, that bastard.\r"
   following: []

@@ -47,7 +47,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - ' That sounds like a provocation.'
+    - That sounds like a provocation.
   - type: 0
     author: Prosecutor
     portrait:
@@ -137,7 +137,7 @@ MonoBehaviour:
       position: 2
       reversed: 0
     text:
-    - "That word still seems to accuse you\r"
+    - "That word still seems to accuse you.\r"
   - type: 0
     author: Mary
     portrait:
@@ -171,7 +171,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - " I have no connection with the victim, it's very clearly about inheritance.
+    - "I have no connection with the victim, it's very clearly about inheritance.
       \r\r"
     - "It's all about my father\r\r"
     - It's a set-up!

@@ -31,7 +31,7 @@ MonoBehaviour:
       old days", when he was in service with my father, they knew each other well.
     - They were friends, even. I kindly declined, as it had been a long time since
       I had any particular contact with Jeremiah, but I regret it now.
-    - 'aybe I should have gone to see him, it might have prevented all this...
+    - 'Maybe I should have gone to see him, it might have prevented all this...
 
 '
   - type: 0
@@ -41,7 +41,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - Sniff..
+    - '*Sniff* ...'
   - type: 0
     author: Prosecutor
     portrait:

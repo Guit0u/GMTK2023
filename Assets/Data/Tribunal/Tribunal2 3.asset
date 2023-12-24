@@ -39,7 +39,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - "The cartridgeenabled us to identify that the weapon that fired the shot was
+    - "The cartridge enabled us to identify that the weapon that fired the shot was
       a SIG Sauer pistol, a weapon known to be the main pistol used by members of
       the army.\r\n\r"
   following:

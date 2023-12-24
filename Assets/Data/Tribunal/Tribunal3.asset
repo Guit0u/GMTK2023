@@ -69,10 +69,8 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - 'We had our differences with my father, but... I loved him all the same. To
+    - We had our differences with my father, but... I loved him all the same. To
       imagine that I would have shot him with his own gun is so horrible.
-
-'
   - type: 0
     author: Judge
     portrait:
@@ -96,7 +94,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - Let's move on
+    - Let's move on.
   following:
   - {fileID: 11400000, guid: ba0d3e89383b88e46916d10a470b6fb3, type: 2}
   - {fileID: 11400000, guid: d1dfcfb930dd12249bab72095a21df48, type: 2}

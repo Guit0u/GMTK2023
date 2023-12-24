@@ -60,7 +60,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - ' If you can''t prove it, I''m afraid the inheritance trail is the strongest...'
+    - If you can't prove it, I'm afraid the inheritance trail is the strongest...
   following:
   - {fileID: 11400000, guid: 985fd271e491087448b569e98886bcbb, type: 2}
   - {fileID: 11400000, guid: 9ee66e79c5bf26e4eb3e37e1d320cdfd, type: 2}

@@ -36,10 +36,8 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - 'You assumed it had to be the assailant''s blood because it was away from the
-      scene, but did you check that it wasn''t the victim''s blood?
-
-'
+    - You assumed it had to be the assailant's blood because it was away from the
+      scene, but did you check that it wasn't the victim's blood?
   - type: 0
     author: Prosecutor
     portrait:

@@ -16,7 +16,7 @@ MonoBehaviour:
     susCondition: 0
     susValue: 0
     clues: []
-  SusModifier: 20
+  SusModifier: 10
   SusMarieModifier: 0
   SusRobinModifier: 0
   entries:

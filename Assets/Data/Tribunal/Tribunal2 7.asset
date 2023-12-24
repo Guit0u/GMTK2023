@@ -27,6 +27,6 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - Maybe I am, maybe I'm not. You're not being very helpful, Mr Jeffords.
+    - You're not being very helpful, Mr Jeffords.
   following:
   - {fileID: 11400000, guid: 44fd70c4b5dfd4846bc5e59c2c69983d, type: 2}

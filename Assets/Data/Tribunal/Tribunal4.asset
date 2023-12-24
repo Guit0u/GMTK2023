@@ -46,10 +46,8 @@ MonoBehaviour:
       position: 2
       reversed: 0
     text:
-    - 'Wait a minute, that''s not my blood. It''s unbearable, I can''t stand being
-      accused anymore, you''re a fascist justice who...
-
-'
+    - Wait a minute, that's not my blood! This is unbearable! I can't stand being
+      accused anymore, you're a fascist-
   - type: 0
     author: 'Prosecutor '
     portrait:
@@ -75,7 +73,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - ' Can you prove that?'
+    - Can you prove that?
   - type: 0
     author: Mary
     portrait:
@@ -102,10 +100,12 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - ' No, it''s the victim''s own blood'
-    - 'I''m not hurt at all, you can see for yourself '
-    - I don't know whose blood this is, but it's certainly not mine. I faint easily
-      at the sight of blood loss.
+    - No, it's the victim's own blood
+    - I'm not hurt at all, you can see for yourself
+    - 'I don''t know whose this is, but it''s certainly not mine.
+
+      I faint
+      easily at the sight of blood loss.'
   following:
   - {fileID: 11400000, guid: fcf16dd608be4d644bb297cda54ef2ff, type: 2}
   - {fileID: 11400000, guid: 449e2270b2e5a184d83ddb4d800309b8, type: 2}

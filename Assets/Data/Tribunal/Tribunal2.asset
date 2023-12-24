@@ -36,9 +36,7 @@ MonoBehaviour:
       reversed: 0
     text:
     - 'Indeed, Mrs Trechton is Jeremiah Trechton''s only daughter and therefore will
-
-      inherit
-      his house and all his property.
+      inherit his house and all his property.
 
 '
   - type: 0
@@ -66,7 +64,7 @@ MonoBehaviour:
       position: 2
       reversed: 0
     text:
-    - Hmpf
+    - Hmpf.
   - type: 0
     author: Judge
     portrait:
@@ -74,10 +72,8 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - ' Finally, we have a third suspect, Mr. Robin Wisserman, who... Took pictures
+    - Finally, we have a third suspect, Mr. Robin Wisserman, who... Took pictures
       of the surrounding houses?
-
-'
   - type: 0
     author: Prosecutor
     portrait:
@@ -103,9 +99,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - 'Yes, because the police confiscated it.
-
-'
+    - Yes, because the police confiscated it.
   - type: 0
     author: Robin
     portrait:
@@ -121,9 +115,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - 'In that case, it would be a pity if you were mistaken for the murderer.
-
-'
+    - In that case, it would be a pity if you were mistaken for the murderer.
   - type: 0
     author: Robin
     portrait:
@@ -131,7 +123,7 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - glup
+    - '*gulp*'
   - type: 0
     author: Judge
     portrait:

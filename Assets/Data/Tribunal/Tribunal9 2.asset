@@ -35,7 +35,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - " Did you cut yourself... on your hand while shaving?\r"
+    - "Did you cut yourself... on your hand while shaving?\r"
   - type: 0
     author: Paul
     portrait:
@@ -43,7 +43,7 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - "I'm very clumsy\r"
+    - "I'm very clumsy...\r"
   - type: 0
     author: Prosecutor
     portrait:

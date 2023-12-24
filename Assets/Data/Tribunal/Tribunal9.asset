@@ -85,7 +85,7 @@ MonoBehaviour:
       position: 2
       reversed: 0
     text:
-    - ' Wait, Jeffords, I just saw... Do you have a bandage on your hand?'
+    - Wait, Jeffords, I just saw... Do you have a bandage on your hand?
   - type: 0
     author: Paul
     portrait:
@@ -101,7 +101,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - ' What does it mean?'
+    - What does it mean?
   - type: 0
     author: Prosecutor
     portrait:
