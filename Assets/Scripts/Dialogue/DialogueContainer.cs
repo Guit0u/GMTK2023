@@ -8,16 +8,18 @@ public class DialogueContainer : MonoBehaviour
 {
     [Header("Parameters")]
     [SerializeField, Range(1, 10)] private int textSpeed = 3;
+    [SerializeField, Range(0, 1)] private float textBaseVolume = 0.2f;
     
     private float waitBetweenLetter;
     private bool typing;
 
     [Header("Portrait")]
     [SerializeField] private List<Image> Portraits;
+    [SerializeField] private Image author;
 
     [Header("Dialogue")]
     [SerializeField] private TextMeshProUGUI dialogue;
-    [SerializeField] private TextMeshProUGUI author;
+    [SerializeField] private TextMeshProUGUI authorName;
     [SerializeField] private GameObject arrow;
 
     [Header("Choices")]
@@ -25,9 +27,17 @@ public class DialogueContainer : MonoBehaviour
 
     public bool IsTyping { get => typing; }
 
+    private AudioSource audioSource;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     private void Start()
     {
         waitBetweenLetter = 0.1f / textSpeed;
+        audioSource.volume = textBaseVolume;
     }
 
     public void ShowPortrait(Portrait portrait)
@@ -42,11 +52,17 @@ public class DialogueContainer : MonoBehaviour
         else Portraits[imageIndex].gameObject.GetComponent<RectTransform>().localScale = Vector3.one;
     }
 
+    private void SetAuthor(string name)
+    {
+        author.enabled = name != string.Empty;
+        authorName.text = name;
+    }
+
     public void ResetText()
     {
         foreach (Button button in buttons) { button.gameObject.SetActive(false); }
 
-        author.text = string.Empty;
+        authorName.text = string.Empty;
         dialogue.text = string.Empty;
 
         arrow.SetActive(false);
@@ -64,7 +80,7 @@ public class DialogueContainer : MonoBehaviour
 
         foreach (Button button in buttons) { button.gameObject.SetActive(false); }
 
-        author.text = entry.author;
+        SetAuthor(entry.author);
         dialogue.text = entry.text[entryIndex];
 
         arrow.SetActive(true);
@@ -73,7 +89,7 @@ public class DialogueContainer : MonoBehaviour
 
     public void SetChoice(string authorName, List<string> choices)
     {
-        author.text = authorName;
+        SetAuthor(authorName);
         dialogue.text = string.Empty;
 
         arrow.SetActive(false);
@@ -89,8 +105,10 @@ public class DialogueContainer : MonoBehaviour
     {
         ResetText();
         typing = true;
+        SetAuthor(authorName);
 
-        author.text = authorName;
+        audioSource.Play();
+        audioSource.loop = true;
 
         foreach (char letter in text.ToCharArray())
         {
@@ -99,6 +117,8 @@ public class DialogueContainer : MonoBehaviour
             dialogue.text += letter;
             yield return new WaitForSeconds(waitBetweenLetter);
         }
+
+        audioSource.loop = false;
 
         arrow.SetActive(true);
         typing = false;
