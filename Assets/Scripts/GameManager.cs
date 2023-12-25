@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,6 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int suspicionGameOverValue;
     [Space(10)]
     [SerializeField] private float timer;
+    [SerializeField] private TextMeshProUGUI timerUi;
     [SerializeField] private DialogueReader reader;
     [Space(10)]
     [SerializeField] private Chapter chapter;
@@ -21,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     private Dictionary<Choice, bool> choices;
 
-    private bool timerIsRunning;
+    private bool timerIsRunning = false;
     private float timeRemaining;
 
     private void Awake()
@@ -54,6 +56,7 @@ public class GameManager : MonoBehaviour
     {
         if (timerIsRunning)
         {
+            timerUi.text = timeRemaining.ToString();
             if (timeRemaining > 0)
             {
                 timeRemaining -= Time.deltaTime;

@@ -83,6 +83,7 @@ public class DialogueContainer : MonoBehaviour
         SetAuthor(entry.author);
         dialogue.text = entry.text[entryIndex];
 
+        audioSource.loop = false;
         arrow.SetActive(true);
         typing = false;
     }
@@ -119,7 +120,6 @@ public class DialogueContainer : MonoBehaviour
         }
 
         audioSource.loop = false;
-
         arrow.SetActive(true);
         typing = false;
     }
