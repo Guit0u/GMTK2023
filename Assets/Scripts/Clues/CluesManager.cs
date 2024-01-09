@@ -11,13 +11,13 @@ public class CluesManager : MonoBehaviour
 
     [SerializeField] private GameObject uiCluePrefab;
     [Space(10)]
-
     [SerializeField] private Image background;
-    [SerializeField] private List<Image> images;
+    [SerializeField] private GameObject imagesContainer;
 
     public Dictionary<string, ClueData> Clues = new();
     private readonly Dictionary<Image, string> ImagesClue = new();
 
+    private List<Image> images;
     private bool isDisplaying;
 
     void Awake()
@@ -33,6 +33,7 @@ public class CluesManager : MonoBehaviour
     private void Start()
     {
         background.gameObject.SetActive(false);
+        images = imagesContainer.GetComponentsInChildren<Image>().ToList();
 
         foreach(Image image in images)
         {
