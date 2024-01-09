@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -122,5 +123,10 @@ public class DialogueContainer : MonoBehaviour
         audioSource.loop = false;
         arrow.SetActive(true);
         typing = false;
+    }
+
+    public void SetTextVolume(Single value)
+    {
+        audioSource.volume = value * textBaseVolume;
     }
 }

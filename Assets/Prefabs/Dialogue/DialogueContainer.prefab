@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2833871377867842b6fb600c7eeb25c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 6139f837b30658b448eff7ed7cbb66c8, type: 2}
+  dialogue: {fileID: 11400000, guid: 15591c696176cf04c95c1c241aefa334, type: 2}
   dialogueContainer: {fileID: 1889212143582414817}
 --- !u!114 &1889212143582414817
 MonoBehaviour:

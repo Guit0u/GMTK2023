@@ -12,7 +12,6 @@ public class SusManager : MonoBehaviour
 
     [Header("Parameters")]
     [SerializeField, Range(0, 1)] private float changeSpeed = 0.5f;
-    [SerializeField, Range(0, 1)] private float pauseTime = 0.5f;
 
     [Header("Debug")]
     [SerializeField] private int suspicion = 0;
@@ -27,6 +26,11 @@ public class SusManager : MonoBehaviour
         else Instance = this;
     }
 
+    public void ShowSlider(bool active)
+    {
+        susMeter.gameObject.SetActive(active);
+    }
+
     public void ChangeSus(int value)
     {
         suspicion += value;
@@ -38,8 +42,6 @@ public class SusManager : MonoBehaviour
 
     private IEnumerator UpdateSlider()
     {
-        susMeter.gameObject.SetActive(true);
-
         bool positiveChange = susMeter.value < suspicion;
 
         if (positiveChange)
@@ -60,9 +62,5 @@ public class SusManager : MonoBehaviour
             }
         }
         susMeter.value = suspicion;
-
-        yield return new WaitForSeconds(pauseTime);
-
-        susMeter.gameObject.SetActive(false);
     }
 }

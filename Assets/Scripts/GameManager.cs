@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -12,16 +13,17 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    [Header("Gameplay Parameters")]
     [SerializeField] private int suspicionGameOverValue;
-    [Space(10)]
-    [SerializeField] private float timer;
-    [SerializeField] private TextMeshProUGUI timerUi;
+    [SerializeField] private float timeToExploreCrimeScene;
+    [Header("Dependancies")]
     [SerializeField] private DialogueReader reader;
     [Space(10)]
-    [SerializeField] private Chapter chapter;
     [SerializeField] private List<DialogueBranch> dialogues;
+    [Header("Debug")]
+    [SerializeField] private Chapter chapter;
 
-    private Dictionary<Choice, bool> choices;
+    private readonly Dictionary<Choice, bool> choices;
 
     private bool timerIsRunning = false;
     private float timeRemaining;
@@ -43,10 +45,11 @@ public class GameManager : MonoBehaviour
         reader.Reset();
         reader.gameObject.SetActive(false);
 
-        timeRemaining = timer;
+        timeRemaining = timeToExploreCrimeScene;
 
         if (chapter == Chapter.Intro)
         {
+            SusManager.Instance.ShowSlider(false);
             reader.SetDialogue(dialogues[0]);
             StartDialogue();
         }
@@ -56,7 +59,6 @@ public class GameManager : MonoBehaviour
     {
         if (timerIsRunning)
         {
-            timerUi.text = timeRemaining.ToString();
             if (timeRemaining > 0)
             {
                 timeRemaining -= Time.deltaTime;
@@ -106,12 +108,11 @@ public class GameManager : MonoBehaviour
 
             reader.SetDialogue(dialogues[1]);
             StartDialogue();
-
-            timerIsRunning = true;
         }
         else if (chapter == Chapter.Crime)
         {
             chapter = Chapter.CrimeExplore;
+            timerIsRunning = true;
         }
         else if (chapter == Chapter.CrimeExplore)
         {
@@ -121,6 +122,8 @@ public class GameManager : MonoBehaviour
 
             reader.SetDialogue(dialogues[2]);
             StartDialogue();
+
+            SusManager.Instance.ShowSlider(true);
         }
         else if (chapter == Chapter.Tribunal)
         {
