@@ -106,7 +106,7 @@ MonoBehaviour:
       position: 2
       reversed: 0
     text:
-    - "A manual trade which is photographing houses hhm?\r\r"
+    - "A manual trade which is photographing houses hmm?\r\r"
   - type: 0
     author: Robin
     portrait:
@@ -122,6 +122,6 @@ MonoBehaviour:
       position: 2
       reversed: 0
     text:
-    - "You're not helping your case. Let's move on\r\r"
+    - "You're not helping your case. Let's move on.\r\r"
   following:
   - {fileID: 11400000, guid: 5203bea11014ad742a7df53ad4f5a177, type: 2}

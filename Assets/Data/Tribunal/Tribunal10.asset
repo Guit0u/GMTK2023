@@ -48,10 +48,8 @@ MonoBehaviour:
       reversed: 0
     text:
     - 'Mrs Mary Trechton, I find you guilty of the murder of Mr Jeremiah Trechton.
-
-      Messrs
-      Jeffords and Wisserman, I''m sorry for the inconvenience, but thank you for
-      helping us understand what happened.
+      Messrs Jeffords and Wisserman, I''m sorry for the inconvenience, but thank
+      you for helping us understand what happened.
 
 '
   - type: 0
