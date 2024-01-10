@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MiniGame : MonoBehaviour
 {
-    [SerializeField] private string miniGameName;
     [SerializeField] private string relatedClue;
     [Space(10)]
     [SerializeField] private TMP_Text timerText;
@@ -43,7 +42,7 @@ public class MiniGame : MonoBehaviour
                 timeRemaining = 0;
                 timerIsRunning = false;
                 BoxClue(true);
-                SceneManager.UnloadSceneAsync(miniGameName);
+                SceneManager.UnloadSceneAsync(CluesManager.Instance.EndClueMiniGame());
             }
         }
     }
@@ -60,6 +59,6 @@ public class MiniGame : MonoBehaviour
     {
         CluesManager.Instance.AffectClue(relatedClue);
         BoxClue(true);
-        SceneManager.UnloadSceneAsync(miniGameName);
+        SceneManager.UnloadSceneAsync(CluesManager.Instance.EndClueMiniGame());
     }
 }

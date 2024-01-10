@@ -10,7 +10,8 @@ public class CluesManager : MonoBehaviour
     public static CluesManager Instance;
 
     [SerializeField] private GameObject uiCluePrefab;
-    [Space(10)]
+    [Header("Dependancies")]
+    [SerializeField] private GameObject button;
     [SerializeField] private Image background;
     [SerializeField] private GameObject imagesContainer;
 
@@ -18,7 +19,10 @@ public class CluesManager : MonoBehaviour
     private readonly Dictionary<Image, string> ImagesClue = new();
 
     private List<Image> images;
-    private bool isDisplaying;
+
+    private bool isClueMenuOpen = false;
+    private bool inMiniGame = false;
+    private string miniGameSceneName;
 
     void Awake()
     {
@@ -27,7 +31,7 @@ public class CluesManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(transform.gameObject);
         }
-        else Destroy(this.gameObject);
+        else Destroy(gameObject);
     }
 
     private void Start()
@@ -38,7 +42,6 @@ public class CluesManager : MonoBehaviour
         foreach(Image image in images)
         {
             ImagesClue.Add(image, null);
-            image.gameObject.SetActive(false);
         }
     }
 
@@ -47,7 +50,6 @@ public class CluesManager : MonoBehaviour
         if (Clues.TryGetValue(clueName, out ClueData clueData))
         {
             return clueData.clueState;
-            
         }
         else return ClueState.NotFound;
     }
@@ -75,28 +77,19 @@ public class CluesManager : MonoBehaviour
 
     public void DisplayClues()
     {
-        isDisplaying = !isDisplaying;
-        background.gameObject.SetActive(isDisplaying);
-
-        if (!isDisplaying) return;
-
-        foreach (Image image in ImagesClue.Keys)
-        {
-            if (ImagesClue[image] != null)
-            {
-                image.gameObject.SetActive(true);
-            }
-            else
-            {
-                image.gameObject.SetActive(false);
-            }
-        }
+        isClueMenuOpen = !isClueMenuOpen;
+        background.gameObject.SetActive(isClueMenuOpen);
     }
 
     public void HideClues()
     {
-        isDisplaying = false;
+        isClueMenuOpen = false;
         background.gameObject.SetActive(false);
+    }
+
+    public void ShowClueButton(bool active)
+    {
+        button.SetActive(active);
     }
 
     void OnImageClicked(BaseEventData eventData)
@@ -120,5 +113,17 @@ public class CluesManager : MonoBehaviour
         entry.callback = new EventTrigger.TriggerEvent();
         entry.callback.AddListener(new UnityEngine.Events.UnityAction<BaseEventData>(callback));
         trigger.triggers.Add(entry);
+    }
+
+    public void StartClueMiniGame(string name)
+    {
+        inMiniGame = true;
+        miniGameSceneName = name;
+    }
+
+    public string EndClueMiniGame()
+    {
+        inMiniGame = false;
+        return miniGameSceneName;
     }
 }

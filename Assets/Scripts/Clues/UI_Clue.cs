@@ -59,6 +59,7 @@ public class UI_Clue : MonoBehaviour
             miniGameDone = true;
             clue.MiniGameDone();
 
+            CluesManager.Instance.StartClueMiniGame(miniGameName);
             SceneManager.LoadScene(miniGameName, LoadSceneMode.Additive);
 
             Destroy(gameObject);

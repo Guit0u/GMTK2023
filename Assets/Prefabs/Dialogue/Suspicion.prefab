@@ -381,7 +381,6 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   changeSpeed: 0.3
-  pauseTime: 1
   suspicion: 0
   suspicionMarie: 0
   suspicionRobin: 0

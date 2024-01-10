@@ -193,7 +193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: miniGame
-      value: MiniInterract
+      value: Gun
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: description
@@ -217,19 +217,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
-      value: I shot him
+      value: The gun I shot Jeremiah with.
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedImage
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 80ebc456680623d40bab60a6fd35f3fc, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.SeenDescription
       value: "Le coffre est toujours ferm\xE9"
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: I took it with me
+      value: I took it with me.
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -375,19 +375,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
-      value: Its my hat
+      value: That's my hat.
       objectReference: {fileID: 0}
-    - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
-      propertyPath: clueData.affectedImage
-      value: 
-      objectReference: {fileID: 21300000, guid: e1028b5c4b75f6846a2ee6f2a9a08876, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.SeenDescription
       value: C'est toujours de l'herbe
-      objectReference: {fileID: 0}
-    - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
-      propertyPath: clueData.affectedDescription
-      value: Its my hat
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -550,7 +542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
-      value: A lot of it
+      value: There's a lot of it!
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedImage
@@ -562,7 +554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: 'I walked in it '
+      value: I walked in it...
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -712,7 +704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.clueName
-      value: footprint
+      value: Footprint
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: affectedDescription
@@ -720,19 +712,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
-      value: my footprint
+      value: A footprint of my foot.
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedImage
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 54d83866ef657684bb8da3c88a2a2c65, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.SeenDescription
       value: "Le coffre est toujours ferm\xE9"
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: i cleaned it
+      value: I cleaned it.
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -1018,7 +1010,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: miniGame
-      value: MiniInterractSang
+      value: Blood
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: description
@@ -1042,7 +1034,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
-      value: Its my Blood
+      value: It's my Blood.
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedImage
@@ -1054,7 +1046,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: I wiped it
+      value: I wiped it.
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -1188,7 +1180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: miniGame
-      value: MiniLab
+      value: Paper
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: description
@@ -1204,7 +1196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.clueName
-      value: small note
+      value: Small note
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: affectedDescription
@@ -1224,7 +1216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: i took it
+      value: I took it with me.
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -1350,7 +1342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: miniGame
-      value: MiniInterractCadre
+      value: Picture
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: description
@@ -1374,7 +1366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
-      value: A picture
+      value: A nice family picture.
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedImage
@@ -1386,7 +1378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: I broke it
+      value: Oops, I broke it.
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -1676,7 +1668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
-      value: It fell after i shot
+      value: It fell after I shot! Lucky to have found it.
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedImage
@@ -1688,7 +1680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: i took it with me
+      value: I took it with me.
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -1834,7 +1826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: miniGame
-      value: MiniPhone
+      value: Phone
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: description
@@ -1858,7 +1850,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
-      value: Victim's Phone
+      value: The victim's phone.
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedImage
@@ -1870,7 +1862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: I deleted my number
+      value: I deleted my number.
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -1950,6 +1942,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1513115016018615789, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1513115016018615789, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1513115016018615789, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1513115016018615789, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2945961490854696386, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
       propertyPath: chapter
       value: 1
@@ -1962,6 +1970,22 @@ PrefabInstance:
       propertyPath: dialogues.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: 013001470ba85cd438a3bdc1f79ccd18, type: 2}
+    - target: {fileID: 6439077766297904008, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439077766297904008, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439077766297904008, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439077766297904008, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7679469732265312690, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2010,6 +2034,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 9087181615936048107, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087181615936048107, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2026,10 +2058,6 @@ PrefabInstance:
     - target: {fileID: 4986761149557850039, guid: db003007c0c58cb44b692e2e035bedf5, type: 3}
       propertyPath: m_Name
       value: ClueManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 5417653801414107070, guid: db003007c0c58cb44b692e2e035bedf5, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5417653801414107070, guid: db003007c0c58cb44b692e2e035bedf5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

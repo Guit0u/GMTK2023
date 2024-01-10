@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 enum Chapter 
 {
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float timeToExploreCrimeScene;
     [Header("Dependancies")]
     [SerializeField] private DialogueReader reader;
+    [SerializeField] private GameObject timer;
     [Space(10)]
     [SerializeField] private List<DialogueBranch> dialogues;
     [Header("Debug")]
@@ -27,6 +29,7 @@ public class GameManager : MonoBehaviour
 
     private bool timerIsRunning = false;
     private float timeRemaining;
+    private Slider timerSlider;
 
     private void Awake()
     {
@@ -38,6 +41,10 @@ public class GameManager : MonoBehaviour
         else Destroy(gameObject);
 
         reader.gameObject.SetActive(false);
+        timerSlider = timer.GetComponentInChildren<Slider>();
+        timerSlider.maxValue = timeToExploreCrimeScene;
+        timerSlider.value = timeToExploreCrimeScene;
+        timer.SetActive(false);
     }
 
     void Start()
@@ -45,11 +52,11 @@ public class GameManager : MonoBehaviour
         reader.Reset();
         reader.gameObject.SetActive(false);
 
-        timeRemaining = timeToExploreCrimeScene;
-
         if (chapter == Chapter.Intro)
         {
             SusManager.Instance.ShowSlider(false);
+            CluesManager.Instance.ShowClueButton(false);
+
             reader.SetDialogue(dialogues[0]);
             StartDialogue();
         }
@@ -62,6 +69,7 @@ public class GameManager : MonoBehaviour
             if (timeRemaining > 0)
             {
                 timeRemaining -= Time.deltaTime;
+                timerSlider.value = timeRemaining;
             }
             else
             {
@@ -112,10 +120,16 @@ public class GameManager : MonoBehaviour
         else if (chapter == Chapter.Crime)
         {
             chapter = Chapter.CrimeExplore;
+
+            timeRemaining = timeToExploreCrimeScene;
+            timer.SetActive(true);
             timerIsRunning = true;
+
+            CluesManager.Instance.ShowClueButton(true);
         }
         else if (chapter == Chapter.CrimeExplore)
         {
+            timer.SetActive(false);
             timerIsRunning = false;
             SceneManager.LoadScene("Tribunal");
             chapter = Chapter.Tribunal;
