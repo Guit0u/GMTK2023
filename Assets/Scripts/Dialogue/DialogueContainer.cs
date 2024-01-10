@@ -9,10 +9,13 @@ public class DialogueContainer : MonoBehaviour
 {
     [Header("Parameters")]
     [SerializeField, Range(1, 10)] private int textSpeed = 3;
+    [SerializeField, Range(0, 1)] private float shortPauseTime = 0.25f;
+    [SerializeField, Range(0, 2)] private float longPauseTime = 1f;
     [SerializeField, Range(0, 1)] private float textBaseVolume = 0.2f;
     
     private float waitBetweenLetter;
     private bool typing;
+    private Stack<TextTag> tagsOpen = new();
 
     [Header("Portrait")]
     [SerializeField] private List<Image> Portraits;
@@ -65,6 +68,7 @@ public class DialogueContainer : MonoBehaviour
 
         authorName.text = string.Empty;
         dialogue.text = string.Empty;
+        dialogue.alignment = TextAlignmentOptions.TopLeft;
 
         arrow.SetActive(false);
     }
@@ -112,12 +116,40 @@ public class DialogueContainer : MonoBehaviour
         audioSource.Play();
         audioSource.loop = true;
 
-        foreach (char letter in text.ToCharArray())
-        {
-            waitBetweenLetter = 0.1f / textSpeed;
+        
+        char[] chars = text.ToCharArray();
 
-            dialogue.text += letter;
-            yield return new WaitForSeconds(waitBetweenLetter);
+        for (int i = 0; i < chars.Length; i++)
+        {
+            if (CheckTag(chars, ref i, dialogue))
+            {
+                tagsOpen.TryPeek(out TextTag tag);
+                switch (tag)
+                {
+                    case TextTag.SHORT_PAUSE:
+                        audioSource.loop = false;
+                        yield return new WaitForSeconds(shortPauseTime);
+                        tagsOpen.Pop();
+                        audioSource.loop = true;
+                        audioSource.Play();
+                        break;
+
+                    case TextTag.LONG_PAUSE:
+                        audioSource.loop = false;
+                        yield return new WaitForSeconds(longPauseTime);
+                        tagsOpen.Pop();
+                        audioSource.loop = true;
+                        audioSource.Play();
+                        break;
+                }
+            }
+            else
+            {
+                dialogue.text += chars[i];
+
+                waitBetweenLetter = 0.1f / textSpeed;
+                yield return new WaitForSeconds(waitBetweenLetter);
+            }
         }
 
         audioSource.loop = false;
@@ -125,8 +157,93 @@ public class DialogueContainer : MonoBehaviour
         typing = false;
     }
 
+    private bool CheckTag(char[] chars, ref int index, TextMeshProUGUI dialogue)
+    {
+        if (chars[index] == '<')
+        {
+            index++;
+            char tagLetter = chars[index];
+            tagsOpen.TryPeek(out TextTag lastTagOpen);
+
+            switch (tagLetter)
+            {
+                case 'b':
+                    if (lastTagOpen == TextTag.BOLD)
+                    {
+                        tagsOpen.Pop();
+                        dialogue.text += @"</b>";
+                    }
+                    else
+                    {
+                        tagsOpen.Push(TextTag.BOLD);
+                        dialogue.text += "<b>";
+                    }
+                    break;
+                case 'i':
+                    if (lastTagOpen == TextTag.ITALIC)
+                    {
+                        tagsOpen.Pop();
+                        dialogue.text += @"</i>";
+                    }
+                    else
+                    {
+                        tagsOpen.Push(TextTag.ITALIC);
+                        dialogue.text += "<i>";
+                    }
+                    break;
+                case 'c':
+                    index++;
+                    if (chars[index] == '=')
+                    {
+                        tagsOpen.Push(TextTag.COLOR);
+                        index++;
+                        char colorLetter = chars[index];
+
+                        switch (colorLetter)
+                        {
+                            case 'r':
+                                dialogue.text += "<color=red>";
+                                break;
+                            case 'g':
+                                dialogue.text += "<color=green>";
+                                break;
+                            case 'b':
+                                dialogue.text += "<color=blue>";
+                                break;
+                        }
+                    }
+                    else if (lastTagOpen == TextTag.COLOR)
+                    {
+                        tagsOpen.Pop();
+                        dialogue.text += @"</color>";
+                    }
+                    break;
+                case 'm':
+                    dialogue.alignment = TextAlignmentOptions.Center;
+                    break;
+                case '.':
+                    tagsOpen.Push(TextTag.SHORT_PAUSE);
+                    break;
+                case '_':
+                    tagsOpen.Push(TextTag.LONG_PAUSE);
+                    break;
+
+            }
+
+            while (chars[index] != '>') index++;
+            return true;
+        }
+
+        return false;
+    }
+
     public void SetTextVolume(Single value)
     {
         audioSource.volume = value * textBaseVolume;
+    }
+
+    public void SetTextSpeed(Single value)
+    {
+        textSpeed = (int)value;
     }
 }

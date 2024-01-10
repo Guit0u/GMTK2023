@@ -1,0 +1,4 @@
+public enum TextTag
+{
+    NONE, BOLD, ITALIC, POSITION, SHORT_PAUSE, LONG_PAUSE, COLOR
+}

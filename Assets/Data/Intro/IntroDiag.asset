@@ -45,7 +45,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - '- The evening -'
+    - <m>- The evening -
   - type: 0
     author: Paul
     portrait:
@@ -53,7 +53,7 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - Good evening, Jeremiah.
+    - Good evening,<.> <c=b>Jeremiah<c>.
   - type: 0
     author: Jeremiah
     portrait:
@@ -61,9 +61,9 @@ MonoBehaviour:
       position: 2
       reversed: 0
     text:
-    - 'Good evening Paul.
+    - 'Good evening <c=b>Paul<c>.
 
-      So what have you come for? Revenge?
+      So what have you come for?<.> Revenge?
 
 '
   - type: 0
@@ -73,7 +73,7 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - The truth.
+    - <i>The truth.<i>
   - type: 0
     author: Jeremiah
     portrait:
@@ -142,7 +142,7 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - 'Stop right there-
+    - 'Stop right there-<.>
 
       *Humpf*
 
@@ -165,7 +165,7 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - Wait. You-
+    - Wait. <_>You-
   - type: 0
     author: 
     portrait:
