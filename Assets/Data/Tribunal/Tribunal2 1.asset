@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 220f8b4b417a8c545ba7074a347b26ff, type: 3}
-  m_Name: Tribunal2 3
+  m_Name: Tribunal2 1
   m_EditorClassIdentifier: 
   condition:
     susCondition: 0
@@ -19,7 +19,7 @@ MonoBehaviour:
     - name: My gun
       IsNot: 0
       state: 2
-  SusModifier: 20
+  SusModifier: 100
   SusMarieModifier: 0
   SusRobinModifier: 0
   entries:
@@ -30,8 +30,10 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - "Let's start with the obvious. The assailant left with the murder weapon but
-      neglected to retrieve the cartridge.\r"
+    - 'Let''s start with the obvious. Obviously, our culprit left in a hurry, since
+      he left the murder weapon at the scene, not even bothering to pick it up.
+
+'
   - type: 0
     author: Prosecutor
     portrait:
@@ -39,8 +41,16 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - "The cartridge enabled us to identify that the weapon that fired the shot was
-      a SIG Sauer pistol, a weapon known to be the main pistol used by members of
-      the army.\r\n\r"
+    - "This weapon is a SIG Sauer pistol, known as the main pistol used by members
+      of the army.\r"
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - "But most interestingly, after fingerprint analysis, it was revealed that the
+      gun was covered with <c=b>Jeremiah<c>'s fingerprints.\r"
   following:
-  - {fileID: 11400000, guid: 1c0c68290e8a46945a111a795eb08149, type: 2}
+  - {fileID: 11400000, guid: 83392b7f629de2a4f85bf5571bb21982, type: 2}

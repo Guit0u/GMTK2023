@@ -17,7 +17,7 @@ MonoBehaviour:
     susValue: 0
     clues:
     - name: Blood
-      IsNot: 1
+      IsNot: 0
       state: 2
   SusModifier: 0
   SusMarieModifier: 0

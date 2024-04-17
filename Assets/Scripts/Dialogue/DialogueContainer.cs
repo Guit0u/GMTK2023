@@ -15,6 +15,7 @@ public class DialogueContainer : MonoBehaviour
     
     private float waitBetweenLetter;
     private bool typing;
+    private bool skip;
     private Stack<TextTag> tagsOpen = new();
 
     [Header("Portrait")]
@@ -79,6 +80,12 @@ public class DialogueContainer : MonoBehaviour
         StartCoroutine(TypeText(entry.author, entry.text[textIndex]));
     }
 
+    public void SkipText()
+    {
+        skip = true;
+    }
+
+    //Unused, kept for debug (will cause text tags to be displayed on screen and disable their effect)
     public void SetText(TextEntry entry, int entryIndex)
     {
         StopAllCoroutines();
@@ -93,7 +100,7 @@ public class DialogueContainer : MonoBehaviour
         typing = false;
     }
 
-    public void SetChoice(string authorName, List<string> choices)
+    public void ShowChoices(string authorName, List<string> choices)
     {
         SetAuthor(authorName);
         dialogue.text = string.Empty;
@@ -128,7 +135,7 @@ public class DialogueContainer : MonoBehaviour
                 {
                     case TextTag.SHORT_PAUSE:
                         audioSource.loop = false;
-                        yield return new WaitForSeconds(shortPauseTime);
+                        yield return new WaitForSeconds(skip ? 0 : shortPauseTime);
                         tagsOpen.Pop();
                         audioSource.loop = true;
                         audioSource.Play();
@@ -136,7 +143,7 @@ public class DialogueContainer : MonoBehaviour
 
                     case TextTag.LONG_PAUSE:
                         audioSource.loop = false;
-                        yield return new WaitForSeconds(longPauseTime);
+                        yield return new WaitForSeconds(skip ? 0 : longPauseTime);
                         tagsOpen.Pop();
                         audioSource.loop = true;
                         audioSource.Play();
@@ -148,13 +155,14 @@ public class DialogueContainer : MonoBehaviour
                 dialogue.text += chars[i];
 
                 waitBetweenLetter = 0.1f / textSpeed;
-                yield return new WaitForSeconds(waitBetweenLetter);
+                yield return new WaitForSeconds(skip ? 0 : waitBetweenLetter);
             }
         }
 
         audioSource.loop = false;
         arrow.SetActive(true);
         typing = false;
+        skip = false;
     }
 
     private bool CheckTag(char[] chars, ref int index, TextMeshProUGUI dialogue)
@@ -193,7 +201,12 @@ public class DialogueContainer : MonoBehaviour
                     break;
                 case 'c':
                     index++;
-                    if (chars[index] == '=')
+                    if (lastTagOpen == TextTag.COLOR)
+                    {
+                        tagsOpen.Pop();
+                        dialogue.text += @"</color>";
+                    }
+                    else if (chars[index] == '=')
                     {
                         tagsOpen.Push(TextTag.COLOR);
                         index++;
@@ -202,20 +215,15 @@ public class DialogueContainer : MonoBehaviour
                         switch (colorLetter)
                         {
                             case 'r':
-                                dialogue.text += "<color=red>";
+                                dialogue.text += "<color=red>"; //Red
                                 break;
                             case 'g':
-                                dialogue.text += "<color=green>";
+                                dialogue.text += "<color=green>"; //Green
                                 break;
                             case 'b':
-                                dialogue.text += "<color=blue>";
+                                dialogue.text += "<color=#0080FF>"; //Blue
                                 break;
                         }
-                    }
-                    else if (lastTagOpen == TextTag.COLOR)
-                    {
-                        tagsOpen.Pop();
-                        dialogue.text += @"</color>";
                     }
                     break;
                 case 'm':

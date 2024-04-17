@@ -27,7 +27,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - We also have with us Mrs Mary Trechton, the victim's daughter.
+    - We also have with us <c=g>Mrs Mary Trechton<c>, the victim's daughter.
   - type: 0
     author: Prosecutor
     portrait:
@@ -35,8 +35,8 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - 'Indeed, Mrs Trechton is Jeremiah Trechton''s only daughter and therefore will
-      inherit his house and all his property.
+    - 'Indeed, <c=g>Mrs Trechton<c> is <c=r>Jeremiah Trechton<c>''s only daughter
+      and therefore will inherit his house and all his property.
 
 '
   - type: 0
@@ -135,6 +135,5 @@ MonoBehaviour:
       infamous crime. Let's see what evidence was left at the crime scene.
   following:
   - {fileID: 11400000, guid: afcfcebeae3d1544fb7ef83a88dc4bbe, type: 2}
-  - {fileID: 11400000, guid: 6c0e2fd315797574b807eee84531966c, type: 2}
   - {fileID: 11400000, guid: 0880faa0681196a4ea6ca0b4c9897cdd, type: 2}
   - {fileID: 11400000, guid: 1c0c68290e8a46945a111a795eb08149, type: 2}

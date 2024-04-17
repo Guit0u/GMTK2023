@@ -53,7 +53,7 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - Good evening,<.> <c=b>Jeremiah<c>.
+    - Good evening,<.> <c=r>Jeremiah<c>.
   - type: 0
     author: Jeremiah
     portrait:

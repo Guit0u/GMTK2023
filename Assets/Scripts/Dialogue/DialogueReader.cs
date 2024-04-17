@@ -27,7 +27,7 @@ public class DialogueReader : MonoBehaviour
 
         if (dialogueContainer.IsTyping)
         {
-            dialogueContainer.SetText(currentEntry, entryTextIndex);
+            dialogueContainer.SkipText();
             return;
         }
 
@@ -86,6 +86,7 @@ public class DialogueReader : MonoBehaviour
             entryIndex = 0;
             entryTextIndex = 0;
 
+            //Should be somewhere else, change sus when new branch even if it not after a choice
             SusManager.Instance.ChangeSus(dialogue.SusModifier);
             SusManager.Instance.CHangeSusRobin(dialogue.SusRobinModifier);
             SusManager.Instance.ChangeSusMarie(dialogue.SusMarieModifier);
@@ -116,14 +117,14 @@ public class DialogueReader : MonoBehaviour
                 else removeIndexes.Add(index);
             }
 
-            //Remove inaccessible followings
+            //Remove inaccessible following entries
             for(int i = removeIndexes.Count - 1; i >= 0; i--)
             {
                 dialogue.following.RemoveAt(i);
             }
 
             dialogueContainer.ShowPortrait(currentEntry.portrait);
-            dialogueContainer.SetChoice(currentEntry.author, choices);
+            dialogueContainer.ShowChoices(currentEntry.author, choices);
         }
     }
 

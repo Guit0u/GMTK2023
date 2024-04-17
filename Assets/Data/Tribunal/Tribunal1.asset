@@ -27,8 +27,8 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - 'I call this session to order for the triple trial for the murder of Mr. Jeremiah
-      Trechton. '
+    - 'I call this session to order for the triple trial for the murder of <c=r>Mr.
+      Jeremiah Trechton<c>. '
     - 'I remind you that, in view of the lack of funds of both the police and the
       justice system -
 
@@ -45,9 +45,9 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - "Yes, Your Honor. Last night, at approximately 8:30 p.m., Mr. Jeremiah Trechton
-      was killed in his home, shot in the chest.. \r\n"
-    - You, Mr Paul Jeffords, were questioned at around 8.45pm in the neighborhood.
+    - "Yes, Your Honor. <.>Last night, at approximately 8:30 p.m., <c=r>Mr. Jeremiah
+      Trechton<c> was killed in his home, shot in the chest. \r\n"
+    - You, <c=b>Mr Paul Jeffords<c>, were questioned at around 8.45pm in the neighborhood.
     - You were seen not far from the scene of the crime, walking away from the victim's
       house. What were you doing there?
   - type: 1

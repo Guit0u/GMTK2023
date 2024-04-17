@@ -17,7 +17,7 @@ MonoBehaviour:
     susValue: 0
     clues:
     - name: Picture
-      IsNot: 0
+      IsNot: 1
       state: 2
   SusModifier: 20
   SusMarieModifier: 0
@@ -121,6 +121,6 @@ MonoBehaviour:
     - This bandage doesn't matter, the case clearly is a burglary
     - I cut myself a few days ago, it's already healed.
   following:
-  - {fileID: 11400000, guid: 5203bea11014ad742a7df53ad4f5a177, type: 2}
-  - {fileID: 11400000, guid: 5203bea11014ad742a7df53ad4f5a177, type: 2}
-  - {fileID: 11400000, guid: 5203bea11014ad742a7df53ad4f5a177, type: 2}
+  - {fileID: 11400000, guid: 9c373c1f02e2b0b49a2b1b84cdab11f0, type: 2}
+  - {fileID: 11400000, guid: 95547b315dfb813439dc8efcbbfabae9, type: 2}
+  - {fileID: 11400000, guid: 28b64c5983879a04dbaa60ecfe5a1e42, type: 2}

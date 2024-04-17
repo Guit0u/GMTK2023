@@ -16,9 +16,9 @@ MonoBehaviour:
     susCondition: 0
     susValue: 0
     clues:
-    - name: My gun
-      IsNot: 1
-      state: 2
+    - name: Cartridge
+      IsNot: 0
+      state: 0
   SusModifier: 30
   SusMarieModifier: 0
   SusRobinModifier: 0
@@ -30,10 +30,8 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - 'Let''s start with the obvious. Obviously, our culprit left in a hurry, since
-      he left the murder weapon at the scene, not even bothering to pick it up.
-
-'
+    - "Let's start with the obvious. The assailant left with the murder weapon but
+      neglected to retrieve the cartridge.\r"
   - type: 0
     author: Prosecutor
     portrait:
@@ -41,7 +39,8 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - "This weapon is a SIG Sauer pistol, known as the main pistol used by members
-      of the army.\r"
+    - The cartridge allowed us to identify that the weapon that fired the shot was
+      a SIG Sauer pistol, a weapon known to be the main pistol used by members of
+      the army.
   following:
   - {fileID: 11400000, guid: 1c0c68290e8a46945a111a795eb08149, type: 2}
