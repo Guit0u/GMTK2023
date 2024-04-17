@@ -14,13 +14,15 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     [Header("Gameplay Parameters")]
-    [SerializeField] private int suspicionGameOverValue;
     [SerializeField] private float timeToExploreCrimeScene;
     [Header("Dependancies")]
     [SerializeField] private DialogueReader reader;
     [SerializeField] private GameObject timer;
     [Space(10)]
     [SerializeField] private List<DialogueBranch> dialogues;
+    [SerializeField] private DialogueBranch endPaul;
+    [SerializeField] private DialogueBranch endMary;
+    [SerializeField] private DialogueBranch endRobin;
     [Header("Debug")]
     [SerializeField] private Chapter chapter;
 
@@ -84,14 +86,6 @@ public class GameManager : MonoBehaviour
                 NextChapter();
             }
         }
-
-        if (SusManager.Instance.Suspicion > suspicionGameOverValue)
-        {
-            chapter = Chapter.GameOver;
-            reader.SetDialogue(dialogues[3]);
-            StartDialogue();
-            SusManager.Instance.Suspicion = 0;
-        }
     }
 
     public void StartDialogue()
@@ -146,12 +140,21 @@ public class GameManager : MonoBehaviour
         }
         else if (chapter == Chapter.Tribunal)
         {
-            Debug.Log("Not Guilty end!");
-            Application.Quit();
+            chapter = Chapter.GameOver;
+
+            int susPaul = SusManager.Instance.Suspicion;
+            int susMary = SusManager.Instance.SusMary;
+            int susRobin = SusManager.Instance.SusRobin;
+
+            if (susPaul >= susMary && susPaul >= susRobin) reader.SetDialogue(endPaul);
+            else if (susMary >= susRobin) reader.SetDialogue(endMary);
+            else reader.SetDialogue(endRobin);
+
+            StartDialogue();
         }
         else if (chapter == Chapter.GameOver)
         {
-            Debug.Log("Guilty gameover");
+            Debug.Log("Game ended!");
             Application.Quit();
         }
     }

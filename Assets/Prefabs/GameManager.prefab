@@ -3906,7 +3906,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 870c03e2c9838ea4f9dc147b8c346a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  suspicionGameOverValue: 60
   timeToExploreCrimeScene: 45
   reader: {fileID: 7826837219938307421}
   timer: {fileID: 732987877890606190}
@@ -3915,6 +3914,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 013001470ba85cd438a3bdc1f79ccd18, type: 2}
   - {fileID: 11400000, guid: 426a0fcfdf1d3ff43a85d5ff7d00631d, type: 2}
   - {fileID: 11400000, guid: 83392b7f629de2a4f85bf5571bb21982, type: 2}
+  endPaul: {fileID: 11400000, guid: 83392b7f629de2a4f85bf5571bb21982, type: 2}
+  endMary: {fileID: 11400000, guid: 16912c8be5433ab41822830d87bec798, type: 2}
+  endRobin: {fileID: 11400000, guid: d6095c2edfedb7a43b53540d8cf31089, type: 2}
   chapter: 0
 --- !u!1 &9079526211090317168
 GameObject:
