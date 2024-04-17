@@ -13,11 +13,14 @@ public class CluesManager : MonoBehaviour
     [SerializeField] private GameObject button;
     [SerializeField] private Image background;
     [SerializeField] private GameObject imagesContainer;
+    [SerializeField] private GameObject clueObjectsContainer;
 
-    public Dictionary<string, ClueData> Clues = new();
-    private readonly Dictionary<Image, string> ImagesClue = new();
+    public GameObject UICluePrefab => uiCluePrefab;
+    public Dictionary<string, ClueData> CluesData = new();
 
-    private List<Image> images;
+    private readonly Dictionary<string, Clue> Clues = new();
+    private readonly Dictionary<Image, string> clueImages = new();
+    private List<Image> menuImages;
 
     private bool isClueMenuOpen = false;
     private string miniGameSceneName;
@@ -35,17 +38,17 @@ public class CluesManager : MonoBehaviour
     private void Start()
     {
         background.gameObject.SetActive(false);
-        images = imagesContainer.GetComponentsInChildren<Image>().ToList();
+        menuImages = imagesContainer.GetComponentsInChildren<Image>().ToList();
 
-        foreach(Image image in images)
+        foreach(Image image in menuImages)
         {
-            ImagesClue.Add(image, null);
+            clueImages.Add(image, null);
         }
     }
 
     public ClueState GetClueState(string clueName)
     {
-        if (Clues.TryGetValue(clueName, out ClueData clueData))
+        if (CluesData.TryGetValue(clueName, out ClueData clueData))
         {
             return clueData.clueState;
         }
@@ -54,22 +57,29 @@ public class CluesManager : MonoBehaviour
 
     public void FoundClue(ClueData clueData)
     {
-        if (Clues.ContainsKey(clueData.clueName)) return;
+        if (CluesData.ContainsKey(clueData.clueName)) return;
 
-        Clues.Add(clueData.clueName, clueData);
+        CluesData.Add(clueData.clueName, clueData);
 
-        var ImageKey = ImagesClue.FirstOrDefault(p => p.Value is null).Key;
+        var ImageKey = clueImages.FirstOrDefault(p => p.Value is null).Key;
         
-        ImagesClue[ImageKey] = clueData.clueName;
+        clueImages[ImageKey] = clueData.clueName;
         ImageKey.sprite = clueData.image;
         
         EventTrigger trigger = ImageKey.gameObject.AddComponent<EventTrigger>();
         AddEventTriggerListener(trigger, EventTriggerType.PointerClick, OnImageClicked);
     }
 
+    public void LinkClueObject(Clue clue, string name)
+    {
+        if (Clues.ContainsKey(name)) return;
+        else Clues.Add(name, clue);
+    }
+
     public void AffectClue(string name)
     {
-        Clues.GetValueOrDefault(name).clueState = ClueState.Affected;
+        CluesData.GetValueOrDefault(name).clueState = ClueState.Affected;
+        Clues.GetValueOrDefault(name).MiniGameDone();
         Debug.Log(name + " was affected");
     }
 
@@ -95,10 +105,10 @@ public class CluesManager : MonoBehaviour
         PointerEventData pointerEventData = (PointerEventData)eventData;
         GameObject clickedImage = pointerEventData.pointerPress;
 
-        ClueData clueData = Clues.GetValueOrDefault(ImagesClue[clickedImage.GetComponent<Image>()]);
+        ClueData clueData = CluesData.GetValueOrDefault(clueImages[clickedImage.GetComponent<Image>()]);
         GameObject uiClue = Instantiate(uiCluePrefab);
 
-        uiClue.GetComponent<UI_Clue>().Setup(null, clueData, string.Empty, true);
+        uiClue.GetComponent<UI_Clue>().Setup(clueData, string.Empty, true);
     }
 
     public static void AddEventTriggerListener(EventTrigger trigger,

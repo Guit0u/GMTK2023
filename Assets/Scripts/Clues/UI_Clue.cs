@@ -16,7 +16,7 @@ public class UI_Clue : MonoBehaviour
 
     private bool miniGameDone;
 
-    public void Setup(Clue clue, ClueData data, string miniGame, bool miniGameDone)
+    public void Setup(ClueData data, string miniGame, bool miniGameDone)
     { 
         clueData = data;
         miniGameName = miniGame;
@@ -40,7 +40,6 @@ public class UI_Clue : MonoBehaviour
                 textDescription.text = clueData.affectedDescription;
                 ClueImage.sprite = clueData.affectedImage;
                 miniGameDone = true;
-                clue.MiniGameDone();
                 break;
         }
 

@@ -168,6 +168,14 @@ PrefabInstance:
       value: Clue (3)
       objectReference: {fileID: 0}
     - target: {fileID: 7930637300555367401, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
+      propertyPath: m_Size.x
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930637300555367401, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
+      propertyPath: m_Size.y
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930637300555367401, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 80ebc456680623d40bab60a6fd35f3fc, type: 3}
@@ -185,6 +193,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7930637300555367401, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930637300555367401, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
+      propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
@@ -545,6 +557,10 @@ PrefabInstance:
       value: casser truc
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
+      propertyPath: spriteAfterMiniGame
+      value: 
+      objectReference: {fileID: 21300000, guid: c11f5182cd44fd44c988c520aefd497b, type: 3}
+    - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
       value: There's a lot of it!
       objectReference: {fileID: 0}
@@ -714,6 +730,10 @@ PrefabInstance:
       propertyPath: affectedDescription
       value: casser truc
       objectReference: {fileID: 0}
+    - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
+      propertyPath: spriteAfterMiniGame
+      value: 
+      objectReference: {fileID: 21300000, guid: 54d83866ef657684bb8da3c88a2a2c65, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
       value: A footprint of my foot.
@@ -1369,6 +1389,10 @@ PrefabInstance:
       value: casser truc
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
+      propertyPath: spriteAfterMiniGame
+      value: 
+      objectReference: {fileID: 21300000, guid: 55edeb1af05f71349a35d727da626121, type: 3}
+    - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
       value: A nice family picture.
       objectReference: {fileID: 0}
@@ -1852,6 +1876,10 @@ PrefabInstance:
       propertyPath: affectedDescription
       value: casser machin
       objectReference: {fileID: 0}
+    - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
+      propertyPath: spriteAfterMiniGame
+      value: 
+      objectReference: {fileID: 21300000, guid: 1cd80ec6d8c135c42b8808e2df88fb8e, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
       value: The victim's phone.

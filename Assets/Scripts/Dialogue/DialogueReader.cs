@@ -140,7 +140,7 @@ public class DialogueReader : MonoBehaviour
 
         foreach (ClueCondition clueCondition in condition.clues)
         {
-            if (CluesManager.Instance.Clues.TryGetValue(clueCondition.name, out ClueData data))
+            if (CluesManager.Instance.CluesData.TryGetValue(clueCondition.name, out ClueData data))
             {
                 if (clueCondition.IsNot ^ data.clueState == clueCondition.state) 
                     return false;

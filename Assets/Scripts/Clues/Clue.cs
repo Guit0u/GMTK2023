@@ -1,22 +1,27 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class Clue : MonoBehaviour
 {
     [SerializeField] private ClueData clueData;
+    [Space(10)]
     [SerializeField] private string miniGame;
-
-    [SerializeField] private GameObject UiCluePrefab;
+    [SerializeField] private Sprite spriteAfterMiniGame;
 
     private bool miniGameDone;
 
-    public void MiniGameDone() => miniGameDone = true;
+    public void MiniGameDone()
+    {
+        GetComponent<SpriteRenderer>().sprite = spriteAfterMiniGame;
+        miniGameDone = true;
+    }
 
     private void OpenUI()
     {
-        GameObject uiClue = Instantiate(UiCluePrefab, transform);
-        uiClue.GetComponent<UI_Clue>().Setup(this, clueData, miniGame, miniGameDone);
+        if (string.IsNullOrEmpty(miniGame)) MiniGameDone();
+       
+        GameObject uiClue = Instantiate(CluesManager.Instance.UICluePrefab, transform);
+        uiClue.GetComponent<UI_Clue>().Setup(clueData, miniGame, miniGameDone);
     }
 
     private void OnMouseDown()
@@ -32,6 +37,7 @@ public class Clue : MonoBehaviour
         {
             clueData.clueState = ClueState.Found;
             CluesManager.Instance.FoundClue(clueData);
+            CluesManager.Instance.LinkClueObject(this, clueData.clueName);
         }
 
         OpenUI();
