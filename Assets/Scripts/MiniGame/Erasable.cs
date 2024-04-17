@@ -1,13 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TacheSang : MonoBehaviour
+public class Erasable : MonoBehaviour
 {
     [SerializeField] private float removalSpeed = 1f;
     [SerializeField] private float mouseMaxBonus = 1f;
     [SerializeField] private float mouseSpeedBonus = 2f;
     [SerializeField] private SpriteRenderer sprite;
-    [SerializeField] private CountSang bloodCount;
+    [SerializeField] private EraseCount bloodCount;
 
     [SerializeField] private Slider slider;
 

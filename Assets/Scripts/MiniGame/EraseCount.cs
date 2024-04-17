@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class CountSang : MonoBehaviour
+public class EraseCount : MonoBehaviour
 {
     [SerializeField] private MiniGame miniGame;
     [SerializeField] private int bloodstainCount = 1;

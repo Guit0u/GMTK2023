@@ -511,7 +511,7 @@ PrefabInstance:
     - target: {fileID: 7930637300555367401, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c11f5182cd44fd44c988c520aefd497b, type: 3}
+      objectReference: {fileID: 21300000, guid: 8fae10eb802cf46449b6db028995b500, type: 3}
     - target: {fileID: 7930637300555367401, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -543,7 +543,7 @@ PrefabInstance:
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.image
       value: 
-      objectReference: {fileID: 21300000, guid: c11f5182cd44fd44c988c520aefd497b, type: 3}
+      objectReference: {fileID: 21300000, guid: 8fae10eb802cf46449b6db028995b500, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: SeenDescription
       value: voir truc
@@ -559,7 +559,7 @@ PrefabInstance:
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: spriteAfterMiniGame
       value: 
-      objectReference: {fileID: 21300000, guid: c11f5182cd44fd44c988c520aefd497b, type: 3}
+      objectReference: {fileID: 21300000, guid: 8fae10eb802cf46449b6db028995b500, type: 3}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
       value: There's a lot of it!
@@ -610,7 +610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3.6
+      value: 1.96
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -708,7 +708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: miniGame
-      value: 
+      value: Footprint
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: description
@@ -733,10 +733,10 @@ PrefabInstance:
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: spriteAfterMiniGame
       value: 
-      objectReference: {fileID: 21300000, guid: 54d83866ef657684bb8da3c88a2a2c65, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
-      value: A footprint of my foot.
+      value: Footprints I left while entering.
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedImage
@@ -748,7 +748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: A footprint of my foot. I cleaned it.
+      value: Footprints I left while entering. I cleaned them.
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -1058,7 +1058,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.description
-      value: It's my Blood.
+      value: It's my Blood. I was wounded during the fight.
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedImage
@@ -1772,6 +1772,77 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
   m_PrefabInstance: {fileID: 1822760613}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &602136447803638695
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2920246792074516662}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -4.076, y: 1.439}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!212 &2187656496049022653
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2920246792074516662}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: e1028b5c4b75f6846a2ee6f2a9a08876, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &2529953341424968023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1966,6 +2037,23 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
   m_PrefabInstance: {fileID: 2529953341424968023}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2920246792074516662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 602136447803638695}
+  - component: {fileID: 2187656496049022653}
+  m_Layer: 0
+  m_Name: Hat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1001 &3775620062137279544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2002,6 +2090,14 @@ PrefabInstance:
       propertyPath: dialogues.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: 013001470ba85cd438a3bdc1f79ccd18, type: 2}
+    - target: {fileID: 3891912849359432809, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3891912849359432809, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6439077766297904008, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2066,6 +2162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 9078678026868873800, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 9087181615936048107, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2117,4 +2217,5 @@ SceneRoots:
   - {fileID: 8225695314838408651}
   - {fileID: 394007124}
   - {fileID: 416722759}
+  - {fileID: 602136447803638695}
   - {fileID: 1440901881}

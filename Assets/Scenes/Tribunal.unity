@@ -203,6 +203,38 @@ PrefabInstance:
       propertyPath: dialogue
       value: 
       objectReference: {fileID: 11400000, guid: 426a0fcfdf1d3ff43a85d5ff7d00631d, type: 2}
+    - target: {fileID: 1513115016018615789, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1513115016018615789, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1513115016018615789, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1513115016018615789, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439077766297904008, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439077766297904008, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439077766297904008, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439077766297904008, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7679469732265312690, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -250,6 +282,14 @@ PrefabInstance:
     - target: {fileID: 8851259333479770182, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087181615936048107, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087181615936048107, guid: ddcbecf9b90b4514fa4bab24185e6066, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -359,10 +399,6 @@ PrefabInstance:
     - target: {fileID: 4986761149557850039, guid: db003007c0c58cb44b692e2e035bedf5, type: 3}
       propertyPath: m_Name
       value: CluesManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 5417653801414107070, guid: db003007c0c58cb44b692e2e035bedf5, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5417653801414107070, guid: db003007c0c58cb44b692e2e035bedf5, type: 3}
       propertyPath: m_LocalPosition.x

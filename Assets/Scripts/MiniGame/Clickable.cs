@@ -1,10 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics.Tracing;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class InterractObject : MonoBehaviour
+public class Clickable : MonoBehaviour
 {
     [SerializeField] private MiniGame miniGame;
     [Header("Parameters")]

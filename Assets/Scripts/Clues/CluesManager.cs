@@ -87,6 +87,9 @@ public class CluesManager : MonoBehaviour
     {
         isClueMenuOpen = !isClueMenuOpen;
         background.gameObject.SetActive(isClueMenuOpen);
+
+        if (isClueMenuOpen) GameManager.Instance.PauseTimer();
+        else GameManager.Instance.ResumeTimer();
     }
 
     public void HideClues()

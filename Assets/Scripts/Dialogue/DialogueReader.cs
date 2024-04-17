@@ -140,7 +140,7 @@ public class DialogueReader : MonoBehaviour
         {
             if (CluesManager.Instance.CluesData.TryGetValue(clueCondition.name, out ClueData data))
             {
-                if (clueCondition.IsNot ^ data.clueState == clueCondition.state) 
+                if (clueCondition.IsNot ^ data.clueState != clueCondition.state) 
                     return false;
             }
         }

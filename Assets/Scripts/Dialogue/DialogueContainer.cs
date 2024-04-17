@@ -161,6 +161,7 @@ public class DialogueContainer : MonoBehaviour
 
         audioSource.loop = false;
         arrow.SetActive(true);
+        tagsOpen.Clear();
         typing = false;
         skip = false;
     }

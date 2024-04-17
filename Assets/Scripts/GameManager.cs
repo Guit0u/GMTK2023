@@ -30,6 +30,12 @@ public class GameManager : MonoBehaviour
     private float timeRemaining;
     private Slider timerSlider;
 
+    public void PauseTimer() => timerIsRunning = false;
+    public void ResumeTimer()
+    {
+        if (chapter == Chapter.CrimeExplore) timerIsRunning = true;
+    }
+
     private void Awake()
     {
         if (Instance == null)
