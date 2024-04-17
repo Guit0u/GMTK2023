@@ -229,7 +229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: I took it with me.
+      value: The gun I shot Jeremiah with. I took it with me.
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -328,6 +328,10 @@ PrefabInstance:
     - target: {fileID: 6401191329624260066, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_Name
       value: Clue (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401191329624260066, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7930637300555367401, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_Sprite
@@ -724,7 +728,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: I cleaned it.
+      value: A footprint of my foot. I cleaned it.
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -1046,7 +1050,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: I wiped it.
+      value: It's my Blood. I wiped it.
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -1216,7 +1220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: I took it with me.
+      value: '"Come and get what''s rightfully yours, if you dare"'
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -1680,7 +1684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: I took it with me.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder
@@ -1862,7 +1866,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631230194742870196, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: clueData.affectedDescription
-      value: I deleted my number.
+      value: The victim's phone. I deleted my number.
       objectReference: {fileID: 0}
     - target: {fileID: 8649271445889083123, guid: 1485709b181022e4ba3e8c69e65bfab0, type: 3}
       propertyPath: m_RootOrder

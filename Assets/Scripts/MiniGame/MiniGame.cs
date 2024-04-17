@@ -2,19 +2,15 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MiniGame : MonoBehaviour
 {
     [SerializeField] private string relatedClue;
-    [Space(10)]
-    [SerializeField] private TMP_Text timerText;
-    [SerializeField] public float timeRemaining = 20;
-    
-    private bool timerIsRunning = false;
+    [SerializeField] private GameObject returnButton;
 
     private void Start()
     {
-        timerIsRunning = true;
         CluesManager.Instance.HideClues();
         BoxClue(false);
     }
@@ -24,41 +20,24 @@ public class MiniGame : MonoBehaviour
         Clue[] clues = FindObjectsOfType<Clue>();
         foreach (Clue clue in clues)
         {
-            clue.GetComponent<BoxCollider2D>().enabled=isEnabled;
+            clue.GetComponent<BoxCollider2D>().enabled = isEnabled;
         }
     }
 
-    void Update()
+    public void DisplayReturnButton(bool active)
     {
-        if (timerIsRunning)
-        {
-            if (timeRemaining > 0)
-            {
-                timeRemaining -= Time.deltaTime;
-                DisplayTime(timeRemaining);
-            }
-            else
-            {
-                timeRemaining = 0;
-                timerIsRunning = false;
-                BoxClue(true);
-                SceneManager.UnloadSceneAsync(CluesManager.Instance.EndClueMiniGame());
-            }
-        }
+        returnButton.SetActive(active);
     }
-    void DisplayTime(float timeToDisplay)
-    {
-        timeToDisplay += 1;
-        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
-        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
 
-        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    public void ReturnToCrimeScene()
+    {
+        BoxClue(true);
+        SceneManager.UnloadSceneAsync(CluesManager.Instance.EndClueMiniGame());
     }
 
     public void Win()
     {
         CluesManager.Instance.AffectClue(relatedClue);
-        BoxClue(true);
-        SceneManager.UnloadSceneAsync(CluesManager.Instance.EndClueMiniGame());
+        ReturnToCrimeScene();
     }
 }

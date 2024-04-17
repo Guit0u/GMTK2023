@@ -11,7 +11,6 @@ public class UI_Clue : MonoBehaviour
     [SerializeField] private TMP_Text textName;
     [SerializeField] private TMP_Text textDescription;
 
-    private Clue clue;
     private ClueData clueData;
     private string miniGameName;
 
@@ -19,7 +18,6 @@ public class UI_Clue : MonoBehaviour
 
     public void Setup(Clue clue, ClueData data, string miniGame, bool miniGameDone)
     { 
-        this.clue = clue;
         clueData = data;
         miniGameName = miniGame;
         this.miniGameDone = miniGameDone;
@@ -41,6 +39,8 @@ public class UI_Clue : MonoBehaviour
             case ClueState.Affected:
                 textDescription.text = clueData.affectedDescription;
                 ClueImage.sprite = clueData.affectedImage;
+                miniGameDone = true;
+                clue.MiniGameDone();
                 break;
         }
 
@@ -56,9 +56,6 @@ public class UI_Clue : MonoBehaviour
     {
         if (!miniGameDone)
         {
-            miniGameDone = true;
-            clue.MiniGameDone();
-
             CluesManager.Instance.StartClueMiniGame(miniGameName);
             SceneManager.LoadScene(miniGameName, LoadSceneMode.Additive);
 

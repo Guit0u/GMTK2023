@@ -1,18 +1,26 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class Phone : MonoBehaviour
 {
+    [SerializeField] private MiniGame miniGame;
+    [SerializeField] private Image image;
+    [SerializeField] private Sprite newSprite;
+    [SerializeField] private float delay;
 
     public void IsGood()
     {
-        FindObjectOfType<MiniGame>().Win();
+        StartCoroutine(EndMiniGame());
     }
 
-    public void IsBad()
+    private IEnumerator EndMiniGame()
     {
-        FindObjectOfType<MiniGame>().timeRemaining = 0;
+        miniGame.DisplayReturnButton(false);
+        image.sprite = newSprite;
+
+        yield return new WaitForSeconds(delay);
+
+        miniGame.Win();
     }
 }

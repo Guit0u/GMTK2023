@@ -657,7 +657,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6878440969418226320}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Phone, Assembly-CSharp
         m_MethodName: IsBad
         m_Mode: 1
@@ -790,7 +790,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6878440969418226320}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Phone, Assembly-CSharp
         m_MethodName: IsBad
         m_Mode: 1
@@ -923,7 +923,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6878440969418226320}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Phone, Assembly-CSharp
         m_MethodName: IsBad
         m_Mode: 1
@@ -1056,7 +1056,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6878440969418226320}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Phone, Assembly-CSharp
         m_MethodName: IsBad
         m_Mode: 1
@@ -1211,7 +1211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5502000071222300049}
-  - component: {fileID: 6878440969418226320}
+  - component: {fileID: 5472210159892863667}
   m_Layer: 0
   m_Name: TestPhone
   m_TagString: Untagged
@@ -1235,7 +1235,7 @@ Transform:
   - {fileID: 1742632850585900720}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6878440969418226320
+--- !u!114 &5472210159892863667
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1247,6 +1247,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713fdd2ad8767c24ea94fdf2decc364c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  miniGame: {fileID: 0}
+  image: {fileID: 88823712449574693}
+  newSprite: {fileID: 21300000, guid: 7bac4b67d2a81884f99b18df449c71f2, type: 3}
+  delay: 1
 --- !u!1 &6519711199596595197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,7 +1372,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6878440969418226320}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Phone, Assembly-CSharp
         m_MethodName: IsBad
         m_Mode: 1
@@ -1501,7 +1505,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6878440969418226320}
+      - m_Target: {fileID: 5472210159892863667}
         m_TargetAssemblyTypeName: Phone, Assembly-CSharp
         m_MethodName: IsGood
         m_Mode: 1
@@ -1650,8 +1654,8 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_VertexColorAlwaysGammaSpace: 1
+  m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0

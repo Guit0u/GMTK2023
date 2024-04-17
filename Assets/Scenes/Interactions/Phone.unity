@@ -182,7 +182,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 1}
+  m_Color: {r: 0.6037736, g: 0.30898136, b: 0.19024561, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -201,8 +201,8 @@ Transform:
   m_GameObject: {fileID: 1371690077}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8560736, y: -2.23467, z: -9}
-  m_LocalScale: {x: 100, y: 100, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -9}
+  m_LocalScale: {x: 32, y: 18, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -280,6 +280,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e46a626709bed1842a7f9e865518f223, type: 3}
+--- !u!114 &1661013452 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7528456041438316017, guid: e46a626709bed1842a7f9e865518f223, type: 3}
+  m_PrefabInstance: {fileID: 1661013451}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2e9df3b329e96343b496a0a0bb8cadc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3486436685432216608
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -288,6 +299,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5472210159892863667, guid: 608241276061daa41ac211eefbd98cd0, type: 3}
+      propertyPath: miniGame
+      value: 
+      objectReference: {fileID: 1661013452}
     - target: {fileID: 5502000071222300049, guid: 608241276061daa41ac211eefbd98cd0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

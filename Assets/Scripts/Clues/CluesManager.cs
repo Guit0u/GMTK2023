@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -21,7 +20,6 @@ public class CluesManager : MonoBehaviour
     private List<Image> images;
 
     private bool isClueMenuOpen = false;
-    private bool inMiniGame = false;
     private string miniGameSceneName;
 
     void Awake()
@@ -117,13 +115,13 @@ public class CluesManager : MonoBehaviour
 
     public void StartClueMiniGame(string name)
     {
-        inMiniGame = true;
         miniGameSceneName = name;
+        button.SetActive(false);
     }
 
     public string EndClueMiniGame()
     {
-        inMiniGame = false;
+        button.SetActive(true);
         return miniGameSceneName;
     }
 }
