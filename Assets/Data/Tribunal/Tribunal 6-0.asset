@@ -10,23 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 220f8b4b417a8c545ba7074a347b26ff, type: 3}
-  m_Name: DiagCrimeScene
+  m_Name: Tribunal 6-0
   m_EditorClassIdentifier: 
   condition:
     susCondition: 0
     susValue: 0
-    clues: []
-  SusModifier: 0
+    clues:
+    - name: Phone
+      IsNot: 1
+      state: 2
+  SusModifier: 30
   SusMarieModifier: 0
   SusRobinModifier: 0
   entries:
   - type: 0
-    author: Paul
+    author: Prosecutor
     portrait:
-      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
-      position: 0
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
       reversed: 1
     text:
-    - A neighbor will have heard the shot.<.> I've got to get out of here fast.<.>
-      But first, I'd better clean up this mess.
-  following: []
+    - Unfortunately for you, <c=b>Mr Jeffords<c>, I am incline to believe <c=b>Mary<c>.
+    - We've been able to recover the victim's phone, and we've gone through his call
+      history.
+  following:
+  - {fileID: 11400000, guid: b137708ec0312cd47804b0a99bfa658d, type: 2}

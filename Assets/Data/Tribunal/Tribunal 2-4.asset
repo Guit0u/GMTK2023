@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220f8b4b417a8c545ba7074a347b26ff, type: 3}
+  m_Name: Tribunal 2-4
+  m_EditorClassIdentifier: 
+  condition:
+    susCondition: 0
+    susValue: 0
+    clues: []
+  SusModifier: 10
+  SusMarieModifier: 0
+  SusRobinModifier: 0
+  entries:
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 1
+    text:
+    - It's quite odd for an anti-militarist to proudly wear a military number, even
+      if it's his father's.
+  - type: 0
+    author: Paul
+    portrait:
+      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - Well, it's a tribute, you see.
+  - type: 0
+    author: Judge
+    portrait:
+      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - The prosecutor is right, <c=b>Mr. Jeffords<c>. Your behavior is odd, to say
+      the least. Pull yourself together if you don't want to try the court's patience.
+    - Let's move on to Mrs Trechton.
+  following:
+  - {fileID: 11400000, guid: d1dfcfb930dd12249bab72095a21df48, type: 2}

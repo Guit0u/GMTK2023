@@ -10,23 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 220f8b4b417a8c545ba7074a347b26ff, type: 3}
-  m_Name: DiagCrimeScene
+  m_Name: Tribunal 1-2
   m_EditorClassIdentifier: 
   condition:
     susCondition: 0
     susValue: 0
     clues: []
-  SusModifier: 0
+  SusModifier: 20
   SusMarieModifier: 0
   SusRobinModifier: 0
   entries:
   - type: 0
-    author: Paul
+    author: Judge
     portrait:
-      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
-      position: 0
-      reversed: 1
+      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
+      position: 1
+      reversed: 0
     text:
-    - A neighbor will have heard the shot.<.> I've got to get out of here fast.<.>
-      But first, I'd better clean up this mess.
-  following: []
+    - The police arrested you there as we just said. Avoid lying to the court in
+      the future.
+  following:
+  - {fileID: 11400000, guid: 7af22ffcc36162148b25a8ab5d104ee9, type: 2}

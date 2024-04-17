@@ -28,7 +28,7 @@ MonoBehaviour:
       reversed: 0
     text:
     - When I said I wanted to see you, I didn't think you'd respond with a threat,
-      without daring to say it to my face.
+      without even daring to say it to my face.
   - type: 0
     author: Jeremiah
     portrait:
@@ -36,8 +36,9 @@ MonoBehaviour:
       position: 2
       reversed: 0
     text:
-    - You're just like your father, a coward, attached to futile things. I stand
-      by what I told you. If you want your revenge, come and get it.
+    - You're just like your father,<.> a coward.<.> You get all riled up about futile
+      things. I stand by what I told you.<.> If you want your revenge, come and get
+      it.
   - type: 0
     author: 
     portrait:
@@ -45,7 +46,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - <m>- The evening -
+    - <m><c=g>- The evening -
   - type: 0
     author: Paul
     portrait:
@@ -53,7 +54,7 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - Good evening,<.> <c=r>Jeremiah<c>.
+    - Good evening, <c=r>Jeremiah<c>.
   - type: 0
     author: Jeremiah
     portrait:
@@ -73,7 +74,7 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - <i>The truth.<i>
+    - <b>The truth.<b>
   - type: 0
     author: Jeremiah
     portrait:
@@ -81,7 +82,7 @@ MonoBehaviour:
       position: 2
       reversed: 0
     text:
-    - A vast program.
+    - An extensive program.
   - type: 0
     author: Paul
     portrait:
@@ -89,8 +90,8 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - Don't play dumb. The truth about my father. About his disappearance in an operation.
-      You all came home but he didn't.
+    - Don't play dumb.<.> The truth about my father.<.> About his disappearance in
+      <.><i>that<i><.> operation.<.> You all came home but he didn't.
   - type: 0
     author: Jeremiah
     portrait:
@@ -98,9 +99,9 @@ MonoBehaviour:
       position: 2
       reversed: 0
     text:
-    - We used to be friends, we went through a lot together. But your father turned
-      out to be an idealist. We have a jargon in the army for that. A pain in the
-      ass.
+    - We used to be friends, we went through a lot together.<.> But your father turned
+      out to be an idealist.<.> We have a jargon in the army for that.<.> A pain
+      in the ass.
   - type: 0
     author: Paul
     portrait:
@@ -116,7 +117,7 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - He refused to obey orders. We've got a word for that too. A deserter.
+    - He refused to obey orders.<.> We've got a word for that too.<.> A deserter.
   - type: 0
     author: Paul
     portrait:
@@ -134,7 +135,7 @@ MonoBehaviour:
     text:
     - A weakling, a coward, like you. You came to my house, threatening me with a
       gun under my own roof.
-    - But you'd never dare. All I have to do is stand up and approach you gently.
+    - But you'd never dare.<.> All I have to do is stand up and approach you gently.
   - type: 0
     author: Paul
     portrait:
@@ -181,5 +182,5 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - "Oh shit, oh shit, oh shit. And he managed to hurt me, that bastard.\r"
+    - "Shit, he's dead!<.> That bastard also managed to hurt me.\r"
   following: []

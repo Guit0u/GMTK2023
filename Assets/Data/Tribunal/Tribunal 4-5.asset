@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 220f8b4b417a8c545ba7074a347b26ff, type: 3}
-  m_Name: DiagCrimeScene
+  m_Name: Tribunal 4-5
   m_EditorClassIdentifier: 
   condition:
     susCondition: 0
@@ -25,8 +25,17 @@ MonoBehaviour:
     portrait:
       sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
       position: 0
+      reversed: 0
+    text:
+    - You're right, I can't prove it.
+  - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
       reversed: 1
     text:
-    - A neighbor will have heard the shot.<.> I've got to get out of here fast.<.>
-      But first, I'd better clean up this mess.
-  following: []
+    - In the absence of proof, all hypotheses are equal. It could just as easily
+      be your blood as the victim's.
+  following:
+  - {fileID: 11400000, guid: 8b2f3f50309c9f44798e262429d67249, type: 2}

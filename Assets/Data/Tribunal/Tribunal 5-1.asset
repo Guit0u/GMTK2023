@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220f8b4b417a8c545ba7074a347b26ff, type: 3}
+  m_Name: Tribunal 5-1
+  m_EditorClassIdentifier: 
+  condition:
+    susCondition: 0
+    susValue: 0
+    clues: []
+  SusModifier: 0
+  SusMarieModifier: 0
+  SusRobinModifier: 0
+  entries:
+  - type: 0
+    author: Paul
+    portrait:
+      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - I have no connection with the victim, it's clearly a question of inheritance.
+  - type: 0
+    author: Judge
+    portrait:
+      sprite: {fileID: 21300000, guid: fe92bfde245692b4f97b35e479eec897, type: 3}
+      position: 1
+      reversed: 0
+    text:
+    - Really? <c=b>Mrs. Trechton<c> just said otherwise.
+  - type: 0
+    author: Paul
+    portrait:
+      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
+      position: 0
+      reversed: 0
+    text:
+    - Both our fathers were in the army, but that doesn't mean I know every soldier
+      in the country, sir.
+  - type: 0
+    author: Mary
+    portrait:
+      sprite: {fileID: 21300000, guid: 55a96cec6c7d46f4fa813b4c906bf573, type: 3}
+      position: 2
+      reversed: 0
+    text:
+    - Liar! I'm sure our fathers knew each other, and I know the name Jeffords.
+  following:
+  - {fileID: 11400000, guid: d8b506c69bfb9694490e7cc2a46b8828, type: 2}
+  - {fileID: 11400000, guid: db1bc69ca199c8c44959fe4afa1bb4d2, type: 2}

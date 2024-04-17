@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 220f8b4b417a8c545ba7074a347b26ff, type: 3}
-  m_Name: DiagCrimeScene
+  m_Name: Tribunal 2-3
   m_EditorClassIdentifier: 
   condition:
     susCondition: 0
@@ -21,12 +21,24 @@ MonoBehaviour:
   SusRobinModifier: 0
   entries:
   - type: 0
+    author: Prosecutor
+    portrait:
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
+      position: 2
+      reversed: 1
+    text:
+    - "The autopsy report informs us that the victim was shot at point-blank, and
+      the body has signs of a struggle. \r"
+    - <c=r>Mr Trechton<c> was most likely killed in a fight with his assaillant,
+      during which the shot was fired.
+    - "Unfortunately, no weapon was found on the crime scene.\r"
+  - type: 0
     author: Paul
     portrait:
       sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
       position: 0
-      reversed: 1
+      reversed: 0
     text:
-    - A neighbor will have heard the shot.<.> I've got to get out of here fast.<.>
-      But first, I'd better clean up this mess.
-  following: []
+    - "<c=b>(How unfortunate.)\r"
+  following:
+  - {fileID: 11400000, guid: 44fd70c4b5dfd4846bc5e59c2c69983d, type: 2}
