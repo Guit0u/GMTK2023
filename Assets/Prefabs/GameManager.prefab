@@ -3931,7 +3931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   suspicionGameOverValue: 60
-  timeToExploreCrimeScene: 40
+  timeToExploreCrimeScene: 60
   reader: {fileID: 7826837219938307421}
   timer: {fileID: 732987877890606190}
   dialogues:

@@ -31,14 +31,14 @@ public class SusManager : MonoBehaviour
         susMeter.gameObject.SetActive(active);
     }
 
-    public void ChangeSus(int value)
+    public void UpdateSusValues(int player, int marie, int robin)
     {
-        suspicion += value;
+        suspicion += player;
         StartCoroutine(UpdateSlider());
-    }
 
-    public void ChangeSusMarie(int value) => suspicionMarie += value;
-    public void CHangeSusRobin(int value) => suspicionRobin += value;
+        suspicionMarie += marie;
+        suspicionRobin += robin;
+    }
 
     private IEnumerator UpdateSlider()
     {

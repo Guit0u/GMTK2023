@@ -68,6 +68,8 @@ public class DialogueReader : MonoBehaviour
                 dialogue = dialogue.following[index];
                 entryIndex = 0;
                 entryTextIndex = 0;
+
+                SusManager.Instance.UpdateSusValues(dialogue.SusModifier, dialogue.SusMarieModifier, dialogue.SusRobinModifier);
                 UpdateContainer();
                 return;
             }
@@ -86,11 +88,7 @@ public class DialogueReader : MonoBehaviour
             entryIndex = 0;
             entryTextIndex = 0;
 
-            //Should be somewhere else, change sus when new branch even if it not after a choice
-            SusManager.Instance.ChangeSus(dialogue.SusModifier);
-            SusManager.Instance.CHangeSusRobin(dialogue.SusRobinModifier);
-            SusManager.Instance.ChangeSusMarie(dialogue.SusMarieModifier);
-
+            SusManager.Instance.UpdateSusValues(dialogue.SusModifier, dialogue.SusMarieModifier, dialogue.SusRobinModifier);
             UpdateContainer();
         }
     }
