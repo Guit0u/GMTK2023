@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float timeToExploreCrimeScene;
     [Header("Dependancies")]
     [SerializeField] private DialogueReader reader;
+    [SerializeField] private VerdictAnimation verdictAnim;
     [SerializeField] private GameObject timer;
     [Space(10)]
     [SerializeField] private List<DialogueBranch> dialogues;
@@ -154,6 +155,13 @@ public class GameManager : MonoBehaviour
         }
         else if (chapter == Chapter.GameOver)
         {
+            int susPaul = SusManager.Instance.Suspicion;
+            int susMary = SusManager.Instance.SusMary;
+            int susRobin = SusManager.Instance.SusRobin;
+
+            if (susPaul >= susMary && susPaul >= susRobin) verdictAnim.PlayGuilty();
+            else verdictAnim.PlayNotGuilty();
+
             Debug.Log("Game ended!");
             Application.Quit();
         }
