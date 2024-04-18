@@ -48,12 +48,6 @@ public class VerdictAnimation : MonoBehaviour
             guilty.text = "Guilty"[..i];
             yield return new WaitForSeconds(guiltyTiming);
         }
-
-        //Confetti time
-        foreach(GameObject o in confetti)
-        {
-            o.SetActive(true);
-        }
     }
 
     private IEnumerator NotGuiltyAnimation()
@@ -69,5 +63,12 @@ public class VerdictAnimation : MonoBehaviour
         notGuilty.text = "Not";
         yield return new WaitForSeconds(notGuiltyTiming);
         notGuilty.text = "Not guilty";
+        yield return new WaitForSeconds(notGuiltyTiming);
+
+        //Confetti time
+        foreach (GameObject o in confetti)
+        {
+            o.SetActive(true);
+        }
     }
 }
