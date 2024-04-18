@@ -51,7 +51,7 @@ MonoBehaviour:
       position: 2
       reversed: 1
     text:
-    - Were not at the crime scene last night?
+    - Were you not at the crime scene last night?
   - type: 0
     author: Mary
     portrait:

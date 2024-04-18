@@ -49,7 +49,7 @@ MonoBehaviour:
     author: Mary
     portrait:
       sprite: {fileID: 21300000, guid: 55a96cec6c7d46f4fa813b4c906bf573, type: 3}
-      position: 2
+      position: 0
       reversed: 0
     text:
     - Liar! I'm sure our fathers knew each other, and I know the name Jeffords.

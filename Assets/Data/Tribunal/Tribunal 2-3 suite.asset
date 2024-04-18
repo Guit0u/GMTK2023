@@ -85,7 +85,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - That remains the most likely
+    - That remains the most likely possibility.
   - type: 0
     author: Judge
     portrait:

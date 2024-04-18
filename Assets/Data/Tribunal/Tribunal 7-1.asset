@@ -38,7 +38,7 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - Why couldn't they fit Mrs. Trechton here?
+    - Why couldn't they fit <c=b>Mrs. Trechton<c> here?
   - type: 0
     author: Mary
     portrait:

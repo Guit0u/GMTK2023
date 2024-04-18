@@ -45,8 +45,9 @@ MonoBehaviour:
       reversed: 0
     text:
     - It wouldn't make much sense to deliberately break that photo. It rather shows
-      that the victim and the murderer had a fight. The burglar would have been caught
-      in the act and the struggle would have broken the photo.
+      that the victim and the murderer had a fight.
+    - The burglar would have been caught in the act and the struggle would have broken
+      the photo.
   - type: 0
     author: Prosecutor
     portrait:

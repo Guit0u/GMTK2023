@@ -27,7 +27,8 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - It seems like this case is a sorry matter of revenge, the ins and outs of which
+    - You seem to be the most suspect out of the three, <c=b>Mr Jeffords<c>.
+    - It looks like this case is a sorry matter of revenge, the ins and outs of which
       we don't fully understand.
   - type: 0
     author: 'Paul '
@@ -57,7 +58,8 @@ MonoBehaviour:
       reversed: 0
     text:
     - Quite right, Sir.
-    - Mr Paul Jeffords, I find you guilty of the murder of Mr Jeremiah Trechton.
+    - <c=b>Mr Paul Jeffords<c>, I find you guilty of the murder of <c=r>Mr Jeremiah
+      Trechton<c>.
   - type: 0
     author: Paul
     portrait:

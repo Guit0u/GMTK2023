@@ -72,7 +72,7 @@ MonoBehaviour:
   - type: 0
     author: Prosecutor
     portrait:
-      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
+      sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
       position: 2
       reversed: 1
     text:
@@ -91,8 +91,8 @@ MonoBehaviour:
     author: Prosecutor
     portrait:
       sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
-      position: 0
-      reversed: 0
+      position: 2
+      reversed: 1
     text:
     - "He could have kept his pistol and left it to you. Do you know anything about
       this gun, Mr Jeffords?\r\r"
@@ -100,7 +100,7 @@ MonoBehaviour:
     author: Paul
     portrait:
       sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
-      position: 1
+      position: 0
       reversed: 0
     text:
     - I'm anti-militaristic, I don't even know how to hold a pistol.

@@ -31,9 +31,10 @@ MonoBehaviour:
       reversed: 1
     text:
     - "Right, let's get on with it. Near the crime scene, a broken photo caught our
-      eye. We might not have been interested in this object, but it was one of the
-      only broken ones in the room. It shows a broken photo of a younger Trechton
-      and another young soldier, it seems.\r"
+      eye. We might not have been interested in this object, but it was the only
+      broken one in the room.\r"
+    - "It shows a broken photo of a younger <c=r>Trechton<c> and another young soldier,
+      it seems.\r"
   - type: 0
     author: Judge
     portrait:
@@ -51,8 +52,8 @@ MonoBehaviour:
     text:
     - Maybe there was a struggle, or maybe the photo meant something to the killer.
     - In any case, there are a few traces of blood, so the assailant must have cut
-      himself breaking the object.<.> <c=b>Mrs. Trechton<c>, do you have any idea
-      what this photo meant to your father?
+      himself breaking the object.
+    - <c=b>Mrs. Trechton<c>, do you have any idea what this photo meant to your father?
   - type: 0
     author: Mary
     portrait:
@@ -83,7 +84,7 @@ MonoBehaviour:
     portrait:
       sprite: {fileID: 21300000, guid: e86ef6e094ffcf74a9d730fd708c6bcf, type: 3}
       position: 2
-      reversed: 0
+      reversed: 1
     text:
     - Wait a moment.<.> I just saw...<.> <c=b>Jeffords<c>, do you have a plaster
       on your hand?
@@ -102,7 +103,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - What does this  mean?
+    - What does this mean?
   - type: 0
     author: Prosecutor
     portrait:

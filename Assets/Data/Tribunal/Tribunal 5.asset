@@ -120,7 +120,7 @@ MonoBehaviour:
       position: 1
       reversed: 0
     text:
-    - "So ?\r"
+    - "So?\r"
   - type: 0
     author: Mary
     portrait:
@@ -144,7 +144,7 @@ MonoBehaviour:
       position: 0
       reversed: 0
     text:
-    - "It seems to me that it's equally damning to <c=b>Jeffords<c>. He knew my father
+    - "It seems to me that it's equally damning to <c=b>Paul<c>. He knew my father
       and the word may well refer to something other than inheritance!\r"
   - type: 0
     author: Prosecutor

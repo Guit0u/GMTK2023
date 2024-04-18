@@ -51,7 +51,7 @@ MonoBehaviour:
     - You were seen not far from the scene of the crime, walking away from the victim's
       house. What were you doing there?
   - type: 1
-    author: 
+    author: Paul
     portrait:
       sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
       position: 0

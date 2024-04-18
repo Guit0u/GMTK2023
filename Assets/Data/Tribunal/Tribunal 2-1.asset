@@ -66,5 +66,4 @@ MonoBehaviour:
       reversed: 1
     text:
     - Indeed, your Honor.
-  following:
-  - {fileID: 11400000, guid: 83392b7f629de2a4f85bf5571bb21982, type: 2}
+  following: []

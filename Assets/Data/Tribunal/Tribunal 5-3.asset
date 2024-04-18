@@ -23,7 +23,7 @@ MonoBehaviour:
   - type: 0
     author: Paul
     portrait:
-      sprite: {fileID: 0}
+      sprite: {fileID: 21300000, guid: dc02f802b30af5c4da2ec5c2f672df14, type: 3}
       position: 0
       reversed: 0
     text:
@@ -37,7 +37,7 @@ MonoBehaviour:
       position: 2
       reversed: 1
     text:
-    - "Except that this word would rather accuse <c=b>Mrs. Trecthon<c>, not you.
+    - "Except that this word would rather accuse <c=b>Mrs. Trechton<c>, not you.
       At least, that's what we thought in the first place, so why would she risk
       attacking herself?\r"
   - type: 0
