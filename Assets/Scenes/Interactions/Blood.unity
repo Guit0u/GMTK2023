@@ -789,6 +789,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3892737547727276012, guid: e46a626709bed1842a7f9e865518f223, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 5882403285128296021, guid: e46a626709bed1842a7f9e865518f223, type: 3}
       propertyPath: m_Name
       value: MiniGameManager

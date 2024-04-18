@@ -87,6 +87,11 @@ public class GameManager : MonoBehaviour
                 NextChapter();
             }
         }
+
+        if (chapter == Chapter.GameOver && Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     public void StartDialogue()
@@ -161,9 +166,6 @@ public class GameManager : MonoBehaviour
 
             if (susPaul >= susMary && susPaul >= susRobin) verdictAnim.PlayGuilty();
             else verdictAnim.PlayNotGuilty();
-
-            Debug.Log("Game ended!");
-            Application.Quit();
         }
     }
 }
